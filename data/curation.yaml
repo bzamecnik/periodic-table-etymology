@@ -1,7 +1,7 @@
 # Curation layer: what Wikipedia does not offer in a usable form.
 # See data/README.md. A "?" is a placeholder; `npm run data:todo` lists them.
 H:
-  gloss: water + begetter
+  gloss: water-maker
   kinds: [ property ]
   language: Greek
   path: [ Greek, Latin, French ]
@@ -12,7 +12,7 @@ He:
   path: [ Greek ]
 Li:
   gloss: stone
-  kinds: [ "?" ]
+  kinds: [ substance ]
   language: Greek
   path: [ Greek ]
 Be:
@@ -22,33 +22,35 @@ Be:
   language: Prakrit
   path: [ Prakrit, Greek, Latin, Old French, Middle English ]
 B:
-  gloss: "?"
-  kinds: [ "?" ]
-  language: Arabic
-  path: [ Arabic, Medieval Latin, Anglo-Norman, Middle French, Middle English ]
+  named: borax
+  about: borate mineral
+  kinds: [ substance ]
+  language: Middle Persian
+  path: [ Middle Persian, Arabic, Medieval Latin, Anglo-Norman, Middle English ]
 C:
   gloss: charcoal
-  kinds: [ "?" ]
+  kinds: [ substance ]
   language: Latin
   path: [ Latin, French ]
 N:
-  gloss: native-soda begetter
-  kinds: [ property ]
-  language: Greek
-  path: [ Greek, Latin, French ]
+  gloss: niter-maker
+  kinds: [ substance ]
+  language: Egyptian
+  path: [ Egyptian, Greek, Latin, French ]
 O:
-  gloss: to bring forth acid
-  kinds: [ "?" ]
+  gloss: acid-maker
+  kinds: [ property ]
   language: Greek
   path: [ Greek, French ]
 F:
+  named: fluorspar
   gloss: a flowing
-  kinds: [ "?" ]
+  kinds: [ substance ]
   language: Latin
   path: [ Latin ]
 Ne:
   gloss: new
-  kinds: [ "?" ]
+  kinds: [ property ]
   language: Greek
   path: [ Greek ]
 Na:
@@ -66,13 +68,14 @@ Mg:
   language: Greek
   path: [ Greek ]
 Al:
-  gloss: alum
-  kinds: [ "?" ]
+  named: alum
+  gloss: bitter salt
+  kinds: [ substance ]
   language: Latin
   path: [ Latin ]
 Si:
   gloss: flint
-  kinds: [ property ]
+  kinds: [ substance ]
   language: Latin
   path: [ Latin ]
 P:
@@ -81,11 +84,10 @@ P:
   language: Greek
   path: [ Greek, Latin ]
 S:
-  gloss: to burn
-  kinds: [ "?" ]
-  language: "?"
-  path: []
-  review: 'Unknown language in source: "Latin Proto-Indo-European (PIE)"'
+  gloss: "to burn?"
+  kinds: [ substance ]
+  language: Latin
+  path: [ Latin, Anglo-Norman, Middle English ]
 Cl:
   gloss: pale green
   kinds: [ color ]
@@ -97,17 +99,18 @@ Ar:
   language: Greek
   path: [ Greek ]
 K:
-  gloss: pot-ash
-  kinds: [ "?" ]
-  language: Neo-Latin
-  path: [ Neo-Latin, Dutch, English ]
-  symbolLanguage: "?"
+  gloss: pot ash
+  kinds: [ substance ]
+  language: Dutch
+  path: [ Dutch, English, Neo-Latin ]
+  symbolLanguage: Arabic
+  symbolPath: [ Arabic, Medieval Latin, German ]
+  symbolGloss: "ashes"
 Ca:
-  gloss: "?"
-  kinds: [ "?" ]
-  language: Greek
-  path: [ Greek, Latin ]
-  review: 'Two languages in source: "Greek/Latin"'
+  gloss: lime
+  kinds: [ substance ]
+  language: Latin
+  path: [ Latin ]
 Sc:
   named: Scandinavia
   gloss: dangerous isle?
@@ -125,7 +128,7 @@ V:
   language: Old Norse
   path: [ Old Norse ]
 Cr:
-  gloss: colour
+  gloss: color
   kinds: [ color ]
   language: Greek
   path: [ Greek, French ]
@@ -145,14 +148,14 @@ Fe:
   symbolGloss: ferrum
 Co:
   gloss: goblin
-  kinds: [ "?" ]
+  kinds: [ mythology ]
   language: German
   path: [ German ]
 Ni:
-  gloss: copper-coloured ore
-  kinds: [ property ]
-  language: Swedish
-  path: [ Swedish, German ]
+  gloss: copper goblin
+  kinds: [ mythology ]
+  language: German
+  path: [ German, Swedish ]
 Cu:
   named: Cyprus
   gloss: Cyprian metal
@@ -160,10 +163,10 @@ Cu:
   language: Greek
   path: [ Greek, Latin, West Germanic, Old English, Middle English ]
 Zn:
-  gloss: Cornet
-  kinds: [ "?" ]
-  language: German
-  path: [ German ]
+  gloss: prong
+  kinds: [ property ]
+  language: Old High German
+  path: [ Old High German, German ]
 Ga:
   gloss: Gaul
   kinds: [ place ]
@@ -186,8 +189,8 @@ Se:
   language: Greek
   path: [ Greek ]
 Br:
-  gloss: dirt
-  kinds: [ "?" ]
+  gloss: stench
+  kinds: [ property ]
   language: Greek
   path: [ Greek, French ]
 Kr:
@@ -213,11 +216,11 @@ Y:
   language: Swedish
   path: [ Swedish ]
 Zr:
+  named: zircon
   gloss: gold-like
-  kinds: [ "?" ]
-  language: "?"
-  path: []
-  review: 'Two languages in source: "Syriac/Persian via Arabic and German"'
+  kinds: [ substance ]
+  language: Middle Persian
+  path: [ Middle Persian, Arabic, German ]
 Nb:
   gloss: snowy
   kinds: [ mythology ]
@@ -225,7 +228,7 @@ Nb:
   path: [ Greek ]
 Mo:
   gloss: lead-like
-  kinds: [ property ]
+  kinds: [ substance ]
   language: Greek
   path: [ Greek ]
 Tc:
@@ -250,38 +253,44 @@ Pd:
   language: Greek
   path: [ Greek, Latin ]
 Ag:
-  gloss: to refine
-  kinds: [ "?" ]
-  language: Akkadian
-  path: [ Akkadian, Old English, Middle English ]
-  symbolLanguage: "?"
+  about: origin unknown
+  kinds: [ substance ]
+  language: Old English
+  path: [ Old English, Middle English ]
+  symbolLanguage: Latin
+  symbolPath: [ Latin ]
+  symbolGloss: "argentum"
 Cd:
-  gloss: Earth
-  kinds: [ "?" ]
+  named: cadmia
+  about: zinc ore
+  kinds: [ substance, mythology ]
   language: Greek
   path: [ Greek, Latin ]
-  review: 'Two languages in source: "Greek/Latin"'
 In:
-  gloss: "?"
+  named: indigo
+  gloss: from India
   kinds: [ color ]
   language: Greek
   path: [ Greek, Latin, English ]
 Sn:
-  gloss: "?"
-  kinds: [ "?" ]
+  about: origin unknown
+  kinds: [ substance ]
   language: Old English
   path: [ Old English, Middle English ]
-  symbolLanguage: "?"
+  symbolLanguage: Latin
+  symbolPath: [ Latin ]
+  symbolGloss: "stannum"
 Sb:
-  gloss: "?"
-  kinds: [ "?" ]
-  language: Greek
-  path: [ Greek, Medieval Latin, Middle English ]
-  symbolLanguage: "?"
-  review: 'Uncertain language in source: "Greek? via Medieval Latin and Middle English"'
+  about: origin unknown
+  kinds: [ substance ]
+  language: Medieval Latin
+  path: [ Medieval Latin, Middle English ]
+  symbolLanguage: Greek
+  symbolPath: [ Greek, Latin ]
+  symbolGloss: "stibium"
 Te:
-  gloss: Earth
-  kinds: [ "?" ]
+  gloss: earth
+  kinds: [ celestial ]
   language: Latin
   path: [ Latin ]
 I:
@@ -291,7 +300,7 @@ I:
   path: [ Greek, French ]
 Xe:
   gloss: foreign
-  kinds: [ "?" ]
+  kinds: [ property ]
   language: Greek
   path: [ Greek ]
 Cs:
@@ -301,12 +310,12 @@ Cs:
   path: [ Latin ]
 Ba:
   gloss: heavy
-  kinds: [ "?" ]
+  kinds: [ property ]
   language: Greek
   path: [ Greek, Neo-Latin ]
 La:
   gloss: to escape notice
-  kinds: [ "?" ]
+  kinds: [ property ]
   language: Greek
   path: [ Greek ]
 Ce:
@@ -435,17 +444,19 @@ Hg:
   symbolLanguage: "?"
 Tl:
   gloss: green twig
-  kinds: [ property ]
+  kinds: [ color ]
   language: Greek
   path: [ Greek ]
 Pb:
-  gloss: "?"
-  kinds: [ "?" ]
+  about: origin unclear
+  kinds: [ substance ]
   language: Old English
-  path: [ Old English ]
-  symbolLanguage: "?"
+  path: [ Old English, Middle English ]
+  symbolLanguage: Latin
+  symbolPath: [ Latin ]
+  symbolGloss: "plumbum"
 Bi:
-  gloss: white mass
+  gloss: "white mass?"
   kinds: [ color ]
   language: German
   path: [ German, Neo-Latin ]
@@ -456,12 +467,13 @@ Po:
   path: [ Latin ]
 At:
   gloss: unstable
-  kinds: [ "?" ]
+  kinds: [ property ]
   language: Greek
   path: [ Greek ]
 Rn:
-  gloss: "?"
-  kinds: [ "?" ]
+  named: radium
+  about: its decay gas
+  kinds: [ property ]
   language: Latin
   path: [ Latin, German, English ]
 Fr:
@@ -477,7 +489,7 @@ Ra:
   path: [ Latin, French ]
 Ac:
   gloss: beam
-  kinds: [ "?" ]
+  kinds: [ property ]
   language: Greek
   path: [ Greek ]
 Th:
@@ -486,11 +498,10 @@ Th:
   language: Old Norse
   path: [ Old Norse ]
 Pa:
-  gloss: first beam element
+  gloss: first beam
   kinds: [ property ]
   language: Greek
   path: [ Greek ]
-  review: 'Uncertain origin in source: "descriptive?"'
 U:
   gloss: sky
   kinds: [ celestial, mythology ]

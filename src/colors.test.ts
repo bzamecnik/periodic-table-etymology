@@ -20,6 +20,6 @@ describe('tileColors', () => {
   })
 
   it('has a neutral color for placeholders', () => {
-    expect(tileColors(element('Li'), 'kind')[0]).toBe('var(--kind-unknown)')
+    expect(tileColors({ ...element('Li'), kinds: ['?'] }, 'kind')[0]).toBe('var(--kind-unknown)')
   })
 })

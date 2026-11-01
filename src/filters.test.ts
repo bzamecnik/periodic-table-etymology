@@ -44,8 +44,9 @@ describe('matchesFilters', () => {
   })
 
   it('can select what is not classified yet', () => {
-    expect(symbols({ kinds: new Set<Kind>(['?']) })).toContain('Li')
-    expect(symbols({ languages: new Set(['?']) })).toContain('Sm')
+    const unclassified = { ...element('Li'), kinds: ['?' as Kind], language: '?' }
+    expect(matchesFilters(unclassified, { ...NO_FILTERS, kinds: new Set<Kind>(['?']) })).toBe(true)
+    expect(matchesFilters(unclassified, { ...NO_FILTERS, languages: new Set(['?']) })).toBe(true)
   })
 
   it('also finds the language of a symbol', () => {
@@ -89,7 +90,8 @@ describe('search', () => {
   })
 
   it('does not treat the placeholder as text', () => {
-    expect(search('?')).not.toContain('B')
+    const placeholder = { ...element('Xe'), gloss: '?' }
+    expect(matchesFilters(placeholder, { ...NO_FILTERS, query: '?' })).toBe(false)
   })
 
   it('takes a blank query as none', () => {
@@ -137,7 +139,8 @@ describe('groupLanguages', () => {
   })
 
   it('leaves placeholders for the end', () => {
-    expect(groupLanguages(elements).at(-1)).toEqual({ family: '?', languages: ['?'] })
+    const withPlaceholder = [{ ...element('Sm'), language: '?' }, ...elements]
+    expect(groupLanguages(withPlaceholder).at(-1)).toEqual({ family: '?', languages: ['?'] })
   })
 })
 

@@ -40,7 +40,8 @@ describe('PeriodicTable', () => {
   })
 
   it('shows placeholders visibly and says so to screen readers', () => {
-    setup()
+    const boron = { ...elements[4], gloss: '?', named: undefined, about: undefined }
+    setup({ elements: [boron] })
     const tile = screen.getByRole('button', { name: /^Boron/ })
     expect(tile).toHaveTextContent('?')
     expect(tile).toHaveAccessibleName(expect.stringContaining('meaning not filled in yet'))

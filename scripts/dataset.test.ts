@@ -53,7 +53,7 @@ describe('the generated dataset', () => {
     for (const element of committed.elements) {
       const lines = tileLines(element)
       if (lines.length < 2) continue
-      for (const line of lines) expect(line.text.length, `${element.symbol}: ${line.text}`).toBeLessThanOrEqual(15)
+      for (const line of lines) expect(line.text.length, `${element.symbol}: ${line.text}`).toBeLessThanOrEqual(16)
     }
   })
 

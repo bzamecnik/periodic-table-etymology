@@ -73,6 +73,7 @@ export const LANGUAGES: Record<string, { family: Family; code: string; reconstru
   Japanese: { family: 'Other', code: 'Ja' },
   Pali: { family: 'Other', code: 'Pi' },
   Persian: { family: 'Other', code: 'Fa' },
+  'Middle Persian': { family: 'Other', code: 'MP' },
   Prakrit: { family: 'Other', code: 'Pk' },
   'Proto-Indo-European': { family: 'Other', code: 'PIE', reconstructed: true },
   Sanskrit: { family: 'Other', code: 'Sa' },

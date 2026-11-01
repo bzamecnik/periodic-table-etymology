@@ -191,3 +191,148 @@ Og:
       - "en.wikipedia: Yuri Oganessian @ 1377348860"
       - "en.wikipedia: Hovhannes @ 1290855289"
       - "en.wikipedia: John (given name) @ 1381822284"
+Li:
+  - text: "Berzelius chose Greek lithos, \"stone\", because this alkali was found in a solid mineral, while potassium came from plant ashes and sodium was known from animal blood."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Lithium @ 1381202909"
+B:
+  - text: "Borax came to English through Anglo-Norman and Medieval Latin from Arabic bawraq, which goes back to Middle Persian. Boron takes its stem, with the ending of carbon."
+    certainty: attested
+    sources:
+      - "en.wiktionary: borax @ 94548479"
+      - "en.wiktionary: boron @ 94581531"
+C:
+  - text: "Antoine Lavoisier coined French carbone from Latin carbō, \"charcoal\". Its further origin is uncertain, possibly a root for \"heat, fire\" also seen in the English hearth."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: carbon @ 94549356"
+      - "en.wiktionary: carbo @ 92354337"
+N:
+  - text: "Greek nitron, \"niter\", goes back to Egyptian nṯrj, the same word as natron, which gave sodium its symbol. The ending means \"to bring forth\": nitrogen makes niter."
+    certainty: attested
+    sources:
+      - "en.wiktionary: natron @ 93709328"
+      - "en.wikipedia: Natron @ 1375081479"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+O:
+  - text: "Lavoisier's French oxygène was first principe oxygène, the \"acidifying principle\", from Greek for \"sharp\" and \"birth\". It rests on the mistaken belief that oxygen is essential to all acids."
+    certainty: attested
+    sources:
+      - "en.wiktionary: oxygen @ 94565932"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Al:
+  - text: "Latin alūmen literally meant something like \"bitter (salt)\" and is related to the English word ale."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: alumen @ 93811870"
+S:
+  - text: "Latin sulpur is of uncertain origin, and spellings with ph and f came from the false belief that it was Greek. The Wikipedia table derives it from a root for \"to burn\", while Wiktionary calls it unknown, perhaps related to a Germanic word for sulfur."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Sulfur @ 1383017237"
+      - "en.wiktionary: sulpur @ 82342347"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+K:
+  - text: "Potash comes from pot and ash, as the substance was leached from ashes and boiled down in a pot. Potassium was formed from its Latin version, potassa."
+    certainty: attested
+    sources:
+      - "en.wiktionary: potash @ 93475546"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Ca:
+  - text: "Latin calx, \"limestone\", was either borrowed from Greek khálix, \"pebble\", or both languages took it from an older unknown one."
+    certainty: disputed
+    sources:
+      - "en.wiktionary: calx @ 94533950"
+Co:
+  - text: "German Kobold, \"goblin\": silver miners in the Harz used the word for rock laced with arsenic and sulfur, which spoiled the ore and made them ill."
+    certainty: attested
+    sources:
+      - "en.wiktionary: cobalt @ 94550333"
+      - "en.wikipedia: Cobalt @ 1381994421"
+Ni:
+  - text: "Not \"copper-colored ore\", as the Wikipedia table has it. German miners called the ore Kupfernickel, \"copper goblin\", blaming a mischievous sprite as they could get no copper from it. Cronstedt shortened the name in 1751."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Nickel @ 1380101141"
+      - "en.wiktionary: nickel @ 93774532"
+Zn:
+  - text: "Probably named by Paracelsus after German Zinke, \"prong, tooth\", which goes back to Old High German zinko and is related to the English tine."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Zinc @ 1382708274"
+      - "en.wiktionary: zinc @ 94578472"
+Zr:
+  - text: "Zircon comes through German and Arabic from Middle Persian. Persian zargun means \"gold-like\", from zar, \"gold\", the same word as in arsenic."
+    certainty: attested
+    sources:
+      - "en.wiktionary: zircon @ 93116968"
+      - "en.wikipedia: Zirconium @ 1382708454"
+Ag:
+  - text: "Old English seolfor has relatives across Germanic, Baltic, Slavic and Celtic, and also in Basque and Berber, but its ultimate origin is unknown. The Wikipedia table proposes a loan from Akkadian ṣarpu, \"refined silver\"."
+    certainty: disputed
+    sources:
+      - "en.wiktionary: silver @ 93722479"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Cd:
+  - text: "Latin cadmia, Greek kadmeia, was calamine, a cadmium-bearing mix of minerals, named after Cadmus, the mythical founder of Thebes."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Cadmium @ 1381637428"
+      - "en.wiktionary: cadmium @ 93572417"
+In:
+  - text: "Named after the indigo line in its spectrum. Indigo comes through Latin from Greek indikon, \"from India\"."
+    certainty: attested
+    sources:
+      - "en.wiktionary: indigo @ 93631957"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Sn:
+  - text: "Old English tin goes back to a Proto-Germanic word without a known origin."
+    certainty: attested
+    sources:
+      - "en.wiktionary: tin @ 93797088"
+  - text: "Latin stannum, the source of the symbol, is of Celtic origin."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: stannum @ 91209611"
+Sb:
+  - text: "The name antimony comes from Medieval Latin antimonium, attested in the 11th century, and its origin is uncertain. The popular story of a \"monk-killer\" is a folk etymology, and several authorities suspect a scribal corruption of an Arabic word."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Antimony @ 1381623857"
+      - "en.wiktionary: antimony @ 94546216"
+  - text: "Latin stibium comes from Greek stibi, a variant of stimmi. The Egyptians called antimony mśdmt or stm."
+    certainty: attested
+    sources:
+      - "en.wiktionary: stibium @ 92387105"
+      - "en.wikipedia: Antimony @ 1381623857"
+Te:
+  - text: "Klaproth coined the name in 1798 from Latin tellūs, \"earth\", and that word's further origin is uncertain."
+    certainty: attested
+    sources:
+      - "en.wiktionary: tellurium @ 93863208"
+      - "en.wiktionary: tellus @ 91783585"
+Pb:
+  - text: "Old English lēad goes back to Proto-Germanic *lauda-, possibly borrowed from Celtic. Latin plumbum may be related, through a lost language of Europe."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Lead @ 1382398829"
+      - "en.wiktionary: lead @ 94560651"
+      - "en.wiktionary: plumbum @ 92694404"
+Bi:
+  - text: "The origin of bismuth is uncertain. It may come from German weiße Masse or Wismuth, \"white mass\", which Georgius Agricola rendered in Latin as bisemutum."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Bismuth @ 1382453045"
+      - "en.wiktionary: bismuth @ 92214111"
+Rn:
+  - text: "A contraction of radium emanation, the gas given off in the decay of radium, with the -on of the noble gases."
+    certainty: attested
+    sources:
+      - "en.wiktionary: radon @ 94637933"
+Ac:
+  - text: "From Greek aktis, \"beam, ray\", in the same way as the first part of protactinium."
+    certainty: attested
+    sources:
+      - "en.wiktionary: actinium @ 93039810"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
