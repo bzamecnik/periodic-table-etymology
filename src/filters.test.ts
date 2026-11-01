@@ -1,0 +1,155 @@
+import { describe, expect, it } from 'vitest'
+import { elements } from './data/index.ts'
+import type { Kind } from './data/vocabulary.ts'
+import {
+  countKinds,
+  countLanguages,
+  groupLanguages,
+  hasFilters,
+  matchesFilters,
+  NO_FILTERS,
+  normalize,
+  oldestLanguages,
+  toggled,
+} from './filters.ts'
+
+const element = (symbol: string) => elements.find((e) => e.symbol === symbol)!
+const symbols = (filters: Partial<typeof NO_FILTERS>) =>
+  elements.filter((e) => matchesFilters(e, { ...NO_FILTERS, ...filters })).map((e) => e.symbol)
+const search = (query: string) => symbols({ query })
+
+describe('matchesFilters', () => {
+  it('lets everything through without filters', () => {
+    expect(symbols({})).toHaveLength(118)
+  })
+
+  it('filters by kind, also for elements of several kinds', () => {
+    const celestial = symbols({ kinds: new Set<Kind>(['celestial']) })
+    expect(celestial).toContain('He')
+    expect(celestial).not.toContain('Fe')
+  })
+
+  it('takes the values within a dimension as alternatives', () => {
+    const result = symbols({ kinds: new Set<Kind>(['person', 'celestial']) })
+    expect(result).toContain('Es')
+    expect(result).toContain('He')
+  })
+
+  it('narrows across dimensions', () => {
+    const result = symbols({ kinds: new Set<Kind>(['mythology']), languages: new Set(['Old Norse']) })
+    expect(result).toEqual(expect.arrayContaining(['V', 'Th']))
+    expect(result).not.toContain('Ti')
+  })
+
+  it('can select what is not classified yet', () => {
+    expect(symbols({ kinds: new Set<Kind>(['?']) })).toContain('Li')
+    expect(symbols({ languages: new Set(['?']) })).toContain('Am')
+  })
+
+  it('also finds the language of a symbol', () => {
+    const curated = { ...element('Na'), language: 'English', symbolLanguage: 'Arabic' }
+    expect(oldestLanguages(curated)).toEqual(['English', 'Arabic'])
+    expect(matchesFilters(curated, { ...NO_FILTERS, languages: new Set(['Arabic']) })).toBe(true)
+  })
+
+  it('ignores the placeholder of a symbol language', () => {
+    expect(oldestLanguages({ ...element('Na'), language: 'English', symbolLanguage: '?' })).toEqual(['English'])
+  })
+})
+
+describe('search', () => {
+  it('finds a name, regardless of case', () => {
+    expect(search('HELIUM')).toContain('He')
+  })
+
+  it('finds an exact symbol', () => {
+    expect(search('fe')).toContain('Fe')
+    expect(search('W')).toContain('W')
+  })
+
+  it('finds a meaning and a language', () => {
+    expect(search('moon')).toContain('Se')
+    expect(search('swedish')).toContain('Y')
+  })
+
+  it('finds original words, also without diacritics', () => {
+    expect(search('ηλιος')).toContain('He')
+    expect(search('rontgen')).toContain('Rg')
+  })
+
+  it('finds former names', () => {
+    expect(search('wolfram')).toContain('W')
+  })
+
+  it('matches at the start of words only', () => {
+    expect(search('sun')).toContain('He')
+    expect(search('ium')).not.toContain('He')
+  })
+
+  it('does not treat the placeholder as text', () => {
+    expect(search('?')).not.toContain('B')
+  })
+
+  it('takes a blank query as none', () => {
+    expect(search('   ')).toHaveLength(118)
+    expect(hasFilters({ ...NO_FILTERS, query: '  ' })).toBe(false)
+    expect(hasFilters({ ...NO_FILTERS, query: 'x' })).toBe(true)
+  })
+
+  it('combines with filters', () => {
+    expect(symbols({ query: 'moon', kinds: new Set<Kind>(['person']) })).toEqual([])
+  })
+})
+
+describe('counts', () => {
+  it('counts kinds, with an element of two kinds in both', () => {
+    const counts = countKinds(elements, NO_FILTERS)
+    expect(counts.get('person')).toBeGreaterThan(10)
+    expect(counts.get('substance')).toBe(0)
+    const total = [...counts.values()].reduce((a, b) => a + b, 0)
+    expect(total).toBe(elements.reduce((sum, e) => sum + e.kinds.length, 0))
+  })
+
+  it('counts a dimension under the other dimensions, not under itself', () => {
+    const filters = { ...NO_FILTERS, kinds: new Set<Kind>(['person']), languages: new Set(['Greek']) }
+    const kinds = countKinds(elements, filters)
+    const languages = countLanguages(elements, filters)
+    // choosing "person" must not make the other kinds look empty
+    expect(kinds.get('place')).toBeGreaterThan(0)
+    // while the languages are narrowed to the people
+    expect(languages.get('Greek')).toBeLessThan(countLanguages(elements, NO_FILTERS).get('Greek')!)
+  })
+
+  it('keeps a language at zero rather than dropping it', () => {
+    const counts = countLanguages(elements, { ...NO_FILTERS, query: 'moon' })
+    expect(counts.get('Japanese')).toBe(0)
+  })
+})
+
+describe('groupLanguages', () => {
+  it('groups by family with the most common first', () => {
+    const groups = groupLanguages(elements)
+    expect(groups[0]).toEqual({ family: 'Greek', languages: ['Greek'] })
+    const latin = groups.find((g) => g.family === 'Latin')!
+    expect(latin.languages[0]).toBe('Latin')
+  })
+
+  it('leaves placeholders for the end', () => {
+    expect(groupLanguages(elements).at(-1)).toEqual({ family: '?', languages: ['?'] })
+  })
+})
+
+describe('normalize', () => {
+  it('drops diacritics and folds whitespace', () => {
+    expect(normalize('Ré  Sumé\u00a0X')).toBe('re sume x')
+  })
+})
+
+describe('toggled', () => {
+  it('adds and removes without changing the original', () => {
+    const values = new Set(['a'])
+    expect(toggled(values, 'b')).toEqual(new Set(['a', 'b']))
+    expect(toggled(values, 'a')).toEqual(new Set())
+    expect(values).toEqual(new Set(['a']))
+  })
+})

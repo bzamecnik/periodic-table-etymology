@@ -101,6 +101,25 @@ a {
   padding: 1.25rem 1.5rem 2rem;
 }
 
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+}
+
+.search input {
+  width: min(24rem, 90vw);
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background: var(--paper-raised);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.9rem;
+}
+
 .masthead h1 {
   margin: 0;
   font-size: clamp(1.6rem, 2.6vw, 2.4rem);
@@ -240,6 +259,13 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.tile__name--long {
+  font-size: calc(var(--tile-text) * 0.9);
+  letter-spacing: -0.03em;
+  /* the same height as a name of the usual size */
+  line-height: calc(var(--tile-text) * 1.15);
 }
 
 .tile__gloss {
@@ -515,5 +541,143 @@ kbd {
   color: var(--accent);
   font: inherit;
   font-size: 0.9em;
+  cursor: pointer;
+}
+
+/* Filters. The chips double as the legend of the colors. */
+
+.controls {
+  display: grid;
+  gap: 0.3rem;
+  margin-top: 0.75rem;
+  font-size: 0.78rem;
+}
+
+.controls__row {
+  display: grid;
+  grid-template-columns: 6.6rem minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.controls__label {
+  margin: 0;
+  padding-top: 0.2rem;
+  font-size: 0.74rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.chips,
+.chips__family {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.chips {
+  gap: 0.2rem 0.7rem;
+}
+
+.chips__family-label {
+  font-size: 0.68rem;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.28em;
+  padding: 0.08rem 0.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  background: var(--paper-raised);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.chip:hover {
+  border-color: var(--ink-faint);
+}
+
+.chip[aria-pressed='true'] {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.chip--empty {
+  color: var(--ink-faint);
+}
+
+.chip__swatch {
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 1px;
+  background: var(--color-a);
+}
+
+.chip__count {
+  font-size: 0.86em;
+  font-variant-numeric: lining-nums tabular-nums;
+  opacity: 0.65;
+}
+
+.controls__status {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1.25rem;
+  min-height: 1.5rem;
+  margin-top: 0.1rem;
+}
+
+.color-by {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.color-by legend {
+  float: left;
+  margin-right: 0.3rem;
+  padding: 0;
+  font-size: 0.74rem;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.color-by label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25em;
+  cursor: pointer;
+}
+
+.color-by input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.match-count {
+  margin: 0;
+  font-variant-numeric: lining-nums;
+  color: var(--ink-soft);
+}
+
+.clear {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
   cursor: pointer;
 }

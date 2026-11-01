@@ -52,7 +52,7 @@ export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: 
           </span>
         </span>
         <span class="tile__symbol">{element.symbol}</span>
-        <span class="tile__name">{element.name}</span>
+        <span class={`tile__name${element.name.length > 10 ? ' tile__name--long' : ''}`}>{element.name}</span>
         <span class={`tile__gloss${element.gloss === PLACEHOLDER ? ' tile__gloss--todo' : ''}`}>{element.gloss}</span>
       </button>
     </div>

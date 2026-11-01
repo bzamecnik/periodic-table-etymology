@@ -1,8 +1,11 @@
-import { useCallback, useEffect, useState } from 'preact/hooks'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks'
+import type { ColorBy } from './colors.ts'
 import { Attribution } from './components/Attribution.tsx'
+import { Controls, SearchBox } from './components/Controls.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
 import { PeriodicTable } from './components/PeriodicTable.tsx'
 import { type ChemicalElement, elements } from './data/index.ts'
+import { type Filters, matchesFilters, NO_FILTERS } from './filters.ts'
 import { navigate, nextLinear } from './navigation.ts'
 
 function zFromHash(): number | null {
@@ -17,13 +20,17 @@ function writeHash(z: number | null) {
 }
 
 const focusTile = (z: number) => document.getElementById(`tile-${elements[z - 1].symbol}`)?.focus()
-const everything = () => true
 
 export function App() {
   const [selectedZ, setSelectedZ] = useState<number | null>(zFromHash)
   const [currentZ, setCurrentZ] = useState<number>(() => zFromHash() ?? 1)
 
-  const isActive = everything
+  const [filters, setFilters] = useState<Filters>(NO_FILTERS)
+  const [colorBy, setColorBy] = useState<ColorBy>('kind')
+  const searchRef = useRef<HTMLInputElement>(null)
+
+  const activeElements = useMemo(() => new Set(elements.filter((e) => matchesFilters(e, filters))), [filters])
+  const isActive = useCallback((element: ChemicalElement) => activeElements.has(element), [activeElements])
 
   const select = useCallback((z: number | null) => {
     setSelectedZ(z)
@@ -51,6 +58,14 @@ export function App() {
     if (selectedZ !== null) select(z)
   }
 
+  const goToFirstMatch = () => {
+    const [first] = activeElements
+    if (!first) return
+    setCurrentZ(first.z)
+    focusTile(first.z)
+    if (selectedZ !== null) select(first.z)
+  }
+
   const onTileSelect = (element: ChemicalElement) => {
     select(element.z)
     focusTile(element.z)
@@ -69,6 +84,11 @@ export function App() {
   useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && selectedZ !== null) close()
+      const typing = event.target instanceof HTMLInputElement && event.target.type === 'search'
+      if (event.key === '/' && !typing && !event.ctrlKey && !event.metaKey && !event.altKey) {
+        event.preventDefault()
+        searchRef.current?.focus()
+      }
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
@@ -77,13 +97,30 @@ export function App() {
   return (
     <div class="page">
       <header class="masthead">
-        <h1>Periodic Table of Name Origins</h1>
-        <p class="tagline">Where the names of all 118 elements come from.</p>
+        <div>
+          <h1>Periodic Table of Name Origins</h1>
+          <p class="tagline">Where the names of all 118 elements come from.</p>
+        </div>
+        <SearchBox
+          filters={filters}
+          searchRef={searchRef}
+          onFiltersChange={setFilters}
+          onSearchSubmit={goToFirstMatch}
+        />
       </header>
       <main>
+        <Controls
+          elements={elements}
+          filters={filters}
+          matchCount={activeElements.size}
+          colorBy={colorBy}
+          onFiltersChange={setFilters}
+          onColorByChange={setColorBy}
+          onClear={() => setFilters(NO_FILTERS)}
+        />
         <PeriodicTable
           elements={elements}
-          colorBy="kind"
+          colorBy={colorBy}
           currentZ={currentZ}
           selectedZ={selectedZ}
           isActive={isActive}
