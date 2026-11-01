@@ -44,6 +44,15 @@ describe('PeriodicTable', () => {
     expect(tile).toHaveAccessibleName(expect.stringContaining('meaning not filled in yet'))
   })
 
+  it('shrinks long names instead of cutting them off', () => {
+    setup()
+    const scale = (symbol: string) =>
+      document.querySelector<HTMLElement>(`#tile-${symbol} .tile__name`)!.style.getPropertyValue('--name-scale')
+    expect(scale('Rf')).toBe('0.8')
+    expect(scale('Mo')).toBe('0.9')
+    expect(scale('Fe')).toBe('1')
+  })
+
   it('puts tiles at their table position', () => {
     setup()
     const iron = document.getElementById('tile-Fe')!

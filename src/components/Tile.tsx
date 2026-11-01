@@ -21,6 +21,13 @@ function describe(element: ChemicalElement, dimmed: boolean): string {
   return `${element.name}, ${element.symbol}, atomic number ${element.z}: ${gloss}. Oldest language: ${language}. Kind: ${kinds}.${match}`
 }
 
+/** Long names get smaller instead of being cut off. */
+function nameScale(name: string): number {
+  if (name.length >= 12) return 0.8
+  if (name.length >= 9) return 0.9
+  return 1
+}
+
 export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: TileProps) {
   const [colorA, colorB] = tileColors(element, colorBy)
   const code = languageCode(element.language)
@@ -52,7 +59,9 @@ export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: 
           </span>
         </span>
         <span class="tile__symbol">{element.symbol}</span>
-        <span class={`tile__name${element.name.length > 10 ? ' tile__name--long' : ''}`}>{element.name}</span>
+        <span class="tile__name" style={{ '--name-scale': nameScale(element.name) }}>
+          {element.name}
+        </span>
         <span class={`tile__gloss${element.gloss === PLACEHOLDER ? ' tile__gloss--todo' : ''}`}>{element.gloss}</span>
       </button>
     </div>

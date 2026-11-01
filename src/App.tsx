@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'preact/hooks'
 import type { ColorBy } from './colors.ts'
 import { Attribution } from './components/Attribution.tsx'
 import { Controls, SearchBox } from './components/Controls.tsx'
@@ -81,7 +81,8 @@ export function App() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
-  useEffect(() => {
+  // a layout effect: a key pressed right after a move must already see that move
+  useLayoutEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === 'Escape' && selectedZ !== null) close()
       const typing = event.target instanceof HTMLInputElement && event.target.type === 'search'

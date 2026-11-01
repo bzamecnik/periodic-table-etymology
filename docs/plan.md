@@ -9,7 +9,7 @@ from. Each step lands as one or more focused commits.
 - [x] 2. Static table with tiles
 - [x] 3. Detail panel and keyboard navigation
 - [x] 4. Filters, search and color switching
-- [ ] 6. Deployment to GitHub Pages on tags
+- [x] 6. Deployment to GitHub Pages on tags
 
 ## Later
 

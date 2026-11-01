@@ -175,7 +175,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   min-width: 0;
-  padding: 0.2rem 0.25rem 0.15rem 0.3rem;
+  padding: 0.2rem 0.2rem 0.15rem 0.25rem;
   overflow: hidden;
   border: 0;
   border-top: 3px solid var(--color-a);
@@ -253,19 +253,13 @@ a {
 
 .tile__name {
   max-width: 100%;
-  font-size: var(--tile-text);
-  letter-spacing: -0.015em;
-  line-height: 1.15;
+  font-size: calc(var(--tile-text) * var(--name-scale, 1));
+  letter-spacing: -0.025em;
+  /* the same height whatever the scale of the name */
+  line-height: calc(var(--tile-text) * 1.15);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.tile__name--long {
-  font-size: calc(var(--tile-text) * 0.9);
-  letter-spacing: -0.03em;
-  /* the same height as a name of the usual size */
-  line-height: calc(var(--tile-text) * 1.15);
 }
 
 .tile__gloss {
