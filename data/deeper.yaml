@@ -440,3 +440,42 @@ Eu:
     certainty: disputed
     sources:
       - "en.wikipedia: Europe @ 1383018724"
+Sm:
+  - text: "Named after the mineral samarskite, itself after the mining engineer Vasili Samarsky-Bykhovets (1803–1870). He was the first person whose name was given to an element."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Samarskite-(Y) @ 1280069939"
+      - "en.wikipedia: Vassili Samarsky-Bykhovets @ 1348507086"
+Md:
+  - text: "The surname is young: as was usual for priests' children of the time, Mendeleev's father received it at the theological seminary, after a local landlord."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Dmitri Mendeleev @ 1381816376"
+No:
+  - text: "The family came from the village of Östra Nöbbelöv in Scania, and its first member wrote himself Petrus Olai Nobelius."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Nobel family @ 1381461231"
+Lr:
+  - text: "Lawrence comes from the Roman martyr Laurentius, \"a person from Laurentum\", a place name possibly derived from Latin laurus, \"laurel\"."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Laurence @ 92514358"
+      - "en.wikipedia: Lawrence (given name) @ 1381206182"
+Rf:
+  - text: "The surname comes from a place in the Scottish Borders, from Old English hryþer, \"cattle\", and ford. The clan's own legends tell of a man called Ruther who guided a king across the Tweed."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Rutherford @ 94543096"
+      - "en.wikipedia: Rutherford (name) @ 1379921902"
+      - "en.wikipedia: Clan Rutherford @ 1378524892"
+Bh:
+  - text: "The Danish surname comes from German Baar or Bahr, and has been recorded in Denmark since the 18th century."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Bohr @ 92245328"
+Cn:
+  - text: "Copernicus is the Latin form of Kopernik, a surname given to people from the Silesian village of Koperniki. The village name has been tied both to Polish koper, \"dill\", and to a German word for \"copper\". His father also traded in copper."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Nicolaus Copernicus @ 1382794491"

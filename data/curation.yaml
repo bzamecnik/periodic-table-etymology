@@ -341,10 +341,11 @@ Pm:
   language: Greek
   path: [ Greek ]
 Sm:
-  gloss: "?"
+  named: V. Samarsky
+  about: via samarskite
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: Russian
+  path: [ Russian ]
 Eu:
   named: Europe
   gloss: "wide-gazing?"
@@ -559,31 +560,35 @@ Es:
   language: German
   path: [ German ]
 Fm:
-  gloss: Enrico Fermi
+  named: E. Fermi
+  about: reactor pioneer
   kinds: [ person ]
   language: Italian
   path: [ Italian ]
 Md:
-  gloss: Dmitri Mendeleyev
+  named: D. Mendeleev
+  about: periodic table
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: Russian
+  path: [ Russian ]
 No:
-  gloss: Alfred Nobel
+  named: A. Nobel
+  about: from Nöbbelöv
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: Swedish
+  path: [ Swedish, Latin ]
 Lr:
-  gloss: Ernest Lawrence
+  named: E. Lawrence
+  gloss: from Laurentum
   kinds: [ person ]
-  language: "?"
-  path: []
-  symbolLanguage: "?"
+  language: Latin
+  path: [ Latin, English ]
 Rf:
-  gloss: Ernest Rutherford
+  named: E. Rutherford
+  gloss: cattle ford
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: Old English
+  path: [ Old English, English ]
 Db:
   named: Dubna
   about: Russian town
@@ -597,10 +602,11 @@ Sg:
   language: Swedish
   path: [ Swedish, English ]
 Bh:
-  gloss: Niels Bohr
+  named: N. Bohr
+  about: atomic model
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: German
+  path: [ German, Danish ]
 Hs:
   named: Hesse
   about: German state
@@ -608,10 +614,11 @@ Hs:
   language: Latin
   path: [ Latin ]
 Mt:
-  gloss: Lise Meitner
+  named: L. Meitner
+  about: nuclear fission
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: German
+  path: [ German ]
 Ds:
   named: Darmstadt
   about: German city
@@ -619,12 +626,14 @@ Ds:
   language: German
   path: [ German ]
 Rg:
-  gloss: Wilhelm Conrad Röntgen
+  named: W. C. Röntgen
+  about: X-rays
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: German
+  path: [ German ]
 Cn:
-  gloss: Nicolaus Copernicus
+  named: N. Copernicus
+  gloss: "dill or copper?"
   kinds: [ person ]
   language: Polish
   path: [ Polish, Latin ]
@@ -635,7 +644,8 @@ Nh:
   language: Japanese
   path: [ Japanese ]
 Fl:
-  gloss: Georgy Flerov
+  named: G. Flerov
+  about: fission research
   kinds: [ person ]
   language: Russian
   path: [ Russian ]
