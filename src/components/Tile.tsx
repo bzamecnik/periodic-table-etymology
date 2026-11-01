@@ -47,18 +47,22 @@ export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: 
         aria-label={describe(element, dimmed)}
         onClick={() => onSelect(element)}
       >
-        <span class="tile__top">
-          <span class="tile__z">{element.z}</span>
-          <span class="tile__marks">
-            {element.kinds.map((kind) => (
-              <KindIcon key={kind} kind={kind} />
-            ))}
-            <span class="tile__code" title={element.language}>
-              {code}
+        <span class="tile__head">
+          <span class="tile__symbol">{element.symbol}</span>
+          <span class="tile__meta">
+            <span class="tile__numbers">
+              <span class="tile__z">{element.z}</span>{' '}
+              <span class="tile__code" title={element.language}>
+                {code}
+              </span>
+            </span>
+            <span class="tile__marks">
+              {element.kinds.map((kind) => (
+                <KindIcon key={kind} kind={kind} />
+              ))}
             </span>
           </span>
         </span>
-        <span class="tile__symbol">{element.symbol}</span>
         <span class="tile__name" style={{ '--name-scale': nameScale(element.name) }}>
           {element.name}
         </span>

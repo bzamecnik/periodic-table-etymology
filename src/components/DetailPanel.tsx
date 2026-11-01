@@ -59,7 +59,7 @@ function Intro() {
       </p>
       <p>
         Each tile shows the name's <i>meaning</i>, its <b>oldest language</b> and an icon for the kind of origin. Choose
-        an element to read where its name came from.
+        an element to read where its name came from. The dot beside a filter row picks what the colors mean.
       </p>
       <p class="panel__keys">
         <kbd>←</kbd> <kbd>→</kbd> by atomic number · <kbd>↑</kbd> <kbd>↓</kbd> within a column · <kbd>Enter</kbd> open ·{' '}

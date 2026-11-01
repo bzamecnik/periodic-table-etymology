@@ -11,7 +11,7 @@ interface PeriodicTableProps {
   isActive: (element: ChemicalElement) => boolean
   onSelect: (element: ChemicalElement) => void
   onKeyDown?: (event: KeyboardEvent) => void
-  /** Placed in the free space in the upper middle of the table. */
+  /** The title, the panel and the credit, placed in the free spaces of the table. */
   children?: ComponentChildren
 }
 
@@ -27,6 +27,7 @@ export function PeriodicTable(props: PeriodicTableProps) {
   return (
     <div class="table-scroll">
       <div class="table-layout">
+        <main class="table-main">
         <div
           role="grid"
           aria-label="Periodic table of the elements"
@@ -50,6 +51,7 @@ export function PeriodicTable(props: PeriodicTableProps) {
             </div>
           ))}
         </div>
+        </main>
         <p class="series-label" style={{ gridRow: 9 }}>
           Lanthanides <span>57–70</span>
         </p>

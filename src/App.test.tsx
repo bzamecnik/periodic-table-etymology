@@ -288,7 +288,7 @@ describe('App', () => {
     it('switches the meaning of the colors', async () => {
       render(<App />)
       expect(tile('He').style.getPropertyValue('--color-a')).toBe('var(--kind-celestial)')
-      await userEvent.click(screen.getByRole('radio', { name: 'Language family' }))
+      await userEvent.click(screen.getByRole('radio', { name: /^Oldest language/ }))
       expect(tile('He').style.getPropertyValue('--color-a')).toBe('var(--family-greek)')
     })
   })

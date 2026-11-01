@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'preact/hooks'
 import type { ColorBy } from './colors.ts'
 import { Attribution } from './components/Attribution.tsx'
-import { Controls, SearchBox } from './components/Controls.tsx'
+import { Controls } from './components/Controls.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
 import { PeriodicTable } from './components/PeriodicTable.tsx'
 import { type ChemicalElement, elements } from './data/index.ts'
@@ -123,46 +123,38 @@ export function App() {
 
   return (
     <div class="page">
-      <header class="masthead">
-        <div>
+      <Controls
+        elements={elements}
+        filters={filters}
+        matchCount={activeElements.size}
+        colorBy={colorBy}
+        searchRef={searchRef}
+        onFiltersChange={changeFilters}
+        onSearchSubmit={goToFirstMatch}
+        onColorByChange={setColorBy}
+        onClear={() => changeFilters(NO_FILTERS)}
+      />
+      <PeriodicTable
+        elements={elements}
+        colorBy={colorBy}
+        currentZ={currentZ}
+        selectedZ={selectedZ}
+        isActive={isActive}
+        onSelect={onTileSelect}
+        onKeyDown={onTableKeyDown}
+      >
+        <header class="masthead">
           <h1>Periodic Table of Name Origins</h1>
           <p class="tagline">Where the names of all 118 elements come from.</p>
-        </div>
-        <SearchBox
-          filters={filters}
-          searchRef={searchRef}
-          onFiltersChange={changeFilters}
-          onSearchSubmit={goToFirstMatch}
+        </header>
+        <DetailPanel
+          element={selectedZ === null ? null : elements[selectedZ - 1]}
+          onClose={close}
+          onPrevious={() => moveSelection(-1)}
+          onNext={() => moveSelection(1)}
         />
-      </header>
-      <main>
-        <Controls
-          elements={elements}
-          filters={filters}
-          matchCount={activeElements.size}
-          colorBy={colorBy}
-          onFiltersChange={changeFilters}
-          onColorByChange={setColorBy}
-          onClear={() => changeFilters(NO_FILTERS)}
-        />
-        <PeriodicTable
-          elements={elements}
-          colorBy={colorBy}
-          currentZ={currentZ}
-          selectedZ={selectedZ}
-          isActive={isActive}
-          onSelect={onTileSelect}
-          onKeyDown={onTableKeyDown}
-        >
-          <DetailPanel
-            element={selectedZ === null ? null : elements[selectedZ - 1]}
-            onClose={close}
-            onPrevious={() => moveSelection(-1)}
-            onNext={() => moveSelection(1)}
-          />
-        </PeriodicTable>
-      </main>
-      <Attribution />
+        <Attribution />
+      </PeriodicTable>
     </div>
   )
 }

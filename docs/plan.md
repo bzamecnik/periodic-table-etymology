@@ -10,6 +10,9 @@ from. Each step lands as one or more focused commits.
 - [x] 3. Detail panel and keyboard navigation
 - [x] 4. Filters, search and color switching
 - [x] 6. Deployment to GitHub Pages on tags
+- [x] 7. Fit the whole table into a laptop window: tiles sized by the available
+  height, title and credit in the free spaces of the table, compact filters;
+  easier closing of the details and leaving by Escape
 
 ## Later
 

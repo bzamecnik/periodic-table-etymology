@@ -95,22 +95,27 @@ a {
   outline-offset: 2px;
 }
 
-.page {
-  max-width: 1560px;
-  margin: 0 auto;
-  padding: 1.25rem 1.5rem 2rem;
+/*
+ * The page fills the window and the table takes what the filters leave, so that
+ * all of it is in sight. Only a window too short for readable tiles scrolls, and
+ * then the filters stay.
+ */
+html {
+  scroll-padding-top: 5.5rem;
 }
 
-.masthead {
+.page {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 0.5rem 2rem;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-height: 100dvh;
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem 0.6rem;
 }
 
 .search input {
-  width: min(24rem, 90vw);
+  width: 100%;
   padding: 0.4rem 0.6rem;
   border: 1px solid var(--rule);
   border-radius: 3px;
@@ -120,27 +125,41 @@ a {
   font-size: 0.9rem;
 }
 
+/* The title takes the free space above boron to neon */
+.masthead {
+  grid-column: 13 / 18;
+  grid-row: 1;
+  align-self: center;
+  padding-left: 0.2rem;
+}
+
 .masthead h1 {
   margin: 0;
-  font-size: clamp(1.6rem, 2.6vw, 2.4rem);
+  font-size: clamp(1.1rem, calc(var(--tile-width) * 0.3), 1.65rem);
   font-weight: 600;
   letter-spacing: -0.01em;
+  line-height: 1.1;
   font-optical-sizing: auto;
 }
 
 .tagline {
-  margin: 0.1rem 0 0;
-  font-size: 1.05rem;
+  margin: 0.15rem 0 0;
+  font-size: clamp(0.7rem, calc(var(--tile-width) * 0.17), 0.95rem);
   font-style: italic;
+  line-height: 1.15;
   color: var(--ink-soft);
 }
 
 /* The table */
 
 .table-scroll {
-  container-type: inline-size;
-  margin-top: 1rem;
+  --min-tile-height: 60px;
+  flex: 1 1 0;
+  /* nine rows of tiles and a thin one between the tables, nine gaps, the padding */
+  min-height: calc(9.25 * var(--min-tile-height) + 9 * 3px + 6px + 1px);
+  container-type: size;
   overflow-x: auto;
+  overflow-y: hidden;
   /* room for the outline of focused tiles */
   padding: 3px;
 }
@@ -152,8 +171,9 @@ a {
 .table-layout {
   --gap: 3px;
   --width: max(100cqw, 1120px);
-  --tile-height: calc((var(--width) - 17 * var(--gap)) / 18 * 1.13);
-  --tile-text: clamp(0.56rem, 0.77cqw, 0.72rem);
+  --tile-width: calc((var(--width) - 17 * var(--gap)) / 18);
+  --tile-height: min(calc(var(--tile-width) * 1.13), calc((100cqh - 9 * var(--gap) - 1px) / 9.25));
+  --tile-text: clamp(0.56rem, min(calc(var(--tile-width) * 0.143), calc(var(--tile-height) * 0.15)), 0.8rem);
   display: grid;
   grid-template-columns: repeat(18, minmax(0, 1fr));
   grid-template-rows: repeat(7, var(--tile-height)) calc(var(--tile-height) / 4) repeat(2, var(--tile-height));
@@ -161,6 +181,7 @@ a {
   width: var(--width);
 }
 
+.table-main,
 .table-grid,
 .table-row,
 .tile-cell {
@@ -175,7 +196,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   min-width: 0;
-  padding: 0.2rem 0.2rem 0.15rem 0.25rem;
+  padding: 0.12rem 0.2rem 0.1rem 0.25rem;
   overflow: hidden;
   border: 0;
   border-top: 3px solid var(--color-a);
@@ -211,15 +232,27 @@ a {
   filter: saturate(0.3);
 }
 
-.tile__top {
+.tile__head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+}
+
+.tile__meta {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   font-size: var(--tile-text);
   line-height: 1.1;
   font-variant-numeric: lining-nums;
   color: var(--ink-soft);
+}
+
+.tile__numbers {
+  letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .tile__marks {
@@ -245,9 +278,10 @@ a {
 }
 
 .tile__symbol {
-  font-size: clamp(1.1rem, 1.9cqw, 1.7rem);
+  flex: none;
+  font-size: clamp(1.1rem, min(calc(var(--tile-width) * 0.35), calc(var(--tile-height) * 0.36)), 1.9rem);
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 1;
   font-optical-sizing: auto;
 }
 
@@ -298,13 +332,14 @@ a {
   color: var(--ink-faint);
 }
 
+/* The credit takes the free space beside the lower tables */
 .attribution {
-  margin-top: 1.5rem;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--rule);
-  max-width: 75ch;
-  font-size: 0.8rem;
-  line-height: 1.45;
+  grid-column: 17 / 19;
+  grid-row: 8 / 11;
+  align-self: end;
+  padding-left: 0.5rem;
+  font-size: clamp(0.56rem, calc(var(--tile-text) * 0.92), 0.7rem);
+  line-height: 1.25;
   color: var(--ink-soft);
 }
 
@@ -331,8 +366,8 @@ a {
   grid-template-columns: minmax(11rem, 15rem) minmax(0, 1fr);
   gap: 1.1rem;
   min-height: 0;
-  margin: 0 0.75rem 0.5rem;
-  padding: 0.75rem 0.9rem;
+  margin: 0 0.5rem 0.35rem;
+  padding: 0.55rem 0.8rem;
   border: 1px solid var(--rule);
   border-radius: 3px;
   background: var(--paper-raised);
@@ -373,9 +408,9 @@ kbd {
 }
 
 .panel__head {
-  position: relative;
   min-height: 0;
-  overflow: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
 .panel__title {
@@ -542,24 +577,69 @@ kbd {
 
 .controls {
   display: grid;
-  gap: 0.3rem;
-  margin-top: 0.75rem;
+  grid-template-columns: clamp(11rem, 15vw, 15rem) minmax(0, 1fr);
+  gap: 0.2rem 1rem;
+  background: var(--paper);
   font-size: 0.78rem;
 }
 
+@media (min-width: 900px) {
+  .controls {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding-block: 0.2rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.controls__search {
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.15rem;
+}
+
+@media (max-width: 899px) {
+  .controls__search {
+    grid-row: auto;
+  }
+}
+
 .controls__row {
+  grid-column: 2;
   display: grid;
-  grid-template-columns: 6.6rem minmax(0, 1fr);
+  grid-template-columns: 7.6rem minmax(0, 1fr);
   gap: 0.5rem;
 }
 
+@media (max-width: 899px) {
+  .controls__row {
+    grid-column: 1;
+  }
+}
+
 .controls__label {
-  margin: 0;
-  padding-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  align-self: start;
+  gap: 0.3em;
+  padding-top: 0.15rem;
   font-size: 0.74rem;
   font-style: italic;
-  font-weight: 400;
   color: var(--ink-soft);
+  cursor: pointer;
+}
+
+.controls__label input {
+  margin: 0;
+  accent-color: var(--accent);
 }
 
 .chips,
@@ -623,44 +703,11 @@ kbd {
 .controls__status {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 0.25rem 1.25rem;
-  min-height: 1.5rem;
-  margin-top: 0.1rem;
-}
-
-.color-by {
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
+  gap: 0 0.9rem;
   margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-.color-by legend {
-  float: left;
-  margin-right: 0.3rem;
-  padding: 0;
-  font-size: 0.74rem;
-  font-style: italic;
-  color: var(--ink-soft);
-}
-
-.color-by label {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25em;
-  cursor: pointer;
-}
-
-.color-by input {
-  margin: 0;
-  accent-color: var(--accent);
 }
 
 .match-count {
-  margin: 0;
   font-variant-numeric: lining-nums;
   color: var(--ink-soft);
 }

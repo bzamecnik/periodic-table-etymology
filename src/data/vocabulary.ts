@@ -14,7 +14,7 @@ export const KIND_LABELS: Record<Kind, string> = {
   mythology: 'Mythology',
   substance: 'Mineral or substance',
   color: 'Color',
-  [PLACEHOLDER]: 'Not classified yet',
+  [PLACEHOLDER]: 'Unclassified',
 }
 
 export const FAMILIES = ['Greek', 'Latin', 'Germanic', 'Romance', 'Slavic', 'Other', PLACEHOLDER] as const
@@ -27,7 +27,7 @@ export const FAMILY_LABELS: Record<Family, string> = {
   Romance: 'Romance',
   Slavic: 'Slavic',
   Other: 'Other',
-  [PLACEHOLDER]: 'Not classified yet',
+  [PLACEHOLDER]: 'Unclassified',
 }
 
 /** Known languages: name -> family and a short code for the tiles. */

@@ -7,7 +7,8 @@ table of element name etymology.
   for the kind of origin (place, person, mythology, …).
 - Choose an element to read its original word, the route of the name through
   languages, the origin of its symbol, former names and sources.
-- Filter by kind and language, search, and color the table by either dimension.
+- Filter by kind and language, search, and color the table by either dimension
+  with the dot beside its row of filters.
 
 ## Keyboard
 

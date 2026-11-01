@@ -10,7 +10,9 @@ interface ControlsProps {
   filters: Filters
   matchCount: number
   colorBy: ColorBy
+  searchRef: Ref<HTMLInputElement>
   onFiltersChange: (filters: Filters) => void
+  onSearchSubmit: () => void
   onColorByChange: (colorBy: ColorBy) => void
   onClear: () => void
 }
@@ -20,6 +22,15 @@ interface SearchBoxProps {
   searchRef: Ref<HTMLInputElement>
   onFiltersChange: (filters: Filters) => void
   onSearchSubmit: () => void
+}
+
+interface RowLabelProps {
+  value: ColorBy
+  label: string
+  /** What the colors of the table then stand for. */
+  meaning: string
+  colorBy: ColorBy
+  onColorByChange: (colorBy: ColorBy) => void
 }
 
 interface ChipProps {
@@ -48,14 +59,14 @@ function Chip({ label, count, pressed, color, icon, onClick }: ChipProps) {
   )
 }
 
-export function SearchBox({ filters, searchRef, onFiltersChange, onSearchSubmit }: SearchBoxProps) {
+function SearchBox({ filters, searchRef, onFiltersChange, onSearchSubmit }: SearchBoxProps) {
   return (
     <div class="search">
       <input
         ref={searchRef}
         type="search"
         aria-label="Search names, meanings and original words"
-        placeholder="Search names, meanings, words…  ( / )"
+        placeholder="Search names, words…  ( / )"
         value={filters.query}
         onInput={(event) => onFiltersChange({ ...filters, query: event.currentTarget.value })}
         onKeyDown={(event) => {
@@ -74,8 +85,27 @@ export function SearchBox({ filters, searchRef, onFiltersChange, onSearchSubmit 
   )
 }
 
+/** Names a row of filters. Its radio button makes the row the legend of the colors. */
+function RowLabel({ value, label, meaning, colorBy, onColorByChange }: RowLabelProps) {
+  const title = `Color the table by ${meaning}`
+  return (
+    <label class="controls__label" title={title}>
+      <input
+        type="radio"
+        name="color-by"
+        value={value}
+        aria-label={`${label}: ${title.toLowerCase()}`}
+        checked={colorBy === value}
+        onChange={() => onColorByChange(value)}
+      />
+      <span>{label}</span>
+    </label>
+  )
+}
+
 export function Controls(props: ControlsProps) {
-  const { elements, filters, matchCount, colorBy, onFiltersChange, onColorByChange, onClear } = props
+  const { elements, filters, matchCount, colorBy, searchRef, onFiltersChange, onSearchSubmit, onColorByChange, onClear } =
+    props
   const kindCounts = countKinds(elements, filters)
   const totalKindCounts = countKinds(elements, NO_FILTERS)
   const languageCounts = countLanguages(elements, filters)
@@ -83,8 +113,32 @@ export function Controls(props: ControlsProps) {
 
   return (
     <section class="controls" aria-label="Filters">
+      <div class="controls__search">
+        <SearchBox
+          filters={filters}
+          searchRef={searchRef}
+          onFiltersChange={onFiltersChange}
+          onSearchSubmit={onSearchSubmit}
+        />
+        <p class="controls__status">
+          <span class="match-count" role="status">
+            {matchCount} of {elements.length} elements
+          </span>
+          {hasFilters(filters) && (
+            <button type="button" class="clear" onClick={onClear}>
+              Clear filters
+            </button>
+          )}
+        </p>
+      </div>
       <div class="controls__row">
-        <h2 class="controls__label">Kind of origin</h2>
+        <RowLabel
+          value="kind"
+          label="Kind of origin"
+          meaning="kind of origin"
+          colorBy={colorBy}
+          onColorByChange={onColorByChange}
+        />
         <div class="chips" role="group" aria-label="Kind of origin">
           {usedKinds.map((kind) => (
             <Chip
@@ -100,7 +154,13 @@ export function Controls(props: ControlsProps) {
         </div>
       </div>
       <div class="controls__row">
-        <h2 class="controls__label">Oldest language</h2>
+        <RowLabel
+          value="language"
+          label="Oldest language"
+          meaning="language family"
+          colorBy={colorBy}
+          onColorByChange={onColorByChange}
+        />
         <div class="chips" role="group" aria-label="Oldest language">
           {groupLanguages(elements).map(({ family, languages }) => (
             <div key={family} class="chips__family" role="group" aria-label={FAMILY_LABELS[family]}>
@@ -122,36 +182,6 @@ export function Controls(props: ControlsProps) {
             </div>
           ))}
         </div>
-      </div>
-      <div class="controls__status">
-        <fieldset class="color-by">
-          <legend>Color by</legend>
-          {(
-            [
-              ['kind', 'Kind of origin'],
-              ['language', 'Language family'],
-            ] as const
-          ).map(([value, label]) => (
-            <label key={value}>
-              <input
-                type="radio"
-                name="color-by"
-                value={value}
-                checked={colorBy === value}
-                onChange={() => onColorByChange(value)}
-              />
-              <span>{label}</span>
-            </label>
-          ))}
-        </fieldset>
-        <p class="match-count" role="status">
-          {matchCount} of {elements.length} elements
-        </p>
-        {hasFilters(filters) && (
-          <button type="button" class="clear" onClick={onClear}>
-            Clear filters
-          </button>
-        )}
       </div>
     </section>
   )
