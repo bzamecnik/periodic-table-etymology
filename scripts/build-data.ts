@@ -6,7 +6,7 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { Document, isSeq, parse, visit } from 'yaml'
 import { inlineToText } from '../src/data/inline.ts'
-import { listTodos, mergeLayers, type PeriodicFacts } from './merge-layers.ts'
+import { type DeeperEntry, listTodos, mergeLayers, type PeriodicFacts } from './merge-layers.ts'
 import { type CurationEntry, draftEntry } from './seed-curation.ts'
 import { parseEtymologyPage } from './wikitext.ts'
 
@@ -51,7 +51,8 @@ if (process.argv.includes('--todo')) {
 } else {
   const periodic = JSON.parse(read('data/periodic.json')) as PeriodicFacts[]
   const source = JSON.parse(read('data/wikipedia/source.json'))
-  const dataset = mergeLayers(source, periodic, rows, curation)
+  const deeper = parse(read('data/deeper.yaml')) as Record<string, DeeperEntry[]>
+  const dataset = mergeLayers(source, periodic, rows, curation, deeper)
   writeFileSync('data/elements.json', JSON.stringify(dataset) + '\n')
   console.log(`data/elements.json: ${dataset.elements.length} elements, ${listTodos(curation).length} items to curate`)
 }

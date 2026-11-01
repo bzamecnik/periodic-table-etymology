@@ -8,15 +8,22 @@
 import { type Kind, LANGUAGES, PLACEHOLDER } from '../src/data/vocabulary.ts'
 
 export interface CurationEntry {
+  /** What the element is named after, when that is not the meaning itself. */
+  named?: string
   /** A very short meaning for the tile. */
-  gloss: string
+  gloss?: string
+  /** What the named thing is, for when its name has no known meaning. */
+  about?: string
   kinds: Kind[]
-  /** The oldest known language of the name or symbol. */
+  /** The oldest attested language of the name. */
   language: string
   /** The route of the name, from the oldest language on. */
   path: string[]
-  /** The oldest language of the symbol, when it has a different origin than the name. */
+  /** The oldest attested language of the symbol, when it has a different origin than the name. */
   symbolLanguage?: string
+  symbolPath?: string[]
+  /** A short meaning of the symbol's word, for the tile. */
+  symbolGloss?: string
   /** What a curator should check. */
   review?: string
 }

@@ -30,8 +30,12 @@ export const FAMILY_LABELS: Record<Family, string> = {
   [PLACEHOLDER]: 'Unclassified',
 }
 
-/** Known languages: name -> family and a short code for the tiles. */
-export const LANGUAGES: Record<string, { family: Family; code: string }> = {
+/**
+ * Known languages: name -> family and a short code for the tiles. Reconstructed
+ * ones may appear on a route, but never as the oldest language of a tile, because
+ * sooner or later nearly every word would end up in Proto-Indo-European.
+ */
+export const LANGUAGES: Record<string, { family: Family; code: string; reconstructed?: boolean }> = {
   Greek: { family: 'Greek', code: 'Gr' },
   Latin: { family: 'Latin', code: 'La' },
   'Old Latin': { family: 'Latin', code: 'OL' },
@@ -45,7 +49,7 @@ export const LANGUAGES: Record<string, { family: Family; code: string }> = {
   'Middle English': { family: 'Germanic', code: 'ME' },
   'Old English': { family: 'Germanic', code: 'OE' },
   'Old Norse': { family: 'Germanic', code: 'ON' },
-  'West Germanic': { family: 'Germanic', code: 'WG' },
+  'West Germanic': { family: 'Germanic', code: 'WG', reconstructed: true },
   French: { family: 'Romance', code: 'Fr' },
   'Old French': { family: 'Romance', code: 'OF' },
   'Middle French': { family: 'Romance', code: 'MF' },
@@ -62,7 +66,7 @@ export const LANGUAGES: Record<string, { family: Family; code: string }> = {
   Pali: { family: 'Other', code: 'Pi' },
   Persian: { family: 'Other', code: 'Fa' },
   Prakrit: { family: 'Other', code: 'Pk' },
-  'Proto-Indo-European': { family: 'Other', code: 'PIE' },
+  'Proto-Indo-European': { family: 'Other', code: 'PIE', reconstructed: true },
   Sanskrit: { family: 'Other', code: 'Sa' },
   'Scottish Gaelic': { family: 'Other', code: 'Gd' },
   Syriac: { family: 'Other', code: 'Sy' },

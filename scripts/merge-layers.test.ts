@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { CurationEntry } from './seed-curation.ts'
-import { listTodos, mergeLayers, type PeriodicFacts, tablePosition } from './merge-layers.ts'
+import { listTodos, mergeLayers, parseSource, type PeriodicFacts, tablePosition } from './merge-layers.ts'
 import type { WikiRow } from './wikitext.ts'
 
 const source = { title: 't', url: 'u', revision: 1, timestamp: 'x', license: 'l' }
@@ -48,10 +48,60 @@ describe('mergeLayers', () => {
     ['an unknown kind', [row], { Fe: { ...entry, kinds: ['nonsense'] } }, /unknown kind/],
     ['an unknown language', [row], { Fe: { ...entry, language: 'Klingon' } }, /unknown language/],
     ['an unknown element', [row], { Fe: entry, Xx: entry }, /Xx: unknown element/],
+    ['a reconstructed language on a tile', [row], { Fe: { ...entry, language: 'Proto-Indo-European' } }, /reconstructed/],
+    ['an unknown language of the symbol route', [row], { Fe: { ...entry, symbolPath: ['Klingon'] } }, /unknown language/],
+    ['nothing to show on a tile', [row], { Fe: { ...entry, gloss: undefined } }, /gloss is missing/],
   ])('fails on %s', (_name, rows, curation, message) => {
     expect(() =>
       mergeLayers(source, [facts], rows as WikiRow[], curation as Record<string, CurationEntry>),
     ).toThrow(message)
+  })
+})
+
+describe('the deeper layer', () => {
+  const claim = { text: 't', certainty: 'attested', sources: ['en.wikipedia: Ytterby @ 123'] }
+  const merge = (deeper: Record<string, unknown[]>) =>
+    mergeLayers(source, [facts], [row], { Fe: entry }, deeper as never).elements[0]
+
+  it('links a source to the revision which was read', () => {
+    expect(parseSource('en.wiktionary: lea @ 42')).toEqual({
+      label: 'Wiktionary: lea',
+      url: 'https://en.wiktionary.org/w/index.php?oldid=42',
+    })
+  })
+
+  it('names the language of a foreign edition', () => {
+    expect(parseSource('sv.wikipedia: Gadolin @ 7').label).toBe('Wikipedia (sv): Gadolin')
+  })
+
+  it('merges the claims and defaults to none', () => {
+    expect(merge({}).deeper).toEqual([])
+    expect(merge({ Fe: [claim] }).deeper).toEqual([
+      {
+        text: 't',
+        certainty: 'attested',
+        sources: [{ label: 'Wikipedia: Ytterby', url: 'https://en.wikipedia.org/w/index.php?oldid=123' }],
+      },
+    ])
+  })
+
+  it('allows a tile without a gloss when it has a name to show', () => {
+    const { elements } = mergeLayers(source, [facts], [row], { Fe: { ...entry, gloss: undefined, named: 'n' } })
+    expect(elements[0]).toMatchObject({ gloss: '', named: 'n' })
+  })
+
+  it.each([
+    ['no source', { ...claim, sources: [] }, /no source/],
+    ['a malformed source', { ...claim, sources: ['Wikipedia'] }, /malformed source/],
+    ['an unknown site', { ...claim, sources: ['en.blog: x @ 1'] }, /malformed source/],
+    ['an unknown certainty', { ...claim, certainty: 'sure' }, /unknown certainty/],
+    ['no text', { ...claim, text: '' }, /no text/],
+  ])('fails on %s', (_name, bad, message) => {
+    expect(() => merge({ Fe: [bad] })).toThrow(message)
+  })
+
+  it('fails on an unknown element', () => {
+    expect(() => merge({ Xx: [claim] })).toThrow(/Xx: unknown element/)
   })
 })
 

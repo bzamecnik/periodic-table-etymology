@@ -1,7 +1,9 @@
 import { render, screen, within } from '@testing-library/preact'
 import { describe, expect, it, vi } from 'vitest'
-import { elements } from '../data/index.ts'
+import { type ChemicalElement, elements } from '../data/index.ts'
 import { PeriodicTable } from './PeriodicTable.tsx'
+import { Tile } from './Tile.tsx'
+import { tileLines } from './tileLines.ts'
 
 const setup = (overrides = {}) => {
   const onSelect = vi.fn()
@@ -83,5 +85,66 @@ describe('PeriodicTable', () => {
     expect(document.getElementById('tile-Ne')).toHaveClass('tile--dimmed')
     expect(document.getElementById('tile-Na')).not.toHaveClass('tile--dimmed')
     expect(document.getElementById('tile-Ne')).toHaveAccessibleName(expect.stringContaining('Does not match'))
+  })
+})
+
+describe('tileLines', () => {
+  const base = elements.find((element) => element.symbol === 'Y')!
+  const lines = (overrides: Partial<ChemicalElement>) =>
+    tileLines({ ...base, named: undefined, about: undefined, symbolGloss: undefined, ...overrides })
+
+  it('shows what it is named after and the meaning', () => {
+    expect(lines({ named: 'Place', gloss: 'meaning' })).toEqual([
+      { text: 'Place', style: 'plain' },
+      { text: 'meaning', style: 'meaning' },
+    ])
+  })
+
+  it('falls back to a description without a meaning', () => {
+    expect(lines({ named: 'Place', gloss: '', about: 'a village' })).toEqual([
+      { text: 'Place', style: 'plain' },
+      { text: 'a village', style: 'plain' },
+    ])
+  })
+
+  it('prefers the meaning to the description', () => {
+    expect(lines({ gloss: 'meaning', about: 'a village' })).toEqual([{ text: 'meaning', style: 'meaning' }])
+  })
+
+  it('adds the meaning of the symbol', () => {
+    expect(lines({ gloss: 'yellow', symbolGloss: 'aurum, dawn' })).toEqual([
+      { text: 'yellow', style: 'meaning' },
+      { text: 'Y: aurum, dawn', style: 'plain' },
+    ])
+  })
+
+  it('marks a placeholder', () => {
+    expect(lines({ gloss: '?' })).toEqual([{ text: '?', style: 'todo' }])
+  })
+})
+
+describe('a tile of an element with a symbol from another language', () => {
+  const special = { ...elements[25], language: 'Old English', symbolLanguage: 'Latin' }
+
+  it('shows both language codes and names both', () => {
+    render(<Tile element={special} colorBy="kind" current={false} selected={false} dimmed={false} onSelect={vi.fn()} />)
+    const tile = screen.getByRole('button')
+    expect(tile).toHaveTextContent('OE')
+    expect(tile).toHaveTextContent('La')
+    expect(tile).toHaveAccessibleName(/Old English, of the symbol: Latin/)
+  })
+
+  it('shows one code when the symbol has the same language', () => {
+    render(
+      <Tile
+        element={{ ...special, symbolLanguage: 'Old English' }}
+        colorBy="kind"
+        current={false}
+        selected={false}
+        dimmed={false}
+        onSelect={vi.fn()}
+      />,
+    )
+    expect(screen.getByRole('button').querySelectorAll('.tile__code')).toHaveLength(1)
   })
 })

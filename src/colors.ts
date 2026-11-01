@@ -8,11 +8,12 @@ const slug = (value: string) => (value === PLACEHOLDER ? 'unknown' : value.toLow
 export const kindColor = (kind: Kind) => `var(--kind-${slug(kind)})`
 export const familyColor = (family: Family) => `var(--family-${slug(family)})`
 
-/** The colors of a tile: two when it belongs to two kinds, otherwise both the same. */
+/** The colors of a tile: two for two kinds or for a symbol from another language, otherwise both the same. */
 export function tileColors(element: ChemicalElement, colorBy: ColorBy): [string, string] {
   if (colorBy === 'language') {
     const color = familyColor(familyOf(element.language))
-    return [color, color]
+    const known = element.symbolLanguage && element.symbolLanguage !== PLACEHOLDER
+    return [color, known ? familyColor(familyOf(element.symbolLanguage!)) : color]
   }
   const [first, second = first] = element.kinds
   return [kindColor(first), kindColor(second)]

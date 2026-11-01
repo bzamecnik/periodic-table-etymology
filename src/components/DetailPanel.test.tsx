@@ -47,6 +47,42 @@ describe('DetailPanel', () => {
     expect(screen.getByText(/Not classified yet/)).toBeInTheDocument()
   })
 
+  it('shows what an element is named after, and its sourced findings', () => {
+    render(
+      <DetailPanel
+        element={{
+          ...element('Y'),
+          named: 'Somewhere',
+          gloss: 'a meaning',
+          about: 'a village',
+          symbolPath: ['Latin', 'French'],
+          symbolGloss: 'a symbol word',
+          deeper: [
+            {
+              text: 'A finding.',
+              certainty: 'disputed',
+              sources: [{ label: 'Wikipedia: Somewhere', url: 'https://en.wikipedia.org/w/index.php?oldid=1' }],
+            },
+            { text: 'A fact.', certainty: 'attested', sources: [{ label: 'Wiktionary: x', url: 'https://u/' }] },
+          ],
+        }}
+        onClose={vi.fn()}
+        onPrevious={vi.fn()}
+        onNext={vi.fn()}
+      />,
+    )
+    const panel = screen.getByRole('complementary')
+    for (const text of ['Somewhere', 'a meaning', 'a village', 'Y: a symbol word', 'Symbol route', 'A finding.']) {
+      expect(panel).toHaveTextContent(text)
+    }
+    expect(screen.getByRole('link', { name: 'Wikipedia: Somewhere' })).toHaveAttribute(
+      'href',
+      'https://en.wikipedia.org/w/index.php?oldid=1',
+    )
+    expect(screen.getByText('disputed')).toBeInTheDocument()
+    expect(screen.queryByText('attested')).toBeNull()
+  })
+
   it('lists the footnotes with their ids', () => {
     show('Zr')
     const first = document.getElementById('note-Zr-1')

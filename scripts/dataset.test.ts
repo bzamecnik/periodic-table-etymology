@@ -1,9 +1,10 @@
 import { readFileSync } from 'node:fs'
 import { parse } from 'yaml'
 import { describe, expect, it } from 'vitest'
+import { tileLines } from '../src/components/tileLines.ts'
 import type { ElementDataset } from '../src/data/element.ts'
 import { type CurationEntry } from './seed-curation.ts'
-import { mergeLayers, type PeriodicFacts } from './merge-layers.ts'
+import { type DeeperEntry, mergeLayers, type PeriodicFacts } from './merge-layers.ts'
 import { parseEtymologyPage } from './wikitext.ts'
 
 const read = (path: string) => readFileSync(path, 'utf8')
@@ -16,6 +17,7 @@ describe('the generated dataset', () => {
       JSON.parse(read('data/periodic.json')) as PeriodicFacts[],
       parseEtymologyPage(read('data/wikipedia/source.wikitext')),
       parse(read('data/curation.yaml')) as Record<string, CurationEntry>,
+      parse(read('data/deeper.yaml')) as Record<string, DeeperEntry[]>,
     )
     expect(committed).toEqual(rebuilt)
   })
@@ -34,9 +36,24 @@ describe('the generated dataset', () => {
     expect(inside).toEqual([])
   })
 
-  it('starts the route of a name with its oldest language unless the symbol is older', () => {
+  it('starts each route with the oldest language', () => {
     for (const element of committed.elements) {
-      if (element.path.length > 0 && !element.symbolLanguage) expect(element.path[0]).toBe(element.language)
+      if (element.path.length > 0) expect(element.path[0]).toBe(element.language)
+      if (element.symbolPath) expect(element.symbolPath[0]).toBe(element.symbolLanguage)
+    }
+  })
+
+  it('never needs more than two lines of text on a tile', () => {
+    for (const element of committed.elements) {
+      expect(tileLines(element).length, element.symbol).toBeLessThanOrEqual(2)
+    }
+  })
+
+  it('keeps each of two lines on a tile short enough to fit', () => {
+    for (const element of committed.elements) {
+      const lines = tileLines(element)
+      if (lines.length < 2) continue
+      for (const line of lines) expect(line.text.length, `${element.symbol}: ${line.text}`).toBeLessThanOrEqual(16)
     }
   })
 

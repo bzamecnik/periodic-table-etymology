@@ -297,20 +297,36 @@ html {
 }
 
 .tile__gloss {
-  display: -webkit-box;
+  display: block;
   max-width: 100%;
-  overflow: hidden;
-  overflow-wrap: anywhere;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   font-size: var(--tile-text);
-  font-style: italic;
   line-height: 1.12;
   color: var(--ink-soft);
 }
 
-.tile__gloss--todo {
-  font-style: normal;
+.tile__line {
+  display: -webkit-box;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* Two lines of different content, each of them on its own line */
+.tile__gloss--two .tile__line {
+  -webkit-line-clamp: 1;
+  overflow-wrap: normal;
+  font-size: calc(var(--tile-text) * var(--line-scale, 1));
+  letter-spacing: -0.015em;
+  /* the same height whatever the scale of the line */
+  line-height: calc(var(--tile-text) * 1.12);
+}
+
+.tile__line--meaning {
+  font-style: italic;
+}
+
+.tile__line--todo {
   font-weight: 700;
 }
 
@@ -456,6 +472,28 @@ kbd {
   font-size: 0.82rem;
 }
 
+.panel__summary {
+  margin: 0.4rem 0 0.35rem;
+}
+
+.panel__summary .panel__gloss {
+  margin: 0;
+}
+
+.panel__named {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.panel__about {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.25;
+  color: var(--ink-soft);
+}
+
 .panel__kinds {
   display: flex;
   flex-wrap: wrap;
@@ -530,6 +568,33 @@ kbd {
 
 .field dd {
   margin: 0;
+}
+
+.deeper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.deeper li + li {
+  margin-top: 0.3rem;
+}
+
+.certainty {
+  font-size: 0.82em;
+  font-style: italic;
+  color: var(--ink-faint);
+}
+
+.certainty--disputed {
+  color: var(--accent);
+}
+
+.deeper__sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.7em;
+  font-size: 0.72rem;
 }
 
 .route {

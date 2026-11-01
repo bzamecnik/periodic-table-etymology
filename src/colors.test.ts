@@ -14,6 +14,11 @@ describe('tileColors', () => {
     expect(tileColors(element('He'), 'language')).toEqual(['var(--family-greek)', 'var(--family-greek)'])
   })
 
+  it('splits a tile whose symbol comes from another language family', () => {
+    const fe = { ...element('Fe'), language: 'Old English', symbolLanguage: 'Latin' }
+    expect(tileColors(fe, 'language')).toEqual(['var(--family-germanic)', 'var(--family-latin)'])
+  })
+
   it('has a neutral color for placeholders', () => {
     expect(tileColors(element('Li'), 'kind')[0]).toBe('var(--kind-unknown)')
   })

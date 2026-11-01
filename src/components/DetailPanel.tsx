@@ -1,5 +1,5 @@
 import { kindColor } from '../colors.ts'
-import type { ChemicalElement } from '../data/index.ts'
+import type { ChemicalElement, DeeperClaim } from '../data/index.ts'
 import { KIND_LABELS, PLACEHOLDER } from '../data/vocabulary.ts'
 import type { Inline } from '../data/types.ts'
 import { KindIcon } from './icons.tsx'
@@ -31,11 +31,10 @@ export function languageRoute(element: ChemicalElement): string[] {
   return path[path.length - 1] === 'English' ? path : [...path, 'English']
 }
 
-function Route({ element }: { element: ChemicalElement }) {
-  const route = languageRoute(element)
+function Route({ label, route }: { label: string; route: string[] }) {
   return (
     <div class="field">
-      <dt>Route</dt>
+      <dt>{label}</dt>
       <dd>
         {route.length === 0 ? (
           <span class="todo">? Not classified yet</span>
@@ -47,6 +46,51 @@ function Route({ element }: { element: ChemicalElement }) {
           </ol>
         )}
       </dd>
+    </div>
+  )
+}
+
+function Deeper({ claims }: { claims: DeeperClaim[] }) {
+  if (claims.length === 0) return null
+  return (
+    <div class="field">
+      <dt>Deeper</dt>
+      <dd>
+        <ul class="deeper">
+          {claims.map((claim) => (
+            <li key={claim.text}>
+              {claim.text}
+              {claim.certainty !== 'attested' && (
+                <span class={`certainty certainty--${claim.certainty}`}> {claim.certainty}</span>
+              )}
+              <span class="deeper__sources">
+                {claim.sources.map((source) => (
+                  <a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">
+                    {source.label}
+                  </a>
+                ))}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </dd>
+    </div>
+  )
+}
+
+function Summary({ element }: { element: ChemicalElement }) {
+  const { named, gloss, about, symbol, symbolGloss } = element
+  if (gloss === PLACEHOLDER) return <p class="panel__gloss todo">? Short meaning not filled in yet</p>
+  return (
+    <div class="panel__summary">
+      {named && <p class="panel__named">{named}</p>}
+      {about && <p class="panel__about">{about}</p>}
+      {gloss && <p class="panel__gloss">{gloss}</p>}
+      {symbolGloss && (
+        <p class="panel__about">
+          {symbol}: {symbolGloss}
+        </p>
+      )}
     </div>
   )
 }
@@ -82,9 +126,7 @@ export function DetailPanel({ element, onClose, onPrevious, onNext }: DetailPane
             <p class="panel__z">Atomic number {element.z}</p>
           </div>
         </div>
-        <p class={`panel__gloss${element.gloss === PLACEHOLDER ? ' todo' : ''}`}>
-          {element.gloss === PLACEHOLDER ? '? Short meaning not filled in yet' : element.gloss}
-        </p>
+        <Summary element={element} />
         <ul class="panel__kinds" aria-label="Kind of origin">
           {element.kinds.map((kind) => (
             <li key={kind} style={{ '--color-a': kindColor(kind) }}>
@@ -106,10 +148,12 @@ export function DetailPanel({ element, onClose, onPrevious, onNext }: DetailPane
       </header>
       <div class="panel__body" tabIndex={0} aria-label="Details">
         <dl>
-          <Route element={element} />
+          <Route label="Route" route={languageRoute(element)} />
+          {element.symbolPath && <Route label="Symbol route" route={element.symbolPath} />}
           <Field label="Original word" content={element.word} prefix={prefix} />
           <Field label="Meaning" content={element.meaning} prefix={prefix} />
           <Field label="Origin" content={element.description} prefix={prefix} />
+          <Deeper claims={element.deeper} />
           <Field label="Symbol" content={element.symbolOrigin} prefix={prefix} />
           <Field label="Former names" content={element.formerNames} prefix={prefix} />
           {element.review && (

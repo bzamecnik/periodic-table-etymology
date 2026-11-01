@@ -2,6 +2,7 @@ import { type ColorBy, tileColors } from '../colors.ts'
 import type { ChemicalElement } from '../data/index.ts'
 import { KIND_LABELS, languageCode, PLACEHOLDER } from '../data/vocabulary.ts'
 import { KindIcon } from './icons.tsx'
+import { tileLines } from './tileLines.ts'
 
 interface TileProps {
   element: ChemicalElement
@@ -14,11 +15,27 @@ interface TileProps {
 }
 
 function describe(element: ChemicalElement, dimmed: boolean): string {
-  const gloss = element.gloss === PLACEHOLDER ? 'meaning not filled in yet' : element.gloss
-  const language = element.language === PLACEHOLDER ? 'not classified yet' : element.language
+  const gloss =
+    element.gloss === PLACEHOLDER
+      ? 'meaning not filled in yet'
+      : tileLines(element)
+          .map((line) => line.text)
+          .join(', ')
+  const name = element.language === PLACEHOLDER ? 'not classified yet' : element.language
+  const language = hasOwnSymbolLanguage(element) ? `${name}, of the symbol: ${element.symbolLanguage}` : name
   const kinds = element.kinds.map((kind) => KIND_LABELS[kind]).join(', ')
   const match = dimmed ? ' Does not match the filters.' : ''
   return `${element.name}, ${element.symbol}, atomic number ${element.z}: ${gloss}. Oldest language: ${language}. Kind: ${kinds}.${match}`
+}
+
+const hasOwnSymbolLanguage = ({ language, symbolLanguage }: ChemicalElement) =>
+  symbolLanguage !== undefined && symbolLanguage !== PLACEHOLDER && symbolLanguage !== language
+
+/** Long lines get smaller instead of being cut off. */
+function lineScale(text: string): number {
+  if (text.length >= 16) return 0.86
+  if (text.length >= 14) return 0.93
+  return 1
 }
 
 /** Long names get smaller instead of being cut off. */
@@ -31,6 +48,7 @@ function nameScale(name: string): number {
 export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: TileProps) {
   const [colorA, colorB] = tileColors(element, colorBy)
   const code = languageCode(element.language)
+  const lines = tileLines(element)
   return (
     <div role="gridcell" aria-colindex={element.column} aria-selected={selected} class="tile-cell">
       <button
@@ -60,13 +78,28 @@ export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: 
               {element.kinds.map((kind) => (
                 <KindIcon key={kind} kind={kind} />
               ))}
+              {hasOwnSymbolLanguage(element) && (
+                <span class="tile__code" title={`Symbol: ${element.symbolLanguage}`}>
+                  {languageCode(element.symbolLanguage!)}
+                </span>
+              )}
             </span>
           </span>
         </span>
         <span class="tile__name" style={{ '--name-scale': nameScale(element.name) }}>
           {element.name}
         </span>
-        <span class={`tile__gloss${element.gloss === PLACEHOLDER ? ' tile__gloss--todo' : ''}`}>{element.gloss}</span>
+        <span class={`tile__gloss${lines.length > 1 ? ' tile__gloss--two' : ''}`}>
+          {lines.map((line) => (
+            <span
+              key={line.text}
+              class={`tile__line tile__line--${line.style}`}
+              style={lines.length > 1 ? { '--line-scale': lineScale(line.text) } : undefined}
+            >
+              {line.text}
+            </span>
+          ))}
+        </span>
       </button>
     </div>
   )

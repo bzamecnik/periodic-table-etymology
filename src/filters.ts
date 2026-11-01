@@ -30,7 +30,12 @@ function searchText(element: ChemicalElement): string {
     text = normalize(
       [
         element.name,
+        element.named ?? '',
         element.gloss === PLACEHOLDER ? '' : element.gloss,
+        element.about ?? '',
+        element.symbolGloss ?? '',
+        ...(element.symbolPath ?? []),
+        ...element.deeper.map((claim) => claim.text),
         element.language === PLACEHOLDER ? '' : element.language,
         ...element.path,
         inlineToText(element.word),
