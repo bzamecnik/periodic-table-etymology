@@ -452,10 +452,12 @@ Md:
     sources:
       - "en.wikipedia: Dmitri Mendeleev @ 1381816376"
 No:
-  - text: "The family came from the village of Östra Nöbbelöv in Scania, and its first member wrote himself Petrus Olai Nobelius."
+  - text: "The family came from the village of Östra Nöbbelöv in Scania, and its first member wrote himself Petrus Olai Nobelius. The village was written Nybbile in 1322, a name containing nyböle, \"new settlement\"."
     certainty: attested
     sources:
       - "en.wikipedia: Nobel family @ 1381461231"
+      - "sv.wikipedia: Östra Nöbbelöv @ 48902495"
+      - "sv.wikipedia: Nöbbelöv, Lund @ 59148402"
 Lr:
   - text: "Lawrence comes from the Roman martyr Laurentius, \"a person from Laurentum\", a place name possibly derived from Latin laurus, \"laurel\"."
     certainty: traditional
@@ -575,3 +577,17 @@ Mt:
     sources:
       - "en.wiktionary: Meitner @ 92416755"
       - "en.wikipedia: Majetín @ 1379561479"
+Db:
+  - text: "Wiktionary derives the Russian name Dubna from an Old East Slavic adjective, dubĭnŭ (дубьнъ), used as a noun. It is formed from dubŭ (дубъ), \"oak\". The town lies where the Dubna River joins the Volga. The Slavic word for oak has no cognates outside the branch, and its deeper origin is uncertain."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Дубна @ 92531286"
+      - "en.wiktionary: Reconstruction:Proto-Slavic/dǫbъ @ 92531290"
+      - "en.wikipedia: Dubna @ 1375802660"
+Tc:
+  - text: "Greek tekhnētos (τεχνητός), \"artificial\", is built on tékhnē (τέχνη), \"art, skill, craft\", the word behind technology as well. The name was chosen in 1947 because technetium was the first element to be produced artificially."
+    certainty: attested
+    sources:
+      - "en.wiktionary: τεχνητός @ 92069569"
+      - "en.wikipedia: Techne @ 1263040232"
+      - "en.wikipedia: Technetium @ 1379384632"

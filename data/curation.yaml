@@ -437,7 +437,7 @@ Os:
   language: Greek
   path: [ Greek, Neo-Latin ]
 Ir:
-  gloss: of rainbows
+  gloss: rainbow
   kinds: [ color ]
   language: Greek
   path: [ Greek, Latin ]
@@ -586,7 +586,7 @@ Md:
   path: [ Russian ]
 No:
   named: A. Nobel
-  about: of Nöbbelöv
+  gloss: new settlement
   kinds: [ person ]
   language: Swedish
   path: [ Swedish, Latin ]
@@ -604,10 +604,10 @@ Rf:
   path: [ Old English, English ]
 Db:
   named: Dubna
-  about: Russian town
+  gloss: oaken
   kinds: [ place ]
-  language: Russian
-  path: [ Russian ]
+  language: Old East Slavic
+  path: [ Old East Slavic, Russian ]
 Sg:
   named: G. T. Seaborg
   gloss: lake mountain
