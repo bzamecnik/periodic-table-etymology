@@ -107,7 +107,7 @@ function Intro() {
       </p>
       <p class="panel__keys">
         <kbd>←</kbd> <kbd>→</kbd> by atomic number · <kbd>↑</kbd> <kbd>↓</kbd> within a column · <kbd>Enter</kbd> open ·{' '}
-        <kbd>Esc</kbd> close · <kbd>/</kbd> search
+        <kbd>Esc</kbd> close · <kbd>/</kbd> search · <kbd>c</kbd> colors
       </p>
     </aside>
   )

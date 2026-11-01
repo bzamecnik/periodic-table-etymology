@@ -102,9 +102,12 @@ export function App() {
       // with the focus nowhere, the arrows lead back to the table
       if (event.target === document.body) onTableKeyDown(event)
       const typing = event.target instanceof HTMLInputElement && event.target.type === 'search'
-      if (event.key === '/' && !typing && !event.ctrlKey && !event.metaKey && !event.altKey) {
+      if (typing || event.ctrlKey || event.metaKey || event.altKey) return
+      if (event.key === '/') {
         event.preventDefault()
         searchRef.current?.focus()
+      } else if (event.key.toLowerCase() === 'c' && !event.repeat) {
+        setColorBy((current) => (current === 'kind' ? 'language' : 'kind'))
       }
     }
     const onClick = (event: MouseEvent) => {

@@ -20,6 +20,7 @@ table of element name etymology.
 | `Enter` | Open or close details; once open, they follow the arrows |
 | `Esc` | Close details, then leave the table; in the search, clear it, then leave it |
 | `/` | Search; `Enter` then leads to the first match |
+| `c` | Switch the colors between the kind of origin and the language family |
 
 With filters on, the arrows skip the elements out of the filter, and open details
 move to the first match when their element gets filtered out. Details also close

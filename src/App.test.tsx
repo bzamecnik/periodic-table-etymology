@@ -319,6 +319,34 @@ describe('App', () => {
     })
   })
 
+  describe('the colors', () => {
+    const coloredByKind = () => screen.getByRole<HTMLInputElement>('radio', { name: /^Kind of origin/ }).checked
+    const coloredByLanguage = () => screen.getByRole<HTMLInputElement>('radio', { name: /^Oldest language/ }).checked
+
+    it('switch by the c key, there and back', async () => {
+      render(<App />)
+      expect(coloredByKind()).toBe(true)
+      await userEvent.keyboard('c')
+      expect(coloredByLanguage()).toBe(true)
+      await userEvent.keyboard('c')
+      expect(coloredByKind()).toBe(true)
+    })
+
+    it('stay when c is typed into the search', async () => {
+      render(<App />)
+      await userEvent.click(screen.getByRole('searchbox'))
+      await userEvent.keyboard('c')
+      expect(screen.getByRole('searchbox')).toHaveValue('c')
+      expect(coloredByKind()).toBe(true)
+    })
+
+    it('stay on a shortcut of the browser, such as copying', async () => {
+      render(<App />)
+      await userEvent.keyboard('{Meta>}c{/Meta}{Control>}c{/Control}')
+      expect(coloredByKind()).toBe(true)
+    })
+  })
+
   describe('the search', () => {
     const keyCap = () => document.querySelector('.search kbd')
 
