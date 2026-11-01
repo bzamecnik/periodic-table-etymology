@@ -118,12 +118,14 @@ Sc:
   language: Latin
   path: [ Latin ]
 Ti:
-  gloss: Titans
+  named: Titans
+  about: Greek deities
   kinds: [ mythology ]
   language: Greek
   path: [ Greek ]
 V:
-  gloss: Dís of the Vanir
+  named: Vanadís
+  about: name of Freyja
   kinds: [ mythology ]
   language: Old Norse
   path: [ Old Norse ]
@@ -224,7 +226,8 @@ Zr:
   language: Middle Persian
   path: [ Middle Persian, Arabic, German ]
 Nb:
-  gloss: snowy
+  named: Niobe
+  gloss: "snowy?"
   kinds: [ mythology ]
   language: Greek
   path: [ Greek ]
@@ -250,7 +253,8 @@ Rh:
   language: Greek
   path: [ Greek ]
 Pd:
-  gloss: little maiden
+  named: Pallas
+  gloss: "young woman?"
   kinds: [ celestial, mythology ]
   language: Greek
   path: [ Greek, Latin ]
@@ -321,6 +325,7 @@ La:
   language: Greek
   path: [ Greek ]
 Ce:
+  named: Ceres
   gloss: grain
   kinds: [ celestial, mythology ]
   language: Latin
@@ -336,7 +341,8 @@ Nd:
   language: Greek
   path: [ Greek ]
 Pm:
-  gloss: forethought
+  named: Prometheus
+  gloss: "forethought?"
   kinds: [ mythology ]
   language: Greek
   path: [ Greek ]
@@ -406,7 +412,8 @@ Hf:
   language: Old Norse
   path: [ Old Norse, Latin ]
 Ta:
-  gloss: "?"
+  named: Tantalus
+  gloss: "the bearer?"
   kinds: [ mythology ]
   language: Greek
   path: [ Greek ]
@@ -448,11 +455,13 @@ Au:
   symbolPath: [ Latin ]
   symbolGloss: dawn
 Hg:
-  gloss: Mercury
+  named: Mercury
   kinds: [ mythology ]
   language: Latin
   path: [ Latin ]
-  symbolLanguage: "?"
+  symbolLanguage: Greek
+  symbolPath: [ Greek, Latin ]
+  symbolGloss: "water-silver"
 Tl:
   gloss: green twig
   kinds: [ color ]
@@ -505,6 +514,7 @@ Ac:
   language: Greek
   path: [ Greek ]
 Th:
+  named: Thor
   gloss: thunder
   kinds: [ mythology ]
   language: Old Norse
@@ -515,17 +525,20 @@ Pa:
   language: Greek
   path: [ Greek ]
 U:
+  named: Uranus
   gloss: sky
   kinds: [ celestial, mythology ]
   language: Greek
   path: [ Greek, Latin ]
 Np:
-  gloss: Neptune
+  named: Neptune
+  about: Roman sea god
   kinds: [ celestial, mythology ]
   language: Latin
   path: [ Latin ]
 Pu:
-  gloss: god of wealth
+  named: Pluto
+  gloss: wealth
   kinds: [ celestial, mythology ]
   language: Greek
   path: [ Greek, Latin ]

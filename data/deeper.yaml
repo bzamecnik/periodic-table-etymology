@@ -479,3 +479,82 @@ Cn:
     certainty: disputed
     sources:
       - "en.wikipedia: Nicolaus Copernicus @ 1382794491"
+He:
+  - text: "Greek hḗlios has relatives in Latin sōl and Sanskrit sū́rya, all from one Proto-Indo-European word for the sun."
+    certainty: attested
+    sources:
+      - "en.wiktionary: ἥλιος @ 92272665"
+V:
+  - text: "Vanadís is one of the many names of Freyja, under which she searched for her husband. It means a dís, a goddess, of the Vanir, whose own name has many proposed etymologies."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Freyja @ 1370311846"
+      - "en.wikipedia: Vanir @ 1376454612"
+Se:
+  - text: "Greek selḗnē, the moon and its goddess, comes from selas, \"light, brightness\"."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Selene @ 1375351131"
+      - "en.wiktionary: Selene @ 93596965"
+Pd:
+  - text: "Named after the asteroid Pallas, itself after an epithet of Athena. It either comes from pallō, \"to brandish\", or, more likely, from pallakis and related words for \"youth, young woman\"."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Athena @ 1383157461"
+      - "en.wiktionary: Pallas @ 92177160"
+Ce:
+  - text: "Named after the asteroid Ceres, itself after the Roman goddess of grain. Her name goes back to a root meaning \"to grow\" or \"to feed\", and it became a word for grain and bread."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Ceres @ 94530632"
+      - "en.wikipedia: Ceres (mythology) @ 1382036521"
+Pm:
+  - text: "The usual view takes Prometheus as \"forethought\", with his brother Epimetheus as \"afterthought\", but the etymology is debated."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Prometheus @ 1381775303"
+      - "en.wiktionary: Prometheus @ 90485347"
+Ta:
+  - text: "Tantalus has been read as \"who has to bear much\", from Greek tálas, \"wretched\", while a medieval source gives \"wishing for a vision\". His punishment also gave English tantalize."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Tantalus @ 1378549502"
+Th:
+  - text: "Old Norse Þórr comes from a Proto-Germanic name related to Old English þunor, and probably to a Proto-Indo-European root for \"thunder\". The English word thunder is related."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Thor @ 1368276040"
+      - "en.wiktionary: Thor @ 94544062"
+U:
+  - text: "Named after the planet, itself after the Greek god of the sky. Most linguists connect Ouranos to a root for \"to rain, moisten\"."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Uranus (mythology) @ 1381772217"
+      - "en.wiktionary: Uranus @ 94475473"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Np:
+  - text: "Named after the planet, itself after the Roman god. The etymology of Neptunus is unclear, with proposals of a root for \"cloud, sky\" and of a \"descendant of water\"."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Neptune (mythology) @ 1380183577"
+      - "en.wiktionary: Neptune @ 93751555"
+Pu:
+  - text: "Named after Pluto, then counted as the next planet after Neptune, as neptunium follows uranium. Greek Ploutōn was the ruler of the underworld, often conflated with Ploutos, the god of wealth, because mineral wealth lies underground."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Pluto (god) @ 1381045388"
+      - "en.wiktionary: Pluto @ 93952956"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Ir:
+  - text: "Greek iris means \"rainbow\" and was also the goddess who personified it, the messenger of the gods. The name refers to the bright colors of the salts."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Iris (mythology) @ 1380530218"
+      - "en.wiktionary: iridium @ 93131758"
+Hg:
+  - text: "Mercurius may come from Latin merx, \"merchandise\", as in merchant, or from Etruscan. Medieval alchemy paired the seven known metals with the Sun, the Moon and the planets, and quicksilver with Mercury, perhaps also because a liquid metal suits the swift god."
+    certainty: disputed
+    sources:
+      - "en.wiktionary: Mercurius @ 92969477"
+      - "en.wikipedia: Mercury (mythology) @ 1381676266"
+      - "en.wiktionary: mercury @ 92753415"
