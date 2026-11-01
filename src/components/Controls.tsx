@@ -1,8 +1,8 @@
 import type { Ref } from 'preact'
 import { type ColorBy, familyColor, kindColor } from '../colors.ts'
 import type { ChemicalElement } from '../data/index.ts'
-import { FAMILY_LABELS, KIND_LABELS, KINDS, type Kind, PLACEHOLDER } from '../data/vocabulary.ts'
-import { countKinds, countLanguages, type Filters, groupLanguages, hasFilters, NO_FILTERS, toggled } from '../filters.ts'
+import { FAMILY_LABELS, KIND_LABELS, type Kind, PLACEHOLDER } from '../data/vocabulary.ts'
+import { countKinds, countLanguages, type Filters, groupLanguages, hasFilters, orderKinds, toggled } from '../filters.ts'
 import { KindIcon } from './icons.tsx'
 
 interface ControlsProps {
@@ -107,9 +107,7 @@ export function Controls(props: ControlsProps) {
   const { elements, filters, matchCount, colorBy, searchRef, onFiltersChange, onSearchSubmit, onColorByChange, onClear } =
     props
   const kindCounts = countKinds(elements, filters)
-  const totalKindCounts = countKinds(elements, NO_FILTERS)
   const languageCounts = countLanguages(elements, filters)
-  const usedKinds = KINDS.filter((kind) => totalKindCounts.get(kind)! > 0)
 
   return (
     <section class="controls" aria-label="Filters">
@@ -140,7 +138,7 @@ export function Controls(props: ControlsProps) {
           onColorByChange={onColorByChange}
         />
         <div class="chips" role="group" aria-label="Kind of origin">
-          {usedKinds.map((kind) => (
+          {orderKinds(elements).map((kind) => (
             <Chip
               key={kind}
               label={KIND_LABELS[kind]}

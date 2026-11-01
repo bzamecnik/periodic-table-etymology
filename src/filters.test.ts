@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { elements } from './data/index.ts'
+import { type ChemicalElement, elements } from './data/index.ts'
 import type { Kind } from './data/vocabulary.ts'
 import {
   countKinds,
@@ -12,6 +12,7 @@ import {
   NO_FILTERS,
   normalize,
   oldestLanguages,
+  orderKinds,
   toggled,
 } from './filters.ts'
 
@@ -127,6 +128,23 @@ describe('counts', () => {
   it('keeps a language at zero rather than dropping it', () => {
     const counts = countLanguages(elements, { ...NO_FILTERS, query: 'moon' })
     expect(counts.get('Japanese')).toBe(0)
+  })
+})
+
+describe('orderKinds', () => {
+  const withKinds = (kinds: ChemicalElement['kinds']) => ({ ...element('Na'), kinds })
+
+  it('puts the most common kind first and leaves out the unused ones', () => {
+    const elements = [withKinds(['color']), withKinds(['person', 'color']), withKinds(['person']), withKinds(['color'])]
+    expect(orderKinds(elements)).toEqual(['color', 'person'])
+  })
+
+  it('keeps the order of the vocabulary on a tie', () => {
+    expect(orderKinds([withKinds(['color']), withKinds(['place'])])).toEqual(['place', 'color'])
+  })
+
+  it('leaves placeholders for the end', () => {
+    expect(orderKinds([withKinds(['?']), withKinds(['?']), withKinds(['color'])])).toEqual(['color', '?'])
   })
 })
 

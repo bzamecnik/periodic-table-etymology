@@ -99,6 +99,13 @@ export function countKinds(elements: ChemicalElement[], filters: Filters): Map<K
   return counts
 }
 
+/** The kinds in use, the most common first; placeholders stay at the end. The order ignores filters, so chips do not jump. */
+export function orderKinds(elements: ChemicalElement[]): Kind[] {
+  const totals = countKinds(elements, NO_FILTERS)
+  const rank = (kind: Kind) => (kind === PLACEHOLDER ? -1 : totals.get(kind)!)
+  return KINDS.filter((kind) => totals.get(kind)! > 0).sort((a, b) => rank(b) - rank(a))
+}
+
 /** How many elements each language would show, given the filters of the other dimensions. */
 export function countLanguages(elements: ChemicalElement[], filters: Filters): Map<string, number> {
   const others = { ...filters, languages: new Set<string>() }
