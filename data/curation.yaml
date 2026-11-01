@@ -326,7 +326,7 @@ La:
   path: [ Greek ]
 Ce:
   named: Ceres
-  gloss: grain
+  about: grain deity
   kinds: [ celestial, mythology ]
   language: Latin
   path: [ Latin ]
@@ -455,7 +455,7 @@ Au:
   symbolPath: [ Latin ]
   symbolGloss: dawn
 Hg:
-  named: Mercury
+  about: messenger deity
   kinds: [ mythology ]
   language: Latin
   path: [ Latin ]
@@ -515,7 +515,7 @@ Ac:
   path: [ Greek ]
 Th:
   named: Thor
-  gloss: thunder
+  about: thunder deity
   kinds: [ mythology ]
   language: Old Norse
   path: [ Old Norse ]
@@ -526,19 +526,19 @@ Pa:
   path: [ Greek ]
 U:
   named: Uranus
-  gloss: sky
+  about: sky deity
   kinds: [ celestial, mythology ]
   language: Greek
   path: [ Greek, Latin ]
 Np:
   named: Neptune
-  about: sea god
+  about: sea deity
   kinds: [ celestial, mythology ]
   language: Latin
   path: [ Latin ]
 Pu:
   named: Pluto
-  gloss: wealth
+  about: wealth deity
   kinds: [ celestial, mythology ]
   language: Greek
   path: [ Greek, Latin ]
