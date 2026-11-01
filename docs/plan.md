@@ -7,7 +7,7 @@ from. Each step lands as one or more focused commits.
 
 - [x] 1. Data pipeline: Wikipedia snapshot, curation layer, generated data
 - [x] 2. Static table with tiles
-- [ ] 3. Detail panel and keyboard navigation
+- [x] 3. Detail panel and keyboard navigation
 - [ ] 4. Filters, search and color switching
 - [ ] 6. Deployment to GitHub Pages on tags
 
