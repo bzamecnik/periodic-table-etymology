@@ -4,6 +4,8 @@ import type { Kind } from './data/vocabulary.ts'
 import {
   countKinds,
   countLanguages,
+  type Filters,
+  followFilters,
   groupLanguages,
   hasFilters,
   matchesFilters,
@@ -151,5 +153,22 @@ describe('toggled', () => {
     expect(toggled(values, 'b')).toEqual(new Set(['a', 'b']))
     expect(toggled(values, 'a')).toEqual(new Set())
     expect(values).toEqual(new Set(['a']))
+  })
+})
+
+describe('followFilters', () => {
+  const person: Filters = { ...NO_FILTERS, kinds: new Set(['person']) }
+
+  it('stays on an element which matches', () => {
+    expect(followFilters(elements, 64, person)).toBe(64)
+    expect(followFilters(elements, 26, NO_FILTERS)).toBe(26)
+  })
+
+  it('moves to the first match', () => {
+    expect(followFilters(elements, 26, person)).toBe(62)
+  })
+
+  it('has nowhere to go without matches', () => {
+    expect(followFilters(elements, 26, { ...NO_FILTERS, query: 'zzzzzz' })).toBeNull()
   })
 })

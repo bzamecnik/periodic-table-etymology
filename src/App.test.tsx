@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/preact'
 import userEvent from '@testing-library/user-event'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { App } from './App.tsx'
 
 const tile = (symbol: string) => document.getElementById(`tile-${symbol}`)!
@@ -69,6 +69,41 @@ describe('App', () => {
       expect(window.location.hash).toBe('')
     })
 
+    it('closes on a second click of its tile', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      await userEvent.click(tile('Fe'))
+      expect(panel()).toHaveAccessibleName('How to read the table')
+      expect(window.location.hash).toBe('')
+    })
+
+    it('closes on a click outside of it', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      await userEvent.click(document.querySelector('.table-layout')!)
+      expect(panel()).toHaveAccessibleName('How to read the table')
+      expect(tile('Fe').classList.contains('tile--selected')).toBe(false)
+    })
+
+    it('stays open on a click inside of it, on another tile or on a filter', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      await userEvent.click(document.querySelector('.panel__body')!)
+      expect(panel()).toHaveAccessibleName('Name origin of Iron')
+      await userEvent.click(screen.getByRole('button', { name: /^Property \d+/ }))
+      await userEvent.click(tile('He'))
+      expect(panel()).toHaveAccessibleName('Name origin of Helium')
+    })
+
+    it('stays open when a click ends a selection of its text', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      const selection = vi.spyOn(window, 'getSelection').mockReturnValue({ isCollapsed: false } as Selection)
+      await userEvent.click(document.querySelector('.table-layout')!)
+      selection.mockRestore()
+      expect(panel()).toHaveAccessibleName('Name origin of Iron')
+    })
+
     it('walks with its buttons', async () => {
       render(<App />)
       await userEvent.click(tile('Fe'))
@@ -119,6 +154,36 @@ describe('App', () => {
       await userEvent.keyboard('{Escape}')
       expect(panel()).toHaveAccessibleName('How to read the table')
       expect(tile('Li')).toHaveFocus()
+    })
+
+    it('leaves the table on a further Escape and comes back with the arrows', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      await userEvent.keyboard('{Escape}')
+      expect(tile('Fe')).toHaveFocus()
+      await userEvent.keyboard('{Escape}')
+      expect(document.body).toHaveFocus()
+      await userEvent.keyboard('{ArrowRight}')
+      expect(tile('Co')).toHaveFocus()
+      expect(panel()).toHaveAccessibleName('How to read the table')
+    })
+
+    it('keeps the focus on a filter when Escape closes the panel', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      const chip = screen.getByRole('button', { name: /^Property \d+/ })
+      chip.focus()
+      await userEvent.keyboard('{Escape}')
+      expect(panel()).toHaveAccessibleName('How to read the table')
+      expect(chip).toHaveFocus()
+    })
+
+    it('returns from the panel to its tile on Escape', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      screen.getByRole('button', { name: 'Next element' }).focus()
+      await userEvent.keyboard('{Escape}')
+      expect(tile('Fe')).toHaveFocus()
     })
 
     it('does not move the panel without it being open', async () => {
@@ -190,6 +255,36 @@ describe('App', () => {
       expect(panel()).toHaveAccessibleName('Name origin of Gadolinium')
     })
 
+    it('moves the open panel to the first match when its element gets filtered out', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      await userEvent.click(chip(/^Person \d+/))
+      expect(panel()).toHaveAccessibleName('Name origin of Samarium')
+      expect(window.location.hash).toBe('#Sm')
+    })
+
+    it('keeps the open panel when its element still matches', async () => {
+      render(<App />)
+      await userEvent.click(tile('Gd'))
+      await userEvent.click(chip(/^Person \d+/))
+      expect(panel()).toHaveAccessibleName('Name origin of Gadolinium')
+    })
+
+    it('closes the panel when nothing matches', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      await userEvent.click(screen.getByRole('searchbox'))
+      await userEvent.keyboard('zzzzzz')
+      expect(panel()).toHaveAccessibleName('How to read the table')
+    })
+
+    it('makes Tab lead to a match, not to a dimmed tile', async () => {
+      render(<App />)
+      await userEvent.click(chip(/^Person \d+/))
+      expect(tile('Sm').tabIndex).toBe(0)
+      expect(tile('H').tabIndex).toBe(-1)
+    })
+
     it('switches the meaning of the colors', async () => {
       render(<App />)
       expect(tile('He').style.getPropertyValue('--color-a')).toBe('var(--kind-celestial)')
@@ -230,8 +325,18 @@ describe('App', () => {
       render(<App />)
       await userEvent.click(tile('Fe'))
       await userEvent.click(box())
-      await userEvent.keyboard('moon{Escape}')
+      await userEvent.keyboard('iron{Escape}')
       expect(box()).toHaveValue('')
+      expect(box()).toHaveFocus()
+      expect(panel()).toHaveAccessibleName('Name origin of Iron')
+    })
+
+    it('leaves the empty box on Escape, still without closing the panel', async () => {
+      render(<App />)
+      await userEvent.click(tile('Fe'))
+      await userEvent.click(box())
+      await userEvent.keyboard('{Escape}')
+      expect(box()).not.toHaveFocus()
       expect(panel()).toHaveAccessibleName('Name origin of Iron')
     })
 

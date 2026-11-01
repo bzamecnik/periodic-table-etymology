@@ -16,12 +16,14 @@ table of element name etymology.
 | `←` `→` | Previous / next by atomic number |
 | `↑` `↓` | Up / down within a column |
 | `Home` `End` | First / last element |
-| `Enter` | Open details; once open, they follow the arrows |
-| `Esc` | Close details, or clear the search |
+| `Enter` | Open or close details; once open, they follow the arrows |
+| `Esc` | Close details, then leave the table; in the search, clear it, then leave it |
 | `/` | Search; `Enter` then leads to the first match |
 
-With filters on, the arrows skip the elements out of the filter. Elements can be
-linked directly, such as `#Fe`.
+With filters on, the arrows skip the elements out of the filter, and open details
+move to the first match when their element gets filtered out. Details also close
+with a click on their tile or anywhere outside. Elements can be linked directly,
+such as `#Fe`.
 
 ## Development
 

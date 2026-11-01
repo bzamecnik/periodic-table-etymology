@@ -5,7 +5,7 @@ import { Controls, SearchBox } from './components/Controls.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
 import { PeriodicTable } from './components/PeriodicTable.tsx'
 import { type ChemicalElement, elements } from './data/index.ts'
-import { type Filters, matchesFilters, NO_FILTERS } from './filters.ts'
+import { type Filters, followFilters, matchesFilters, NO_FILTERS } from './filters.ts'
 import { navigate, nextLinear } from './navigation.ts'
 
 function zFromHash(): number | null {
@@ -20,6 +20,9 @@ function writeHash(z: number | null) {
 }
 
 const focusTile = (z: number) => document.getElementById(`tile-${elements[z - 1].symbol}`)?.focus()
+
+/** A click on any of these has a purpose of its own, so it does not close the panel. */
+const KEEPS_PANEL_OPEN = 'button, a, input, label, .panel'
 
 export function App() {
   const [selectedZ, setSelectedZ] = useState<number | null>(zFromHash)
@@ -39,8 +42,10 @@ export function App() {
   }, [])
 
   const close = () => {
+    // the focus would get lost with the panel; elsewhere it stays where it is
+    const focusInPanel = document.activeElement?.closest('.panel')
     select(null)
-    focusTile(currentZ)
+    if (focusInPanel) focusTile(currentZ)
   }
 
   const moveSelection = (direction: 1 | -1) => {
@@ -67,8 +72,14 @@ export function App() {
   }
 
   const onTileSelect = (element: ChemicalElement) => {
-    select(element.z)
+    select(element.z === selectedZ ? null : element.z)
     focusTile(element.z)
+  }
+
+  const changeFilters = (next: Filters) => {
+    setFilters(next)
+    if (selectedZ !== null) select(followFilters(elements, selectedZ, next))
+    setCurrentZ((z) => followFilters(elements, z, next) ?? z)
   }
 
   useEffect(() => {
@@ -84,15 +95,30 @@ export function App() {
   // a layout effect: a key pressed right after a move must already see that move
   useLayoutEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && selectedZ !== null) close()
+      if (event.key === 'Escape') {
+        if (selectedZ !== null) close()
+        else if (document.activeElement instanceof HTMLElement) document.activeElement.blur()
+      }
+      // with the focus nowhere, the arrows lead back to the table
+      if (event.target === document.body) onTableKeyDown(event)
       const typing = event.target instanceof HTMLInputElement && event.target.type === 'search'
       if (event.key === '/' && !typing && !event.ctrlKey && !event.metaKey && !event.altKey) {
         event.preventDefault()
         searchRef.current?.focus()
       }
     }
+    const onClick = (event: MouseEvent) => {
+      if (selectedZ === null || !(event.target instanceof Element)) return
+      // the end of a drag which selected some text is a click as well
+      if (event.target.closest(KEEPS_PANEL_OPEN) || window.getSelection()?.isCollapsed === false) return
+      select(null)
+    }
     window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
+    window.addEventListener('click', onClick)
+    return () => {
+      window.removeEventListener('keydown', onKeyDown)
+      window.removeEventListener('click', onClick)
+    }
   })
 
   return (
@@ -105,7 +131,7 @@ export function App() {
         <SearchBox
           filters={filters}
           searchRef={searchRef}
-          onFiltersChange={setFilters}
+          onFiltersChange={changeFilters}
           onSearchSubmit={goToFirstMatch}
         />
       </header>
@@ -115,9 +141,9 @@ export function App() {
           filters={filters}
           matchCount={activeElements.size}
           colorBy={colorBy}
-          onFiltersChange={setFilters}
+          onFiltersChange={changeFilters}
           onColorByChange={setColorBy}
-          onClear={() => setFilters(NO_FILTERS)}
+          onClear={() => changeFilters(NO_FILTERS)}
         />
         <PeriodicTable
           elements={elements}

@@ -63,9 +63,10 @@ export function SearchBox({ filters, searchRef, onFiltersChange, onSearchSubmit 
             event.preventDefault()
             onSearchSubmit()
           } else if (event.key === 'Escape') {
-            // only leaves the search; an open panel stays
+            // only concerns the search: first clear it, then leave it; an open panel stays
             event.stopPropagation()
-            onFiltersChange({ ...filters, query: '' })
+            if (filters.query === '') event.currentTarget.blur()
+            else onFiltersChange({ ...filters, query: '' })
           }
         }}
       />

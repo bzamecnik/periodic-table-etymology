@@ -128,3 +128,9 @@ export function toggled<T>(values: ReadonlySet<T>, value: T): Set<T> {
   if (!result.delete(value)) result.add(value)
   return result
 }
+
+/** Where a position in the table goes under new filters: it stays on a match, else moves to the first one, if any. */
+export function followFilters(elements: ChemicalElement[], z: number, filters: Filters): number | null {
+  if (matchesFilters(elements[z - 1], filters)) return z
+  return elements.find((element) => matchesFilters(element, filters))?.z ?? null
+}
