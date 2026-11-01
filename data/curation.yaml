@@ -23,7 +23,7 @@ Be:
   path: [ Prakrit, Greek, Latin, Old French, Middle English ]
 B:
   named: borax
-  about: borate mineral
+  about: boron mineral
   kinds: [ substance ]
   language: Middle Persian
   path: [ Middle Persian, Arabic, Medieval Latin, Anglo-Norman, Middle English ]
@@ -125,7 +125,7 @@ Ti:
   path: [ Greek ]
 V:
   named: Vanadís
-  about: name of Freyja
+  about: "Freyja's name"
   kinds: [ mythology ]
   language: Old Norse
   path: [ Old Norse ]
@@ -177,7 +177,7 @@ Ga:
   path: [ Latin ]
 Ge:
   named: Germania
-  about: origin unknown
+  about: unknown root
   kinds: [ place ]
   language: Latin
   path: [ Latin ]
@@ -254,12 +254,12 @@ Rh:
   path: [ Greek ]
 Pd:
   named: Pallas
-  gloss: "young woman?"
+  gloss: "maiden?"
   kinds: [ celestial, mythology ]
   language: Greek
   path: [ Greek, Latin ]
 Ag:
-  about: origin unknown
+  about: unknown root
   kinds: [ substance ]
   language: Old English
   path: [ Old English, Middle English ]
@@ -279,7 +279,7 @@ In:
   language: Greek
   path: [ Greek, Latin, English ]
 Sn:
-  about: origin unknown
+  about: unknown root
   kinds: [ substance ]
   language: Old English
   path: [ Old English, Middle English ]
@@ -287,7 +287,7 @@ Sn:
   symbolPath: [ Latin ]
   symbolGloss: "stannum"
 Sb:
-  about: origin unknown
+  about: unknown root
   kinds: [ substance ]
   language: Medieval Latin
   path: [ Medieval Latin, Middle English ]
@@ -468,7 +468,7 @@ Tl:
   language: Greek
   path: [ Greek ]
 Pb:
-  about: origin unclear
+  about: unclear root
   kinds: [ substance ]
   language: Old English
   path: [ Old English, Middle English ]
@@ -532,7 +532,7 @@ U:
   path: [ Greek, Latin ]
 Np:
   named: Neptune
-  about: Roman sea god
+  about: sea god
   kinds: [ celestial, mythology ]
   language: Latin
   path: [ Latin ]
@@ -586,13 +586,13 @@ Md:
   path: [ Russian ]
 No:
   named: A. Nobel
-  about: from Nöbbelöv
+  about: of Nöbbelöv
   kinds: [ person ]
   language: Swedish
   path: [ Swedish, Latin ]
 Lr:
   named: E. Lawrence
-  gloss: from Laurentum
+  gloss: of Laurentum
   kinds: [ person ]
   language: Latin
   path: [ Latin, English ]

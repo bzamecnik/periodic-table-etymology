@@ -16,3 +16,10 @@ export function tileLines(element: ChemicalElement): TileLine[] {
   if (symbolGloss) lines.push({ text: `${symbol}: ${symbolGloss}`, style: 'plain' })
   return lines
 }
+
+/** Long lines get smaller instead of being cut off; upright text and wide letters take more room. */
+export function lineScale({ text, style }: TileLine): number {
+  const letter = style === 'meaning' ? 0.47 : 0.54
+  const width = [...text].reduce((sum, char) => sum + letter + (/[mwMW]/.test(char) ? 0.28 : 0), 0)
+  return Math.max(0.78, Math.min(1, 6 / width))
+}

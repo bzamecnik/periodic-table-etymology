@@ -2,7 +2,7 @@ import { type ColorBy, tileColors } from '../colors.ts'
 import type { ChemicalElement } from '../data/index.ts'
 import { KIND_LABELS, languageCode, PLACEHOLDER } from '../data/vocabulary.ts'
 import { KindIcon } from './icons.tsx'
-import { tileLines } from './tileLines.ts'
+import { lineScale, tileLines } from './tileLines.ts'
 
 interface TileProps {
   element: ChemicalElement
@@ -30,15 +30,6 @@ function describe(element: ChemicalElement, dimmed: boolean): string {
 
 const hasOwnSymbolLanguage = ({ language, symbolLanguage }: ChemicalElement) =>
   symbolLanguage !== undefined && symbolLanguage !== PLACEHOLDER && symbolLanguage !== language
-
-/** Long lines get smaller instead of being cut off. */
-function lineScale(text: string): number {
-  if (text.length >= 16) return 0.8
-  if (text.length >= 15) return 0.84
-  if (text.length >= 13) return 0.92
-  if (text.length >= 12) return 0.96
-  return 1
-}
 
 /** Long names get smaller instead of being cut off. */
 function nameScale(name: string): number {
@@ -96,7 +87,7 @@ export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: 
             <span
               key={line.text}
               class={`tile__line tile__line--${line.style}`}
-              style={lines.length > 1 ? { '--line-scale': lineScale(line.text) } : undefined}
+              style={lines.length > 1 ? { '--line-scale': lineScale(line) } : undefined}
             >
               {line.text}
             </span>

@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { type ChemicalElement, elements } from '../data/index.ts'
 import { PeriodicTable } from './PeriodicTable.tsx'
 import { Tile } from './Tile.tsx'
-import { tileLines } from './tileLines.ts'
+import { lineScale, tileLines } from './tileLines.ts'
 
 const setup = (overrides = {}) => {
   const onSelect = vi.fn()
@@ -147,5 +147,26 @@ describe('a tile of an element with a symbol from another language', () => {
       />,
     )
     expect(screen.getByRole('button').querySelectorAll('.tile__code')).toHaveLength(1)
+  })
+})
+
+describe('lineScale', () => {
+  const scale = (text: string, style: 'plain' | 'meaning' = 'plain') => lineScale({ text, style })
+
+  it('leaves a short line alone', () => {
+    expect(scale('Ytterby')).toBe(1)
+  })
+
+  it('shrinks a long line, and upright text more than italics', () => {
+    expect(scale('Scandinavian text')).toBeLessThan(1)
+    expect(scale('Scandinavian', 'plain')).toBeLessThan(scale('Scandinavian', 'meaning'))
+  })
+
+  it('counts wide letters', () => {
+    expect(scale('mmmmmmmmmm')).toBeLessThan(scale('nnnnnnnnnn'))
+  })
+
+  it('never gets too small to read', () => {
+    expect(scale('a very very very long line of text')).toBe(0.78)
   })
 })
