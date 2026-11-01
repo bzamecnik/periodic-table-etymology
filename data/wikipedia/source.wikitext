@@ -1,0 +1,1067 @@
+{{Short description|Etymology of chemical elements}}
+
+[[File:Simple_Periodic_Table_Chart-blocks.svg|500px|right]]
+
+{{sidebar periodic table|history}}
+
+{{nowrap|This article lists}} the '''etymology of chemical elements of the periodic table'''.
+
+==History==
+Throughout the [[history of chemistry]], many chemical elements have been discovered. In the 19th century, [[Dmitri Mendeleev]] formulated the [[periodic table]], a table of elements which describes their structure. Because elements have been discovered at various times and places, from antiquity through the present day, their names have derived from several languages and cultures.
+
+===Named after places===
+{{main|List of chemical elements named after places}}
+Of the 118 known elements, 41 have names associated with, or specifically named after, places around the world or among astronomical objects. Of these, 32 have names tied to the places on Earth, and the other nine are named after [[Solar System]] objects; [[helium]] and [[selenium]] after the [[Sun]] and [[Moon]]; [[Mercury (element)|mercury]] (indirectly), [[tellurium]], [[uranium]] and [[neptunium]] after the planets [[mercury (planet)|Mercury]], [[Earth]], [[Uranus]] and [[Neptune]]; [[plutonium]] and [[cerium]] after the dwarf planets [[Pluto]] and [[Ceres (dwarf planet)|Ceres]], both considered planets when the elements were named; and [[palladium]] after the asteroid [[Pallas family|Pallas]].<ref name=Boudreaux/>
+
+===Named after people===
+{{main|List of chemical elements named after people}}
+Nineteen elements are connected with the names of twenty people (as [[curium]] honours both [[Marie Curie|Marie]] and [[Pierre Curie]]). Of these, only [[gadolinium]] and [[samarium]] occur in nature; the rest are [[synthetic element|synthetic]]. Fifteen elements were named after scientists; four other have indirect connection to the names of non-scientists.<ref name=Boudreaux>{{cite web|author1=Kevin A. Boudreaux|title=Derivations of the Names and Symbols of the Elements|url=http://www.angelo.edu/faculty/kboudrea/periodic/hist_names.htm|publisher=Angelo State University}}</ref> Only [[Glenn T. Seaborg]] and [[Yuri Oganessian]] were honoured during their lifetime by having elements named after them, and Oganessian is the only one still living. Elements named after four non-scientists in this table were actually named after a place or thing which in turn had been named after these people. [[Samarium]] was named from the mineral from which it was isolated, [[samarskite]], which was named after [[Vassili Samarsky-Bykhovets]]. [[Berkelium]] and [[livermorium]] were named after the California cities [[Berkeley, California|Berkeley]] and [[Livermore, California|Livermore]], the locations of the [[Lawrence Berkeley National Laboratory|Lawrence Berkeley]] and [[Lawrence Livermore National Laboratory|Lawrence Livermore]] national laboratories; the cities were named after [[George Berkeley]] and [[Robert Livermore]]. [[Americium]] was named after America, which was named after [[Amerigo Vespucci]].
+
+===Named after mythological entities===
+Also, mythological entities have had a significant impact on the naming of elements, directly or indirectly. [[Cerium]], [[europium]], [[helium]], [[iridium]], [[mercury (element)|mercury]], [[neptunium]], [[niobium]], [[palladium]], [[plutonium]], [[promethium]], [[selenium]], [[tantalum]], [[titanium]], [[thorium]], [[uranium]] and [[vanadium]] are all connected to mythological deities.
+
+===Named after minerals===
+Elements may also have been named after the minerals in which they were discovered. For example, beryllium is named after [[beryl]].
+
+===Controversies and failed proposals===
+{{main|List of chemical elements naming controversies|Transfermium wars}}
+Other element names given after people have been proposed but failed to gain official international recognition. These include columbium (Cb), hahnium (Ha), joliotium (Jl), and kurchatovium (Ku), names connected to [[Christopher Columbus]], [[Otto Hahn]], [[Irène Joliot-Curie]], and [[Igor Kurchatov]]; and also cassiopeium (Cp), a name coming from the constellation [[Cassiopeia (constellation)|Cassiopeia]] and is hence indirectly connected to the mythological [[Cassiopeia (mother of Andromeda)|Cassiopeia]].
+
+==Current naming practices and procedures==
+{{main|Systematic element name}}
+For the last two decades, [[IUPAC]] has been the governing body for naming elements. IUPAC has also provided a temporary name and symbol for unknown or recently synthesized elements.
+
+==List==
+{| class="wikitable sortable collapsible uncollapsed skin-invert" style="width:100%; font-size:90%; vertical-align:top"
+|+ Etymology of the chemical element names
+|-
+! colspan="2" | Element
+! Original word
+! Language of origin
+! Meaning
+! Nature of origin
+|-
+! Name<br/>{{nobold|(symbol)}}
+! ''Z''
+! colspan="4" style="text-align:left;" | Description {{nobold|1=(symbol etymology, former names)}}
+{{List of chemical element name etymologies row 
+|symbol=H 
+|word-origin-lang = Greek via Latin and French 
+|word-origin = {{lang|grc|ὕδωρ}} (root: {{lang|grc|ὑδρ}}-) + {{lang|grc|γενής}} ({{translit|grc|hydor genes}}) 
+|meaning     = "water + begetter"
+|origin      = descriptive 
+|desc        = From French {{lang|fr|hydrogène}}<ref>{{cite OEtymD|hydrogen}}</ref> and Latin {{lang|la|hydro-}} and {{lang|la|-genes}}, derived from the Greek {{lang|grc|ὕδωρ γείνομαι}} ({{translit|grc|hydor geinomai}}), meaning "Ι&nbsp;beget water".
+}}
+{{List of chemical element name etymologies row 
+|symbol=He 
+|word-origin-lang = Greek 
+|word-origin = {{lang|grc|ἥλιος}} ({{translit|grc|hélios}}) 
+|meaning     = "sun"
+|origin      = astrological;<br/>mythological 
+|desc        = Named after the Greek {{lang|grc|ἥλιος}} ({{translit|grc|[[helios]]}}), meaning "the sun" or the mythological sun-god.<ref name="mythology-planet-element">Some elements (particularly ancient elements) were associated with Greek (or Roman or other) gods or people, in [[Greek mythology]] (or other mythology), and with [[planet]]s (or other objects in the [[Solar System]]), such as [[Mercury (mythology)]] – [[Mercury (planet)]] – [[Mercury (element)]], etc.<br/>Also, astrological symbols for the planets were often used as symbols for the ancient elements.</ref> It was first identified by its characteristic emission lines in the Sun's [[Spectral line|spectrum]].
+}}
+{{List of chemical element name etymologies row 
+|symbol=Li 
+|word-origin-lang = Greek 
+|word-origin = {{lang|grc|λίθος}} ({{translit|grc|lithos}}) 
+|meaning     = "stone"
+|desc        = From Greek {{lang|grc|λίθος}} ({{translit|grc|lithos}}) meaning "stone", because it was discovered from a mineral while other common alkali metals ([[sodium]] and [[potassium]]) were discovered from plant tissue.
+}}
+{{List of chemical element name etymologies row 
+|symbol=Be 
+|word-origin-lang = [[Sanskrit]], [[Pali]], and [[Prakrit]] via Greek, Latin, [[Old French]], and [[Middle English]] 
+|word-origin = City of [[Belur, Karnataka|Belur]] in [[India]] via Greek {{lang|grc|βήρυλλος}} ({{translit|grc|beryllos}})
+|meaning     = "[[beryl]]", a mineral
+|origin      = descriptive (colour)
+|desc        = {{lang|grc|βήρυλλος}} ({{translit|grc|beryllos}}), denoting [[beryl]], which contains beryllium.<ref>At one time, beryllium was called '''glucinium''', which is from Greek {{lang|grc|γλυκύς}} ({{translit|grc|glykys}}), meaning "sweet", due to the sweet taste of its [[salt (chemistry)|salt]]s.</ref> The word is derived (via Latin: {{lang|la|beryllus}} and French: {{lang|fr|béryl}}) from the Greek {{lang|grc|βήρυλλος}} ({{translit|grc|bērullos}}), "a blue-green [[Spar (mineralogy)|spar]]", from [[Prakrit]] {{lang|und-Deva|वॆरुलिय‌}} ({{translit|Deva|veruliya}}), from [[Pali|Pāli]] {{lang|pi|वेलुरिय}} ({{translit|Deva|veḷuriya}}), {{lang|und-Deva|भेलिरु}} ({{translit|Deva|veḷiru}}) or {{lang|und-Deva|भिलर्}} ({{translit|Deva|viḷar}})<!-- repetitions? -->: "to become pale", in reference to the pale semiprecious gemstone [[beryl]].<ref>{{OEtymD|beryl}}<!-- to check for relevance --></ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=B
+|word-origin-lang = [[Arabic]], [[Medieval Latin]], [[Anglo-Norman language|Anglo-Norman]], [[Middle French]], and [[Middle English]]
+|word-origin = {{lang|ar|بورق}} ({{translit|ar|buraq}})
+|desc        = From the Arabic {{lang|ar|بورق}} ({{translit|ar|buraq}}), which refers to [[borax]]. Possibly derived from [[Persian language|Persian]] {{lang|fa|بوره}} ({{translit|fa|burah}}). The Arabic was adapted as [[Medieval Latin]] {{lang|la|baurach}}, [[Anglo-Norman language|Anglo-Norman]] {{lang|xno|boreis}}, and [[Middle English]] {{lang|enm|boras}}, which became the source of the English "boron".
+}}
+{{List of chemical element name etymologies row
+|symbol=C
+|word-origin-lang = Latin via French
+|word-origin = {{lang|fr|charbone}}
+|meaning     = "charcoal"
+|desc        = From French {{lang|fr|charbone}}, which in turn came from Latin {{lang|la|carbō}}, meaning "charcoal" and is related to {{lang|la|carbōn}}, meaning "a coal". (The German and [[Dutch language|Dutch]] names, "{{lang|de|Kohlenstoff}}" and "{{lang|nl|koolstof}}", respectively, both literally mean "coal matter".) These words come from the [[Proto-Indo-European]] base {{lang|ine-x-proto|*ker-}} meaning "heat", "fire", or "to burn".<ref>{{cite OEtymD|carbon}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=N
+|word-origin-lang = Greek via Latin and French
+|word-origin = {{lang|grc|νίτρον}} (Latin: {{lang|la|nitrum}}) {{lang|grc|-γενής}} ({{translit|grc|-genes}})
+|meaning     = "native-soda begetter"
+|origin      = descriptive
+|desc        = From French {{lang|fr|nitrogène}}<ref>{{cite OEtymD|nitrogen}}</ref> derived from Greek {{lang|grc|νίτρον γείνομαι}} ({{translit|grc|nitron geinomai}}), meaning "I form/beget native-soda ([[niter]])".<ref>'''Nitrogen''', The pure gas is inert enough that [[Antoine Lavoisier]] referred to it as {{lang|fr|azote}}, meaning "without life", since animals placed in it died of asphyxiation. This term became the French for '''nitrogen''' and later spread to many other languages.</ref> The original source is either the Arabic word {{lang|ar|نطرون}} ({{translit|ar|natrun}}) or the [[Egyptian language|Egyptian]] word {{translit|egy|netjeri}}. (See the entry on Sodium below).<ref>{{cite book
+| last= Vygus| first= Mark
+| date= April 2012
+| title= Vygus dictionary
+| url= http://www.pyramidtextsonline.com/MarkVygusDictionary.pdf
+| page= 1546}}</ref> 
+|alt-name    = '''{{lang|fr|azote}}''' (French), from Greek {{lang|grc|ἄζωτος}} ({{translit|grc|azōtos}}) "lifeless" but possibly inspired by '''azoth''', one of the [[List of alchemical substances#Others|alchemical names]] of mercury, from [[Andalusian Arabic]] {{lang|ar|al-zuq}}, the [[Classical Arabic]] name of that element.
+}}
+{{List of chemical element name etymologies row
+|symbol=O
+|word-origin-lang = Greek via French
+|word-origin = {{lang|grc|ὀξύ γείνομαι}} ({{translit|grc|oxy geinomai}})/{{lang|fr|oxygène}}
+|meaning= "to bring forth acid"
+|desc        = From Greek {{lang|grc|ὀξύ}} [[wikt:γείνομαι|γείνομαι]] ({{translit|grc|oxy geinomai}}), meaning "Ι bring forth acid", as it was believed to be an essential component of acids. This phrase was corrupted into the French {{lang|fr|oxygène}}, which became the source of the English "oxygen".<ref>{{cite OEtymD|oxygen}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=F
+|word-origin-lang = Latin
+|word-origin = {{lang|la|fluor}}
+|meaning     = "a flowing"
+|desc        = From Latin {{lang|la|fluor}} meaning "a flowing", from mineral name [[fluorspar]] (calcium fluoride). Fluorspar was used to make iron flowing in smelting.
+}}
+{{List of chemical element name etymologies row
+|symbol=Ne
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|νέος}} ({{translit|grc|neos}})
+|meaning     = "new"
+|desc        = From Greek {{lang|grc|νέος}} ({{translit|grc|neos}}), meaning "new".
+}}
+{{List of chemical element name etymologies row
+|symbol=Na
+|word-origin-lang = English
+|word-origin = ''{{lang|en|[[sodium|soda]]}}''
+|desc        = From the English "[[sodium bicarbonate|soda]]", used in names of [[:Category:Sodium compounds|sodium compounds]] such as [[caustic soda]], [[soda ash]], and [[baking soda]]. Probably from Italian {{lang|it|sida}} (or directly from [[Medieval Latin]] {{lang|la|soda}}) meaning "a kind of saltwort", from which soda was obtained, of uncertain origin.<ref>{{OEtymD|soda}}</ref>
+|symbol-etym = '''Na''' is from the [[Neo-Latin]] noun '''{{lang|la|natrium}}''', derived from Greek {{lang|grc|νίτρον}} ({{translit|grc|nítron}}), "natural soda, a kind of [[salt (chemistry)|salt]]".<ref>In [[medieval Europe]], '''{{lang|la|sodanum}}''' is the Latin name of "a compound of sodium".</ref> The original source is either the Arabic word {{lang|ar|نطرون}} ({{translit|ar|natrun}}) or the [[Egyptian language|Egyptian]] word {{translit|egy|netjeri}}.<ref>{{cite book
+| last= Vygus| first= Mark
+| date= April 2012
+| title= Vygus dictionary
+| url= http://www.pyramidtextsonline.com/MarkVygusDictionary.pdf
+| page= 1546}}</ref><div style= "float:right"><hiero>R8-X1</hiero></div>
+}}
+{{List of chemical element name etymologies row
+|symbol=Mg
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|Μαγνησία}} ({{translit|grc|Magnesia}})
+|origin      = toponym
+|desc        = From the Ancient Greek Μαγνησία ([[Ancient Magnesia|Magnesia]]) (district in [[Thessaly]]), where it was discovered.
+}}
+{{List of chemical element name etymologies row
+|symbol=Al
+|word-origin-lang = Latin
+|word-origin = {{lang|la|alumen}}
+|meaning     = "[[alum]]" (literally: bitter salt)<ref>{{OEtymD|aluminium| access-date= 2011-01-02}}</ref>
+|desc        = Latin {{lang|la|alumen}}, which means "[[alum]]" (literally: bitter salt).
+}}
+{{List of chemical element name etymologies row
+|symbol=Si
+|word-origin-lang = Latin
+|word-origin = {{lang|la|silex}}, {{lang|la|silicis}}
+|meaning     = "flint"
+|origin      = descriptive
+|desc        = From Latin {{lang|la|silex}} or {{lang|la|silicis}}, which means "[[flint]]", a kind of stone (chiefly silicon dioxide).
+}}
+{{List of chemical element name etymologies row
+|symbol=P
+|word-origin-lang = Greek via Latin<ref>{{cite OEtymD|phosphorus}}</ref>
+|word-origin = {{lang|grc|φῶς}} + {{lang|grc|φόρος}} ({{translit|grc|phos + phoros}})
+|meaning     = "light-bearer"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|φῶς}} + {{lang|grc|φόρος}} ({{translit|grc|phos + phoros}}), which means "light bearer", because [[white phosphorus]] emits a faint glow upon exposure to [[oxygen]].<br/>Phosphorus was the ancient name for [[Venus]], or [[Hesperus]], the Morning Star.<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=S
+|word-origin-lang = Latin<br/><br/>[[Proto-Indo-European]] (PIE)
+|word-origin = [[Old Latin]] {{lang|la|sulpur}}<br/>(later {{lang|la|sulphur}}, {{lang|la|sulfur}})<br/><!-- double br = bad formatting; to be improved --><br/>[[Proto-Indo-European language|Proto-Indo-European]] {{lang|ine-x-proto|*swépl̥}}<br/>(genitive {{lang|ine-x-proto|*sulplós}}),<br/>nominal derivative of {{lang|ine-x-proto|*swelp}}.<ref>Mallory & Adams (2006) ''The Oxford introduction to Proto-Indo-European and the Proto-Indo-European world'', Oxford University Press</ref>
+|meaning     = "to burn"
+|desc        = The word came into Middle English from Anglo-Norman {{lang|xno|sulfre}}, itself derived through Old French {{lang|fr|soulfre}} from Late Latin {{lang|la|sulfur}}.<ref>{{cite OEtymD|sulfur}}</ref> From [[Proto-Indo-European language|Proto-Indo-European]] {{lang|ine-x-proto|*swelp}} "to burn"
+}}
+{{List of chemical element name etymologies row
+|symbol=Cl
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|χλωρός}} ({{translit|grc|chlorós}})
+|meaning     = "pale green"<ref>{{cite OEtymD|chlorine}}</ref>
+|origin      = descriptive (colour)
+|desc        = From Greek {{lang|grc|χλωρός}} ({{translit|grc|chlorós}}), which means "yellowish green" or "greenish yellow", because of the colour of the gas.
+}}
+{{List of chemical element name etymologies row
+|symbol=Ar
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|ἀργόν}} ({{translit|grc|argon}})
+|meaning     = "inactive"
+|origin      = descriptive
+|desc        = Greek [[Inert gas|{{translit|grc|argon}}]] means "inactive" (literally: "slow").
+}}
+{{List of chemical element name etymologies row
+|symbol=K
+|word-origin-lang = [[Neo-Latin]] via [[Dutch language|Dutch]] and English<ref name="cite OEtymD|potash">{{cite OEtymD|potash}}</ref>
+|word-origin = {{lang|la|potassa}}; {{lang|nl|potasch}} via ''{{lang|en|[[potash]]}}''<ref>{{cite OEtymD|potassium}}</ref>
+|meaning     = "pot-ash"
+|desc        = From the English "[[potash]]": pot-ash (potassium compound prepared from an [[alkali]] extracted in a ''pot'' from the ''ash'' of burnt wood or tree leaves).<br/>Potash is a [[calque]] of Dutch {{lang|nl|potaschen}}, which means "pot ashes".<ref name="cite OEtymD|potash">{{cite OEtymD|potash}}</ref>
+|symbol-etym = '''K''' is from the Latin name '''{{lang|la|kalium}}''', from [[Arabic]] {{lang|ar|القلي}} ({{translit|ar|al qalīy}}), which means "calcined ashes".
+}}
+{{List of chemical element name etymologies row
+|symbol=Ca
+|word-origin-lang = Greek/Latin
+|word-origin = {{lang|grc|χάλιξ}}/{{lang|la|calx}}
+|meaning     = "pebble"/"limestone"<ref>{{cite OEtymD|calcium}}</ref>
+|desc        = From Latin {{lang|la|calx}}, which means "lime". Calcium was known as early as the first century when the [[Ancient Rome|Ancient Romans]] prepared [[Lime (mineral)|lime]] as [[calcium oxide]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Sc
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Scandia}}
+|meaning     = "Scandinavia"
+|origin      = toponym
+|desc        = Named from Latin {{lang|la|Scandia}}, "[[Scandinavia]]".
+|alt-name    = '''eka-boron'''<ref name="eka-named elements">'''eka-... named elements''': [[Dmitri Mendeleev|Mendeleev]] [[Mendeleev's predicted elements|predicted]] and described properties of then-unknown elements, based on the then empty locations in his 1871 [[Periodic table]]. The predictions proved to be correct with the discovery of [[scandium]], [[gallium]], [[technetium]] and [[germanium]]. He named those unknown, unnamed elements "eka-...", for example "eka-boron"; the prefix means ''one more'' (i.e., one more row ''below'' boron in the periodic table). Ultimately, eka-boron was discovered, named "aluminium" and indeed is located below boron.<br/>
+The elements he predicted, '''eka-boron''', '''eka-aluminium''', '''eka-manganese''', and '''eka-silicon'''  proved to be good predictors of [[scandium]], [[gallium]], [[technetium]] and [[germanium]], respectively.<br/>
+The prefix {{translit|sa|eka-}}, from the [[Sanskrit]], means "one" (one place down from a known element in the table), and is sometimes used in discussions about any more undiscovered element. For example, [[darmstadtium]] is sometimes referred to as '''eka-platinum'''.</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Ti
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|Τιτάν}}, {{gcl|GEN}}: {{lang|grc|Τιτάνος}} ({{translit|grc|Titan}})
+|meaning     = "Titans", sons of Gaia
+|origin      = mythological
+|desc        = After the "[[Titans]]", the first offspring of [[Gaia (mythology)|Gaia]] in Greek mythology.<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=V
+|word-origin-lang = [[Old Norse]]
+|word-origin = {{lang|non|Vanadís}}
+|meaning     = "[[Dís]] of the [[Vanir]]"
+|origin      = mythological
+|desc        = From [[Old Norse]] {{lang|no|Vanadís}}, one of the names of the [[Vanir|Vanr]] goddess [[Freyja]] in [[Norse mythology]], because of multicoloured [[chemical compound]]s deemed beautiful.<ref name="mythology-planet-element"/><ref name="naming controversy"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Cr
+|word-origin-lang = Greek via French
+|word-origin = {{lang|grc|χρῶμα}} ({{translit|grc|chróma}})
+|meaning     = "colour"
+|origin      = descriptive (colour)
+|desc        = From Greek {{lang|grc|χρῶμα}} ({{translit|grc|chróma}}), "colour", because of its multicoloured compounds. This word was adapted as the French {{lang|fr|chrome}}, and adding the suffix {{translit|la|-ium}} created the English "chromium".<ref>{{cite OEtymD|chromium}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Mn
+|word-origin-lang = Greek via Latin, [[Italian language|Italian]], and French
+|word-origin = {{lang|grc|Μαγνησία}}<br/>({{translit|grc|Magnesia}};<br/>Medieval Latin: {{lang|la|magnesia}})
+|meaning     = "[[Magnesia (regional unit)]]", Greece
+|origin      = descriptive, toponym
+|desc        = From Latin {{lang|la|Magnesia}}, ultimately from Ancient Greek region [[Ancient Magnesia|Magnesia]]. The word ''Magnesia'' evolved into {{lang|it|manganese}} in [[Italian language|Italian]] and into {{lang|fr|manganèse}} in French.
+}}
+{{List of chemical element name etymologies row
+|symbol=Fe
+|word-origin-lang = [[Old English]] via [[Middle English]]
+|word-origin = {{lang|en|īsern}}<br/>(earlier: {{lang|en|īren/īsen}})<br/>{{lang|en|/yren/yron}}
+|meaning     = "holy metal or strong metal"<ref>{{cite OEtymD|iron}}</ref>
+|origin      = descriptive
+|desc        = From the [[Anglo-Saxon language|Anglo-Saxon]] {{lang|ang|īsern}} which is derived from [[Proto-Germanic]] {{lang|de|isarnan}} meaning "holy metal" or "strong metal".
+|symbol-etym = '''Fe''' is from Latin '''{{lang|la|ferrum}}''', meaning "iron".
+}}
+{{List of chemical element name etymologies row
+|symbol=Co
+|word-origin-lang = German
+|word-origin = {{lang|de|[[Kobold]]|italic=yes}}
+|meaning     = "goblin"
+|desc        = From German {{lang|de|Kobold}}, which means "goblin". The metal was named by miners, because it was poisonous and troublesome ([[pollution|polluted]] and degraded by other mined elements, such as nickel). Other sources cite the origin in the silver miners' belief that cobalt had been placed by "[[Kobold]]s", who had stolen the silver. Some suggest that the name may have been derived from Greek {{lang|grc|κόβαλος}} ({{translit|grc|kobalos}}), which means "mine" and which may have common roots with kobold, goblin, and cobalt.
+}}
+{{List of chemical element name etymologies row
+|symbol=Ni
+|word-origin-lang = [[Swedish language|Swedish]] via German<ref name = oetymdnickel>{{cite OEtymD|nickel}}</ref>
+|word-origin = {{lang|sv|Kopparnickel}}/<br/>{{lang|de|Kupfernickel}}
+|meaning     = "copper-coloured ore"
+|origin      = descriptive
+|desc        = From Swedish {{lang|sv|kopparnickel}}, meaning "copper-coloured ore". This referred to the ore [[niccolite]] from which it was obtained.<ref name = oetymdnickel/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Cu
+|word-origin-lang = Greek? via Latin, [[West Germanic languages|West Germanic]], [[Old English]], and [[Middle English]]<ref>{{cite OEtymD|copper}}</ref>
+|word-origin = {{lang|grc|Κύπριος}} ({{translit|grc|Kyprios}})?
+|meaning     = "who/which is from [[Cyprus]]"
+|origin      = toponym
+|desc        = Possibly from Greek {{lang|grc|Κύπριος}} ({{translit|grc|Kyprios}}) (which comes from {{lang|grc|Κύπρος}} ({{translit|grc|Kypros}}), the Greek name of Cyprus) via Latin {{lang|la|cuprum}}, West Germanic {{lang|gmw|*kupar}}, Old English {{lang|ang|coper}}/{{lang|ang|copor}}, and Middle English {{lang|enm|coper}}. The Latin term, during the Roman Empire, was {{lang|la|aes cyprium}}; {{lang|la|aes}} was the generic term for copper alloys such as [[bronze]]. {{translit|la|Cyprium}} means "[[Cyprus]]" or "which is from Cyprus", where so much of it was mined; it was simplified to {{translit|grc|cuprum}} and then eventually Anglicized as "copper" (Old English {{lang|ang|coper/copor}}).
+|symbol-etym = '''Cu''' is from the Latin name '''{{lang|la|cuprum}}''' ("copper").
+}}
+{{List of chemical element name etymologies row
+|symbol=Zn
+|word-origin-lang = German
+|word-origin = {{lang|de|Zink}}
+|meaning     = ?"Cornet"
+|desc        = From German {{lang|de|Zink}} which is related to {{lang|de|Zinken}} "prong, point", probably alluding to its spiky crystals. May be derived from [[Old Persian]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Ga
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Gallia}}
+|meaning     = "Gaul" (Ancient France)
+|origin      = toponym
+|desc        = From Latin {{lang|la|Gallia}}, which means "[[Gaul]]" (Ancient France), and also {{lang|fr|gallus}}, which means "rooster". The element was obtained as free metal by [[Lecoq de Boisbaudran]], who named it after his native land France. Allegations were later made that he had also named it after himself, as {{lang|la|gallus}} is Latin for {{lang|fr|le coq}} ("[[rooster]]"), but he denied that this had been his intention.<ref name="denied allegations">{{cite journal |title= The discovery of the elements. XIII. Some elements predicted by Mendeleeff |pages= 1605–1619 |last= Weeks |first= Mary Elvira |author-link=Mary Elvira Weeks |doi=10.1021/ed009p1605 |journal= [[Journal of Chemical Education]] |volume= 9 |issue= 9 |date= 1932 |bibcode= 1932JChEd...9.1605W}}</ref>
+|alt-name    = '''eka-aluminium''' by Mendeleev, who had predicted its existence.<ref name="eka-named elements"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Ge
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Germania}}
+|meaning     = "Germany"
+|origin      = toponym
+|desc        = From Latin {{lang|la|Germania}}, which means "Germany".
+|alt-name    = '''eka-silicon''' by Mendeleev.<ref name="eka-named elements"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=As
+|word-origin-lang = [[Syriac language|Syriac]]/[[Persian language|Persian]] via Greek, Latin, [[Old French]], and [[Middle English]]
+|word-origin = {{lang|grc|ἀρσενικόν}} ({{translit|grc|arsenikon}})
+|origin      = descriptive (colour)
+|meaning     = ?"male"
+|desc        = From Greek {{lang|grc|ἀρσενικόν}} ({{translit|grc|arsenikon}}), which is adapted from [[Syriac language|Syriac]] {{lang|syc|{{Script/Estrangelo Syriac|ܠܫܢܐܠܐ ܙܐܦܢܝܐ}}}} ({{translit|syc|(al) zarniqa}})<ref name="cite OEtymD|arsenic">{{cite OEtymD|arsenic}}</ref> and [[Persian language|Persian]] {{lang|fa|زرنيخ}} ({{translit|fa|zarnik}}), "yellow [[orpiment]]". The Greek {{translit|grc|arsenikon}} is [[false etymology|paretymologically]]<!-- then why note here? and why the unknown word shown? --> related to the Greek word {{lang|grc|ἀρσενικός}} ({{translit|grc|arsenikos}}), which means "masculine" or "potent". These words were adapted as the Latin {{lang|la|arsenicum}} and Old French {{lang|fr|arsenic}}, which is the source for the English arsenic.<ref name="cite OEtymD|arsenic">{{cite OEtymD|arsenic}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Se
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|σελήνη}} ({{translit|grc|selene}})
+|meaning     = "moon"
+|origin      = astrological;<br/>mythological
+|desc        = From Greek {{lang|grc|σελήνη}} ({{translit|grc|selene}}), which means "Moon", and also the moon-goddess [[Selene]].<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Br
+|word-origin-lang = Greek via French
+|word-origin = {{lang|grc|βρῶμος}} ({{translit|grc|brómos}})<ref>{{cite OEtymD|bromine}}</ref>
+|meaning     = "dirt" or "stench" (of male goat)<ref>{{cite book
+ |last1= Gemoll |first1= W.
+ |last2= Vretska |first2= K.
+ |title= Griechisch-Deutsches Schul- und Handwörterbuch
+ |trans-title= Greek–German dictionary
+ |edition= 9th
+ |publisher= öbvhpt
+ |isbn= 3-209-00108-1
+ |year= 1997}}</ref>
+|desc        = {{lang|grc|βρῶμος}} ({{translit|grc|brómos}}) means "stench" (literally: "clangor"), due to its characteristic smell.
+}}
+{{List of chemical element name etymologies row
+|symbol=Kr
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|κρυπτός}} ({{translit|grc|kryptos}})
+|meaning     = "hidden"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|κρυπτός}} ({{translit|grc|kryptos}}), which means "hidden one", because of its colourless, odourless, tasteless, gaseous properties, as well as its rarity in nature.
+}}
+{{List of chemical element name etymologies row
+|symbol=Rb
+|word-origin-lang = Latin
+|word-origin = {{lang|la|rubidus}}
+|meaning     = "deepest red"
+|origin      = descriptive (colour)
+|desc        = From Latin {{lang|la|rubidus}}, which means "deepest red", because of the colour of a [[spectral line]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Sr
+|word-origin-lang = [[Scottish Gaelic]] via English
+|word-origin = [[Strontian]]
+|meaning     = proper name
+|origin      = toponym
+|desc        = Named after [[strontianite]], the mineral. Strontianite itself was named after the town of [[Strontian]] ([[Scotland]]) where the mineral was found; {{lang|gd|[[Sròn]] an t-Sìthein}} literally means "nose ['point'] of the [[fairy hill]]".
+}}
+{{List of chemical element name etymologies row
+|symbol=Y
+|word-origin-lang = [[Swedish language|Swedish]]
+|word-origin = {{lang|sv|Ytterby}}
+|meaning     = proper name 
+|origin      = toponym
+|desc        = Named after the mineral [[yttria]] (yttrium oxide), where it was originally extracted from. ''Yttria'' itself was named after [[Ytterby]], Sweden.<ref name="names from Ytterby">In a mine near [[Ytterby]], Sweden, many [[Ytterby#Chemical discoveries|elements were discovered]]. Four elements are named after Ytterby: [[#Y|§&nbsp;yttrium]]&nbsp;(Y), [[#Tb|§&nbsp;terbium]]&nbsp;(Tb), [[#Er|§&nbsp;erbium]]&nbsp;(Er), [[#Yb|§&nbsp;ytterbium]]&nbsp;(Yb).</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Zr
+|word-origin-lang = [[Syriac language|Syriac]]/[[Persian language|Persian]] via Arabic and German
+|word-origin = {{lang|syc|ܙܐܪܓܥܢܥ}} ({{translit|syc|zargono}}),<ref>{{cite web
+| last= Pearse| first= Roger
+| title= Syriac Literature
+| date= 2002-09-16
+| url= http://www.tertullian.org/rpearse/oriental/syriac.htm
+| access-date= 2008-02-11}}</ref><br/>{{lang|fa|زرگون}} ({{translit|fa|zargûn}})
+|meaning     = "gold-like"
+|desc        = From [[Arabic]] {{lang|ar|زركون}} ({{translit|ar|zarkûn}}). Derived from [[Persian language|Persian]] {{lang|fa|زرگون}} ({{translit|fa|zargûn}}), which means "gold-like". {{lang|de|Zirkon}} is the German variant of these and is the origin of the English ''zircon''.<ref>{{OEtymD|zircon| access-date= 2011-01-02}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Nb
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|Νιόβη}} ({{translit|grc|Niobe}})
+|meaning     = "snowy"
+|origin      = mythological
+|desc        = Named after [[Niobe]], daughter of [[Tantalus]] in classical mythology.<ref name="naming controversy"/><ref name="mythology-planet-element"/>
+|alt-name    = '''columbium''' from [[Columbia (personification)|Columbia]], personification of the United States.
+}}
+{{List of chemical element name etymologies row
+|symbol=Mo
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|μόλυβδος}} ({{translit|grc|molybdos}})
+|meaning     = "lead-like"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|μόλυβδος}} ({{translit|grc|molybdos}}), "lead", due to confusion with lead ore [[galena]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Tc
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|τεχνητός}} ({{translit|grc|technetos}})
+|meaning     = "artificial"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|τεχνητός}} ({{translit|grc|technetos}}), which means "artificial", because it was the first artificially produced element.
+|alt-name    = '''eka-manganese'''<ref name="eka-named elements"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Ru
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Ruthenia}}
+|meaning     = "Ruthenia", Kievan Rus'<ref>{{Cite book
+| url= https://books.google.com/books?id=t124cP06gg0C&q=Ruthenia+-+Kievan+Rus&pg=PA11
+| title= A History of Ukraine
+| last= Magocsi
+| first= Paul Robert
+| date= 1996-01-01
+| publisher= University of Toronto Press
+| isbn= 9780802078209
+| language= en}}</ref>
+|origin      = toponym (exonym)
+|desc        = From Latin [[Ruthenia]], geographical [[exonym]] for [[Kievan Rus']].
+}}
+{{List of chemical element name etymologies row
+|symbol=Rh
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|ῥόδον}} ({{translit|grc|rhodon}})
+|meaning     = "rose"
+|origin      = descriptive (colour)
+|desc        = From Greek {{lang|grc|ῥόδον}} ({{translit|grc|rhodon}}), which means "rose". From its rose-red [[:Category:Rhodium compounds|compounds]]<!-- ? are they? -->.
+}}
+{{List of chemical element name etymologies row
+|symbol=Pd
+|word-origin-lang = Greek via Latin
+|word-origin = {{lang|grc|Παλλάς}} (genitive: {{lang|grc|Παλλάδος}}) ({{translit|grc|Pallas}})
+|meaning     = "little maiden"<ref>{{OEtymD|Pallas|access-date= 2011-01-02}}</ref>
+|origin      = astrological;<br/>mythological
+|desc        = Named after [[2 Pallas|Pallas]], the asteroid discovered two years earlier. The asteroid itself was named after [[Athena|Pallas Athena]], goddess of wisdom and victory.<ref name="mythology-planet-element"/> The word Palladium is derived from Greek {{lang|grc|Παλλάδιον}} and is the neuter version of {{lang|grc|Παλλάδιος}}, meaning "of Pallas".<ref>{{OEtymD|palladium| access-date= 2011-01-02}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Ag
+|word-origin-lang = [[Akkadian language|Akkadian]] via [[Old English]] and [[Middle English]]
+|word-origin = {{cuneiform|𒊭𒁺𒁍/𒊭𒅈𒇥}} ({{translit|ak|siolfor}}/{{translit|ak|seolfor}})
+|meaning     = "to refine", "smelt"
+|desc        = Possibly borrowed from Akkadian {{cuneiform|𒊭𒅈𒇥}} ({{translit|ak|sarpu}}) "refined silver" and related to {{cuneiform|𒊭𒁺𒁍}} ({{translit|ak|sarapu}}) "to refine", "smelt".<ref>{{OEtymD|silver| access-date= 2011-01-02}}</ref><br/>From [[Old English]], {{translit|ang|seolfor}} which was derived from [[Proto-Germanic]] {{lang|gem-x-proto|*silubra-}}; compare [[Old High German]] {{lang|goh|silabar}}; and has cognates in [[Balto-Slavic languages]]: {{lang|cu|sĭrebro}}, {{lang|lt|sidabras}}, [[Old Prussian]] {{lang|prg|sirablan}}.<br/>Alternatively, possibly from one of the [[Pre-Indo-European languages]], compare {{lang|eu|zilar}}.
+|symbol-etym = '''Ag''' is from the Latin name '''{{lang|la|argentum}}''' ("silver"), which is derived from [[Proto-Indo-European]] {{lang|ine-x-proto|*arg-ent-}}.
+}}
+{{List of chemical element name etymologies row
+|symbol=Cd
+|word-origin-lang = Greek/Latin
+|word-origin = {{lang|grc|καδμεία}} ({{translit|grc|kadmeia}})
+|meaning     = "[[Earth (classical element)|Earth]]" (as classical element),<br/>"[[calamine]]" or Cadmean earth<sup>[?]</sup>
+|desc        = From Latin {{lang|la|cadmia}}, which is derived from Greek {{lang|grc|καδμεία}} ({{translit|grc|kadmeia}}) and means "[[calamine]]", a cadmium-bearing mixture of minerals. Cadmium is named after [[Cadmus]] (in Greek: {{lang|grc|Κάδμος}}: {{translit|grc|Kadmos}}), a character in Greek mythology and calamine is derived from {{lang|fr|Le Calamine}}, the French name of the [[Belgium|Belgian]] town of [[Kelmis]].
+}}
+{{List of chemical element name etymologies row
+|symbol=In
+|word-origin-lang = Greek via Latin and English
+|word-origin = {{lang|la|indigo}}
+|origin      = descriptive (colour)
+|desc        = Named after ''[[Indigo (color)|indigo]]'', because of an indigo-coloured [[atomic spectrum|spectrum]] line. The English word indigo is from Spanish {{lang|es|indico}} and Dutch {{lang|nl|indigo}} (from Portuguese {{lang|pt|endego}}<!-- ? unclear -->), from Latin {{lang|la|indigo}}, from Greek {{lang|grc|ἰνδικόν}} ({{translit|grc|indikon}}): "blue dye from India".
+}}
+{{List of chemical element name etymologies row
+|symbol=Sn
+|word-origin-lang = Anglo-Saxon via [[Middle English]]
+|word-origin = {{lang|en|tin}}
+|desc        = The word ''{{lang|en|tin}}'' is borrowed from a [[Proto-Indo-European language]], and has cognates in several [[Germanic languages|Germanic]] and [[Celtic languages]].<ref>'''Tin''' – The American Heritage Dictionary [https://www.ahdictionary.com/word/search.html?q= tin]</ref>
+|symbol-etym = '''Sn''' is from its Latin name '''{{lang|la|stannum}}'''.
+}}
+{{List of chemical element name etymologies row
+|symbol=Sb
+|word-origin-lang = Greek? via [[Medieval Latin]] and [[Middle English]]<ref>{{cite web|url= http://dictionary.reference.com/browse/antimony |title= Antimony &#124; Define Antimony at Dictionary.com |publisher= Dictionary.reference.com |access-date= 2011-01-02}}</ref>
+|meaning     = various
+|desc        = Possibly from Greek {{lang|grc|ἀντί}} + {{lang|grc|μόνος}} ({{translit|grc|anti + monos}}), approximately meaning "opposed to solitude", as believed never to exist in pure form, or {{lang|grc|ἀντί}} + {{lang|grc|μοναχός}} ({{translit|grc|anti + monachos}}) for "monk-killer" (in French folk etymology, anti-moine "monk's bane"), because many early alchemists were monks, and antimony is poisonous. This may also be derived from the [[Pharaonic]] ([[Ancient Egypt]]ian), {{translit|egy|Antos [[Ammon]]}} (expression), which could be translated as "bloom of the god Ammo".
+|symbol-etym = '''Sb''' is from Latin name '''{{lang|la|stibium}}''', which is derived from Greek {{lang|grc|Στίβι}} ({{translit|grc|stíbi}}), a variant of {{lang|grc|στίμμι}} ({{translit|grc|stimmi}}); genitive: {{lang|grc|στίμμεος}} or {{lang|grc|στίμμιδος}}; probably a loan word from Arabic or Egyptian <!-- hiero -->{{translit|egy|sdm}} meaning "eyepaint".<div style= "float:right;"><hiero>O34:D46-G17-F21:D4</hiero></div><ref>{{cite book
+| last= Vygus| first= Mark| date= April 2012
+| title= Vygus dictionary
+| url= http://www.pyramidtextsonline.com/MarkVygusDictionary.pdf
+| page= 1409}}</ref><ref>'''Antimony''', '''Sb'''
+*[[Littré]] suggests that the first form is derived from {{lang|grc|*stimmida}}<!-- assumed greek grc in this Littré part 10-08-2021 -->, a hypothetical alternative [[accusative]] of {{lang|grc|stimmi}} (the canonical accusative of the noun is the same as the nominative: {{lang|grc|stimmi}}). The Arabic word for the substance, as "mark" or "the cosmetic", can appear as {{lang|ar|تحميض، ثمود، وثمود، وثمود}} ({{translit|ar|ithmid}}, {{translit|ar|athmoud}}, {{translit|ar|othmod}} or {{translit|ar|uthmod}})
+* [[LSJ]], ''s.v.'', vocalisation, spelling, and declension vary; Endlich; Celsus, 6.6.6 ff; Pliny ''Natural History'' 33.33; Lewis and Short: ''Latin Dictionary''. ''OED'', s. ''antimony''.
+* ''stimmi'' is used by the Attic tragic poets of the 5th century BC. Later Greeks also used ''στίβι (stibi)'', which is written in Latin by [[Aulus Cornelius Celsus|Celsus]] and [[Pliny the Elder]] in the first century AD. Pliny also names {{translit|grc|stimi}} {{sic}}, {{translit|grc|larbaris}}, and {{translit|grc|[[alabaster]]}} (Greek: {{lang|grc|ἀλάβαστρον}}), "very common platyophthalmos ({{lang|grc|πλατυόφθαλμος}})", "wide-eye" in Greek (the description refers to the effects of the cosmetic). In Egyptian hieroglyphics, <!--hiero-->{{translit|egy|mśdmt}}; the vowels are uncertain, but in Coptic and according to an Arabic tradition, it is pronounced {{translit|grc|mesdemet}} (Albright; Sarton, quotes Meyerhof, the translator). In Arabic, the word for powdered stibnite is [[Kohl (cosmetics)|kuhl]].[http://www.3rd1000.com/elements/Antimony.htm]</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Te
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Tellus}}
+|meaning     = "Earth"
+|desc        = From Latin {{lang|la|tellus}}, "[[Earth]]".
+}}
+{{List of chemical element name etymologies row
+|symbol=I
+|word-origin-lang = Greek via French
+|word-origin = {{lang|grc|ἰώδης}} ({{translit|grc|iodes}})
+|meaning     = "violet"
+|origin      = descriptive (colour)
+|desc        = Named after the Greek {{lang|grc|ἰώδης}} ({{translit|grc|iodes}}), which means "violet", because of the colour of the gaseous phase. This word was adapted as the French {{lang|fr|iode}}, which is the source of the English "iodine".<ref>{{OEtymD|iodine}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Xe
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|ξένος}} ({{translit|grc|xenos}})
+|meaning     = "foreign"
+|desc        = From the Greek adjective {{lang|grc|ξένος}} ({{translit|grc|xenos}}): "foreign", "a stranger".<!--This is because of its rarity, making it a "strange" thing to encounter among the more common elements.-->
+}}
+{{List of chemical element name etymologies row
+|symbol=Cs
+|word-origin-lang = Latin
+|word-origin = {{lang|la|caesius}}
+|meaning     = "blue-grey"<ref>{{OEtymD|cesium| access-date= 2011-01-02}}</ref> or "sky blue"
+|origin      = descriptive (colour)
+|desc        = From Latin {{lang|la|caesius}}, which means "sky blue". Its identification was based upon the bright blue lines in its spectrum, and it was the first element discovered by spectrum analysis.
+}}
+{{List of chemical element name etymologies row
+|symbol=Ba
+|word-origin-lang = Greek via [[Neo-Latin]]
+|word-origin = {{lang|grc|βαρύς}} ({{translit|grc|barys}})
+|meaning     = "heavy"
+|desc        = {{lang|grc|βαρύς}} ({{translit|grc|barys}}) means "heavy". The oxide was initially called "barote", then "baryta", which was modified to "barium" to describe the metal. [[Humphry Davy]] gave the element this name because it was originally found in [[baryte]], which shares the same source.<ref>{{OEtymD|barium| access-date= 2011-01-02}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=La
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|λανθάνειν}} ({{translit|grc|lanthanein}})
+|meaning     = "to escape notice"
+|desc        = From Greek {{lang|grc|λανθάνω}} ({{translit|grc|lanthánō}}), "I escape notice".
+}}
+{{List of chemical element name etymologies row
+|symbol=Ce
+|word-origin-lang = Latin
+|word-origin = {{lang|la|ceres}}
+|meaning     = "grain", "bread"
+|origin      = astrological;<br/>mythological
+|desc        = Named after the asteroid [[Ceres (dwarf planet)|Ceres]], discovered two years earlier. The asteroid itself, now classified as a dwarf planet, was named after [[Ceres (mythology)|Ceres]], the goddess of fertility in Roman mythology.<ref name="mythology-planet-element"/> {{lang|la|Ceres}} is derived from [[Proto-Indo-European]] {{lang|ine-x-proto|*ker-es-}} from base {{lang|ine-x-proto|*ker-}} meaning "to grow".<ref>{{cite web
+| author= Mike Campbell
+| url= http://www.behindthename.com/name/ceres
+| title= Meaning, Origin and History of the Name Ceres
+| publisher= Behind the Name
+| access-date= 2011-01-02}}</ref><ref>{{OEtymD|cereal| access-date= 2011-01-02}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Pr
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|πράσιος δίδυμος}} ({{translit|grc|prasios didymos}})
+|meaning     = "green twin"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|πράσιος δίδυμος}} ({{translit|grc|prasios didymos}}), meaning "green twin", because [[didymium]]<ref name="didymium">[[didymium]] was originally mistaken for an element, later it was discovered that it separates into elements [[#Pr]] and [[#Nd]]. The metals have different-coloured [[salt (chemistry)|salt]]s, which helps distinguish them.</ref> separates into '''praseodymium''' and [[neodymium]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Nd
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|νέος δίδυμος}} ({{translit|grc|neos didymos}})
+|meaning     = "new twin"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|νέος διδύμος}} ({{translit|grc|neos didymos}}), which means "new twin", because [[didymium]]<ref name="didymium"/> separates into [[praseodymium]] and neodymium.
+}}
+{{List of chemical element name etymologies row
+|symbol=Pm
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|Προμηθεύς}} ({{translit|grc|Prometheus}})
+|meaning     = "forethought"<ref>The ancient Greek derivation of ''Prometheus'' from the Greek {{lang|grc|πρό}} (''pro'', “before”) + {{lang|grc|μανθάνω}} (''manthánō'', “learn”), thus "forethought", which engendered a contrasting brother [[Epimetheus]] ("afterthought"), was a [[folk etymology]]; it is succinctly expressed in [[Maurus Servius Honoratus|Servius]]' commentary on Virgil, ''[[Eclogue]]'' 6.42: "''Prometheus vir prudentissimus fuit, unde etiam Prometheus dictus est {{lang|grc|ἀπὸ τής πρόμηθείας}}, id est a providentia''." Modern scientific linguistics suggests that the name derived from the [[Proto-Indo-European root]] that also produces the [[Vedic Sanskrit|Vedic]] {{translit|sa|pra math}}, "to steal", hence {{translit|sa|pramathyu-s}}, "thief", [[cognate]] with "Prometheus", the thief of fire. The [[Vedic mythology|Vedic myth]] of fire's theft by [[Mātariśvan]] is an analog to the Greek account. {{translit|sa|Pramantha}} was the tool used to create fire. See: Fortson, Benjamin W. (2004). ''Indo-European Language and Culture: An Introduction.'' Blackwell Publishing, p. 27.; Williamson (2004), ''The Longing for Myth in Germany'', 214–15; Dougherty, Carol (2006). ''Prometheus'' p. 4.</ref>
+|origin      = mythological
+|desc        = Named after [[Prometheus]] (a god in classical mythology), who stole the fire of heaven and gave it to mankind.<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Sm
+|word-origin-lang = 
+|word-origin = Samarsky-Bykhovets, Vassili
+|origin      = eponym
+|desc        = Named after the mineral [[samarskite]], itself named after Colonel [[Vassili Samarsky-Bykhovets]], a [[Russia]]n mine official.
+}}
+{{List of chemical element name etymologies row
+|symbol=Eu
+|word-origin-lang = Ancient Greek
+|word-origin = {{lang|grc|Εὐρώπη}} ({{translit|grc|Europe}})
+|meaning     = "broad-faced" or "well-watered"
+|origin      = toponym;<br/>mythological
+|desc        = Named after Europe, where it was discovered. Europe itself was named after [[Europa (consort of Zeus)]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Gd
+|word-origin-lang = [[Finnish language|Finnish]]
+|word-origin = Gadolin, Johan
+|meaning     = 
+|origin      = eponym
+|desc        = Named in honour of [[Johan Gadolin]],<ref>{{Cite journal
+ | last= Pyykkö | first= Pekka | author-link= Pekka Pyykkö
+ | date= 2015-07-23
+ | title= Magically magnetic gadolinium
+ | journal= [[Nature Chemistry]]
+ | volume= 7 | issue= 8 | pages= 680
+ | doi= 10.1038/nchem.2287
+ | pmid= 26201746
+ | bibcode= 2015NatCh...7..680P
+ | doi-access= free}}</ref> who was one of the founders of [[Nordic countries|Nordic]] chemistry research, and who discovered [[#Y|§&nbsp;yttrium]]. The mineral [[gadolinite]] is also named after him.
+}}
+{{List of chemical element name etymologies row
+|symbol=Tb
+|word-origin-lang = [[Swedish language|Swedish]]
+|word-origin = Ytterby
+|meaning     = proper name
+|origin      = toponym
+|desc        = Named after [[Ytterby]], the village in [[Sweden]] where the element was first discovered.<ref name="names from Ytterby"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Dy
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|δυσπρόσιτος}} ({{translit|grc|dysprositos}})
+|meaning     = "hard to get at"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|δυσπρόσιτος}} ({{translit|grc|dysprositos}}), which means "hard to get at".
+}}
+{{List of chemical element name etymologies row
+|symbol=Ho
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Holmia}}
+|meaning     = "Stockholm"
+|origin      = toponym
+|desc        = From Latin {{lang|la|Holmia}}, "[[Stockholm]]".
+}}
+{{List of chemical element name etymologies row
+|symbol=Er
+|word-origin-lang = Swedish
+|word-origin = Ytterby
+|meaning     = proper name
+|origin      = toponym
+|desc        = Named after [[Ytterby]], [[Sweden]], where large concentrations of minerals [[yttria]] and [[erbia]] are located. Erbia and terbia were confused at this time. After 1860, what had been known as terbia was renamed erbia, and after 1877, what had been known as erbia was renamed terbia.<ref name="names from Ytterby"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Tm
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|Θούλη}} ({{translit|grc|Thoúlē}})<ref>{{cite web
+| url= http://www.wordnik.com/words/Thule/etymologies
+| title= Thule in Wordnik, accessed 9 March 2010
+| publisher= Wordnik.com
+| access-date= 2011-01-02
+| url-status= dead
+| archive-url= https://web.archive.org/web/20131004225019/http://www.wordnik.com/words/Thule/etymologies
+| archive-date= 4 October 2013 }}</ref>
+|meaning     = "[[Thule]]"
+|origin      = mythological
+|desc        = Named after [[Thule]], an ancient Roman and Greek name ({{lang|grc|Θούλη}}) for a mythical country in the far north, perhaps [[Scandinavia]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Yb
+|word-origin-lang = Swedish
+|word-origin = Ytterby
+|meaning     = proper name
+|origin      = toponym
+|desc        = Named after [[ytterbia]], the oxide compound of ytterbium. ''Ytterbia'' itself was named after [[Ytterby]], Sweden.<ref name="names from Ytterby"/><ref name="naming controversy"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Lu
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Lutetia}}
+|meaning     = "[[Paris]]"
+|origin      = toponym
+|desc        = Named after the Latin {{lang|la|Lutetia}} ([[Gaulish]] for "place of mud"), the city of Paris.<ref name="naming controversy"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Hf
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Hafnia}}
+|meaning     = "[[Copenhagen]]"
+|origin      = toponym
+|desc        = From Latin {{lang|la|Hafnia}}: "[[Copenhagen]]", Denmark.
+}}
+{{List of chemical element name etymologies row
+|symbol=Ta
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|Τάνταλος}} ({{translit|grc|Tantalus}})
+|meaning     = possibly "the bearer" or "the sufferer"<ref>{{OEtymD|Tantalus| access-date= 2011-01-02}}</ref>
+|origin      = mythological
+|desc        = Named after Greek {{lang|grc|Τάνταλος}} ({{translit|grc|[[Tantalus]]}}), who was punished after death by being condemned to stand knee-deep in water. If he bent to drink the water, it drained below the level he could reach (in [[Greek mythology]]). This was considered similar to tantalum's general non-reactivity (that is, "unreachability") because of its inertness (it sits among reagents and is unaffected by them).<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=W
+|word-origin-lang = [[Swedish language|Swedish]] and [[Danish language|Danish]]
+|word-origin = {{lang|sv|tung sten}}
+|meaning     = "heavy stone"
+|origin      = descriptive
+|desc        = From the Swedish and Danish "tung sten", which means "heavy stone".
+|alt-name    = '''{{lang|de|Wolfrahm}}''' (German, literally "wolf cream") was the historical name. The names '''{{lang|de|wolfram}}''' or '''{{lang|sv|volfram}}''' are still used in [[German language|German]] and several other languages.{{refn|{{Cite web|url=https://www.britannica.com/science/tungsten-chemical-element|title=Tungsten|website=Britannica|date=12 March 2026|access-date=5 May 2026}}}}
+|symbol-etym = '''W''' is from the [[German Language|German]] name '''{{lang|de|Wolfram}}'''.
+}}
+{{List of chemical element name etymologies row
+|symbol=Re
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Rhenus}}
+|meaning     = "Rhine"
+|origin      = toponym
+|desc        = From Latin {{lang|la|Rhenus}}, the river [[Rhine]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Os
+|word-origin-lang = Greek via [[Neo-Latin]]
+|word-origin = {{lang|grc|ὀσμή}} ({{translit|grc|osme}})
+|meaning     = "a smell"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|ὀσμή}} ({{translit|grc|osme}}), meaning "a smell", as [[osmium tetroxide]] is foul-smelling.
+}}
+{{List of chemical element name etymologies row
+|symbol=Ir
+|word-origin-lang = Greek via Latin
+|word-origin = {{lang|grc|ἴρις}} (genitive: {{lang|grc|ἴριδος}}) ({{translit|grc|iris}})
+|meaning     = "of rainbows"
+|origin      = descriptive (colour)
+|desc        = Named after the Latin noun {{lang|la|iris}}, which means "[[rainbow]], iris plant, iris of the eye", because many of its salts are strongly coloured; [[Iris (mythology)|Iris]] was originally the name of the goddess of rainbows and a messenger in Greek mythology.<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Pt
+|word-origin-lang = Spanish via [[Neo-Latin]]
+|word-origin = {{lang|es|platina}} ({{translit|es|del Pinto}})
+|meaning     = "little silver" (of the Pinto River)<ref>{{cite book
+| last= Woods| first= Ian
+| title= The Elements: Platinum
+| publisher= Benchmark Books
+| year= 2004| series= The Elements| isbn= 978-0-7614-1550-3
+| url-access= registration| url= https://archive.org/details/platinum0000wood }}</ref>
+|origin      = descriptive
+|desc        = From the Spanish, {{lang|es|platina}}, which means "little silver", because it was first encountered in a silver mine. The modern Spanish is {{lang|es|platino}}. Platina is a diminutive of {{lang|es|plata}} (silver); it is a loan word from French {{lang|fr|plate}} or [[Occitan language|Provençal]] {{lang|oc|plata}} (sheet of metal) and is the origin of the English "plate".<ref>{{OEtymD|platinum| access-date= 2011-01-02}}</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Au
+|word-origin-lang = [[Old English]] via [[Middle English]]
+|word-origin = ''gold''
+|meaning     = 
+|origin      = descriptive (colour)
+|desc        = From the [[Old English]] "gold", from [[Proto-Indo-European]] {{lang|ine-x-proto|*ghel-}} meaning "yellow/ bright".
+|symbol-etym = '''Au''' is from Latin '''{{lang|la|aurum}}''', which means "shining dawn".<ref>'''Gold''' in [[Sanskrit]] is {{lang|sa|ज्वल }} {{translit|sa|jval}}; in Greek, {{lang|grc|χρυσός}} ({{translit|grc|khrusos}}); in Chinese, {{lang|ha|金}} ({{translit|ha|jīn}}).<sup>[relevance?]</sup></ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Hg
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Mercurius}}
+|meaning     = "[[Mercury (mythology)|Mercury]]", Roman god
+|origin      = mythological
+|desc        = Named after [[Mercury (mythology)|Mercury]], the god of speed and messenger of the Gods, as was the [[Mercury (planet)|planet Mercury]] named after the god.
+|symbol-etym= '''Hg''' is from Latin '''{{lang|la|hydrargyrum}}''', which is from the Greek words {{lang|grc|ὕδωρ}} and {{lang|grc|ἀργυρός}} ({{translit|grc|hydor}} and {{translit|grc|argyros}}). Meaning "water-silver", because it is a liquid like water (at room temperature), and has a silvery metallic sheen.<ref name="mythology-planet-element"/><ref>'''Mercury''' – The Indian [[alchemy]] called ''Rassayana'', which means "the way of mercury".</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Tl
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|θαλλός}} ({{translit|grc|thallos}})
+|meaning     = "green twig"
+|origin      = descriptive
+|desc        = From Greek {{lang|grc|θαλλός}} ({{translit|grc|thallos}}), which means "a green shoot (twig)", because of its bright-green spectral [[emission line]]s.
+}}
+{{List of chemical element name etymologies row
+|symbol=Pb
+|word-origin-lang = Anglo-Saxon
+|word-origin = ''{{lang|en|lead}}''
+|symbol-etym = '''Pb''' is from the Latin name '''{{lang|la|plumbum}}''', still visible in the English ''plumbing''.<ref name="mythology-planet-element"/><ref>'''Lead''' was mentioned in the [[Book of Exodus]]. [[Alchemy|Alchemists]] believed that lead was the oldest metal and associated the element with [[Saturn]].</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Bi
+|word-origin-lang = [[Neo-Latin]] from German
+|word-origin = {{lang|la|bisemutum}}
+|meaning     = "white mass"
+|origin      = descriptive (colour)
+|desc        = {{lang|la|bisemutum}} is derived from German {{lang|de|Wismuth}}, perhaps from {{lang|de|weiße Masse}}, and means "white mass", due to its appearance.
+}}
+{{List of chemical element name etymologies row
+|symbol=Po
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Polonia}}
+|meaning     = "Poland"
+|origin      = toponym
+|desc        = Named after [[Poland]], homeland of discoverer [[Marie Curie]].
+|alt-name   = '''radium F'''
+}}
+{{List of chemical element name etymologies row
+|symbol=At
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|ἄστατος}} ({{translit|grc|astatos}})
+|meaning     = "unstable"
+|desc        = From Greek {{lang|grc|ἄστατος}} ({{translit|grc|astatos}}), meaning "unstable".
+|alt-name    = '''alabamine''' (Ab) was an earlier proposed name for astatine
+}}
+{{List of chemical element name etymologies row
+|symbol=Rn
+|word-origin-lang = Latin via German and English<ref>{{OEtymD|radon| access-date= 2011-01-02}}</ref>
+|word-origin = [[radium]]
+|meaning     = 
+|origin      = 
+|desc        = Contraction of [[radium]] [[Emanation (chemistry)|emanation]], since the element appears in the radioactive decay of radium.
+|alt-name    = '''niton''' (Nt), from Latin {{lang|la|nitens}} "shining", because of the radioluminescence of radon.
+}}
+{{List of chemical element name etymologies row
+|symbol=Fr
+|word-origin-lang = French
+|word-origin = {{lang|fr|France}}
+|meaning     = 
+|origin      = toponym
+|desc        = Named after France (literally: "Land of the Franks"), where it was discovered, at the [[Curie Institute (Paris)|Curie Institute, Paris]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Ra
+|word-origin-lang = Latin via French
+|word-origin = {{lang|la|radius}}
+|meaning     = "ray"
+|origin      = descriptive
+|desc        = From Latin {{lang|la|radius}} meaning "ray", because of its [[radioactivity]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Ac
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|ἀκτίς}} ({{translit|grc|aktis}})
+|meaning     = "beam"
+|origin      = 
+|desc        = From Greek {{lang|grc|ἀκτίς}}/{{lang|grc|ἀκτῖνος}} ({{translit|grc|aktis}}/{{translit|grc|aktinos}}), which means "beam ([[Ray (optics)|ray]])".
+}}
+{{List of chemical element name etymologies row
+|symbol=Th
+|word-origin-lang = [[Old Norse]]
+|word-origin = {{lang|non|Þōrr}} ({{translit|en|Thor}})
+|meaning     = "thunder"
+|origin      = mythological
+|desc        = From [[Old Norse]] {{lang|non|Þōrr}} ({{translit|en|[[Thor]]}}), a god associated with thunder in [[Norse mythology]].<ref name="mythology-planet-element"/>
+|alt-name    = '''ionium''' (Io) was given early in the study of radioactive elements to the Thorium-230 [[isotope]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Pa
+|word-origin-lang = Greek
+|word-origin = {{lang|grc|πρῶτος}} + {{lang|grc|ἀκτίς}}
+|meaning     = "first beam element"
+|origin      = descriptive?
+|desc        = From Greek {{translit|grc|proto-}} "first" + Neo-Latin {{lang|la|actinium}} (itself from Greek {{lang|grc|ἀκτίς}}, gen.<sup>[?]</sup>: {{lang|grc|ἀκτῖνος}}) "ray": ''proto(-)actinium'', later shortened to ''protactinium''.<ref>'''Protactinium'''; In 1913, [[Kasimir Fajans]] and [[Otto H. Göhring]] identified and named element 91 '''brevium''', from Latin {{lang|la|brevis}}, which means "brief, short"; protactinium has a short half-life. The name was changed to "protoactinium" in 1918 and shortened to '''protactinium''' in 1949.</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=U
+|word-origin-lang = Greek via Latin
+|word-origin = {{lang|grc|Οὐρανός}} ({{translit|grc|Ouranos}}); "Uranus"
+|meaning     = "sky"
+|origin      = astrological;<br/>mythological
+|desc        = Named after the planet [[Uranus]], which had been discovered eight years earlier in 1781. The planet was named after the god [[Uranus (mythology)|Uranus]], the god of sky and [[heaven]] in [[Greek mythology]].<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Np
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Neptunus}}
+|meaning     = "Neptune"
+|origin      = astrological;<br/>mythological
+|desc        = Named after [[Neptune]], the planet. The planet itself was named after [[Neptune (mythology)|Neptune]], the god of oceans in Roman mythology.<ref name="mythology-planet-element"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Pu
+|word-origin-lang = Greek via Latin
+|word-origin = {{lang|grc|Πλούτων}} ({{translit|grc|Ploutōn}}) via "Pluto"
+|meaning     = "god of wealth"<ref>{{OEtymD|Pluto| access-date= 2011-01-02}}</ref>
+|origin      = astrological;<br/>mythological
+|desc        = Named after the dwarf planet [[Pluto]] (then considered to be the ninth planet), because it was discovered directly after element neptunium ({{section link||Np}}) and is higher than element uranium ({{section link||U}}) in the [[periodic table]]. Thus, plutonium was named by analogy with the ordering of the planets, ending with Pluto. Pluto itself was named after [[Pluto (mythology)|Pluto]], a Greek god of the dead.<ref name="mythology-planet-element"/> Greek {{lang|grc|Πλούτων}} ({{translit|grc|Ploutōn}}) is related to the word {{lang|grc|πλοῦτος}} ({{translit|grc|ploutos}}) meaning "wealth".
+}}
+{{List of chemical element name etymologies row
+|symbol=Am
+|word-origin-lang = 
+|word-origin = [[Americas|America]]
+|origin      = toponym
+|desc        = Named after the Americas, because it was discovered in the United States; by analogy with ''europium'' ({{section link||Eu}}). The name of the continent [[Americas|America]] itself is derived from the name of the Italian navigator [[Amerigo Vespucci]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Cm
+|word-origin-lang = 
+|word-origin = Curie, Marie and Pierre
+|origin      = eponym
+|desc        = Named in honour of [[Marie Curie|Marie]] and [[Pierre Curie]], who discovered [[radium]] and researched [[radioactivity]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Bk
+|word-origin-lang = [[Anglo-Saxon]] via English
+|word-origin = [[University of California, Berkeley]]
+|origin      = toponym
+|desc        = Named after the [[University of California, Berkeley]], where it was discovered. The city of [[Berkeley, California|Berkeley]] itself was named after [[George Berkeley]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Cf
+|word-origin-lang = English
+|word-origin = California
+|origin      = toponym
+|desc        = Named after the state of [[California]], US, and the [[University of California, Berkeley]]. The [[origin of the name California]] is disputed.
+}}
+{{List of chemical element name etymologies row
+|symbol=Es
+|word-origin-lang = [[German language|German]]
+|word-origin = Einstein, Albert
+|meaning     = 
+|origin      = eponym
+|desc        = Named in honour of [[Albert Einstein]], for his work on [[theoretical physics]], which included the [[photoelectric effect]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Fm
+|word-origin-lang = [[Italian language|Italian]]
+|word-origin = Fermi, Enrico
+|meaning     = Italian surname
+|origin      = eponym
+|desc        = Named in honour of [[Enrico Fermi]], who developed the first [[nuclear reactor]], [[quantum mechanics]], nuclear and particle physics, and [[statistical mechanics]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Md
+|word-origin-lang = 
+|word-origin = Mendeleyev, Dmitri
+|origin      = eponym
+|desc        = Named in honour of [[Dmitri Mendeleyev]], who formulated the [[periodic table]].<ref>'''Mendelevium''', "Mendeleyev" commonly spelt as Mendeleev, Mendeléef, or Mendelejeff, and first name sometimes spelt as Dmitry or Dmitriy</ref>
+|alt-name    = '''eka-thulium'''.<ref name="eka-named elements"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=No
+|word-origin-lang = 
+|word-origin = Nobel, Alfred
+|origin      = eponym
+|desc        = Named in honour of [[Alfred Nobel]], who invented [[dynamite]] and instituted the [[Nobel Prizes]] foundation.
+}}
+{{List of chemical element name etymologies row
+|symbol=Lr
+|word-origin-lang = 
+|word-origin = Lawrence, Ernest
+|origin      = eponym
+|desc        = Named in honour of [[Ernest Lawrence]], who was involved in the development of the [[cyclotron]].
+|symbol-etym = '''Lw''' was used formerly, '''Lr''' is used since 1963.<ref name="naming controversy"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Rf
+|word-origin-lang = 
+|word-origin = Rutherford, Ernest
+|origin      = eponym
+|desc        = Named in honour of [[Ernest Rutherford]], who pioneered the [[orbital theory|Bohr model]] of the [[atom]]. '''Rutherfordium''' has also been called '''kurchatovium''' ('''Ku'''), named in honour of [[Igor Kurchatov]], who helped develop understanding of the [[uranium]] [[chain reaction]] and the [[nuclear reactor]].
+|alt-name    = '''unnilquadium''' (Unq, '104'): temporary [[systematic element name|systematic name and symbol]]<ref name="element name Uxx">Formal IUPAC [[Systematic element name]]. Temporary name and symbol, denoting the element number, available before a formal name is given.</ref><ref name="naming controversy"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Db
+|word-origin-lang = [[Russian language|Russian]]
+|word-origin = {{lang|ru|Дубна}} ({{translit|ru|Dubna}})
+|origin      = toponym
+|desc        = Named after [[Dubna]], Russia, location of the [[Joint Institute for Nuclear Research]] (JINR) where it was discovered. 
+|alt-names   = '''hahnium''' (Ha) was proposed by researchers at the University of California, Berkeley, in honour of [[Otto Hahn]], for his pioneering work in [[radioactivity]] and [[radiochemistry]], but the proposal was rejected.<ref name="naming controversy"/><br/>'''unnilpentium''' (Unp, '105'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Sg
+|word-origin-lang = [[Swedish language|Swedish]] via English
+|word-origin = [[Glenn T. Seaborg|Seaborg, Glenn Teodor]]
+|meaning     = Swedish surname
+|origin      = eponym
+|desc        = Named in honour of [[Glenn T. Seaborg]], who discovered the chemistry of the [[transuranium elements]], shared in the discovery and isolation of ten elements, and developed and proposed the [[actinide series]].
+|alt-names   = '''eka-tungsten''',<ref name="eka-named elements"/><br/>'''unnilhexium''' (Unh, '106'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/><ref name="naming controversy"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Bh
+|word-origin-lang = 
+|word-origin = [[Niels Bohr|Bohr, Niels]]
+|origin      = eponym
+|desc        = Named in honour of [[Niels Bohr]], who made fundamental contributions to the understanding of [[atomic structure]] and [[quantum mechanics]].<ref name="naming controversy">see [[List of chemical elements naming controversies]]</ref>
+|alt-name    = '''unnilseptium''' (Uns, '107'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Hs
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Hassia}}
+|meaning     = "[[Hesse]]"
+|origin      = toponym
+|desc        = From Latin {{lang|la|Hassia}}, meaning [[Hessen]], the German state where it was discovered at the [[GSI Helmholtz Centre for Heavy Ion Research]], [[Darmstadt]].<ref name="naming controversy"/>
+|alt-names   = '''eka-osmium''',<ref name="eka-named elements"/><br/>'''unniloctium''' (Uno, '108'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Mt
+|word-origin-lang = 
+|word-origin = Meitner, Lise
+|origin      = eponym
+|desc        = Named in honour of [[Lise Meitner]], who shared discovery of [[nuclear fission]].<ref name="naming controversy"/>
+|alt-names   = '''eka-iridium''',<ref name="eka-named elements"/><br/>'''unnilennium''' (Une, '109'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Ds
+|word-origin-lang = German
+|word-origin = {{lang|de|Darmstadt}}
+|meaning     = proper name
+|origin      = toponym
+|desc        = Named after [[Darmstadt]], where it was discovered at the [[GSI Helmholtz Centre for Heavy Ion Research]].
+|alt-name    = '''eka-platinum''',<ref name="eka-named elements"/><br/>'''ununnilium''' (Uun, '110'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/><ref>Some humorous scientists suggested the name '''policium''', because 110 is the [[emergency telephone number]] for the German police.</ref>
+}}
+{{List of chemical element name etymologies row
+|symbol=Rg
+|lang-orig   = 
+|word-origin = Röntgen, Wilhelm Conrad
+|meaning     = 
+|origin      = eponym
+|desc        = Named in honour of [[Wilhelm Röntgen]], who discovered and produced [[X-ray]]s.
+|alt-names   = '''eka-gold''',<ref name="eka-named elements"/><br/>'''unununium''' (Uuu, '111'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Cn
+|word-origin-lang = [[Polish language|Polish]] via Latin
+|word-origin = Copernicus, Nicolaus
+|meaning     = Polish surname
+|origin      = eponym
+|desc        = Named in honour of [[Nicolaus Copernicus]].
+|alt-names   = '''eka-mercury''',<ref name="eka-named elements"/> and temporarily [[systematic element name|systematic name and symbol]] '''ununbium''' (Uub, '112'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Nh
+|word-origin-lang = [[Japanese language|Japanese]]
+|word-origin = {{lang|ja|日本}} ({{translit|ja|Nihon}})
+|meaning     = "Japan"
+|origin      = toponym
+|desc        = Named after {{translit|ja|Nihon}} ("[[Japan]]"), where the element was discovered at the [[Riken]] research institute.
+|alt-names   = '''eka-thallium''',<ref name="eka-named elements"/><br/>'''ununtrium''' (Uut, '113'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Fl
+|word-origin-lang = Russian
+|word-origin = Flerov, Georgy
+|meaning     = Russian surname
+|origin      = eponym
+|desc        = Named in honour of [[Georgy Flyorov]], who was at the forefront of Soviet [[nuclear physics]] and founder of the [[Joint Institute for Nuclear Research]] in [[Dubna]], [[Russia]], where the element was discovered.
+|alt-name    = '''ununquadium''' (Uuq, '114'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Mc
+|word-origin-lang = Latin
+|word-origin = {{lang|la|Moscovia}}
+|meaning     = "[[Moscow]]"
+|origin      = toponym
+|desc        = Named after [[Moscow Oblast]], where the element was discovered.
+|alt-names   = '''eka-bismuth''',<ref name="eka-named elements"/><br/>'''ununpentium''' (Uup, '115'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Lv
+|word-origin-lang = English
+|word-origin = Livermore
+|origin      = toponym
+|alt-name    = '''ununhexium''' (Uuh, '116'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+|desc        = Named in honour of the [[Lawrence Livermore National Laboratory]], which collaborated in the discovery and is in [[Livermore, California]], in turn named after the rancher [[Robert Livermore]].
+}}
+{{List of chemical element name etymologies row
+|symbol=Ts
+|word-origin-lang = [[Cherokee language|Cherokee]] via [[English language|English]]
+|word-origin = [[Tennessee]]
+|meaning     = 
+|origin      = toponym
+|desc        = Named after the US state of [[Tennessee]], itself named after the Cherokee village of {{lang|chr|ᏔᎾᏏ}}<!-- Cherokee lang/script --> ({{translit|chr|tanasi}}), where important work for one of the steps to synthesise the element was done in the [[Oak Ridge National Laboratory]].
+|alt-names   = '''eka-astatine''',<ref name="eka-named elements"/><br/>'''ununseptium''' (Uus, '117'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+{{List of chemical element name etymologies row
+|symbol=Og
+|word-origin-lang = [[Russian language|Russian]]
+|word-origin = Oganessian, Yuri ({{lang|ru|Оганесян}})
+|meaning     = Armenian surname
+|origin      = eponym
+|desc        = Named after [[Yuri Oganessian]], a great contributor to the field of synthesis of superheavy elements.
+|alt-names   = '''eka-radon''',<ref name="eka-named elements"/><br/>'''ununoctium''' (Uuo, '118'): temporary [[systematic element name|systematic name and symbol]].<ref name="element name Uxx"/>
+}}
+|}
+
+==See also==
+*[[List of chemical element naming controversies]]
+*[[Naming of elements]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+* Eric Scerri, ''The Periodic System, Its Story and Its Significance'', Oxford University Press, New York, 2007.
+
+{{Navbox periodic table}}
+
+{{DEFAULTSORT:Chemical Element Name Etymologies, List Of}}
+[[Category:Lists of chemical elements|Name Etymologies]]
+[[Category:Naming of chemical elements|Etymology]]
+[[Category:Lists of etymologies]]

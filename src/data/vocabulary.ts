@@ -1,0 +1,77 @@
+/** The controlled values of the curation layer, shared by the data build and the app. */
+
+/** Marks a value still waiting for a curator. */
+export const PLACEHOLDER = '?'
+
+export const KINDS = ['place', 'person', 'celestial', 'property', 'mythology', 'substance', 'color', PLACEHOLDER] as const
+export type Kind = (typeof KINDS)[number]
+
+export const KIND_LABELS: Record<Kind, string> = {
+  place: 'Place',
+  person: 'Person',
+  celestial: 'Celestial body',
+  property: 'Property',
+  mythology: 'Mythology',
+  substance: 'Mineral or substance',
+  color: 'Color',
+  [PLACEHOLDER]: 'Not classified yet',
+}
+
+export const FAMILIES = ['Greek', 'Latin', 'Germanic', 'Romance', 'Slavic', 'Other', PLACEHOLDER] as const
+export type Family = (typeof FAMILIES)[number]
+
+export const FAMILY_LABELS: Record<Family, string> = {
+  Greek: 'Greek',
+  Latin: 'Latin',
+  Germanic: 'Germanic',
+  Romance: 'Romance',
+  Slavic: 'Slavic',
+  Other: 'Other',
+  [PLACEHOLDER]: 'Not classified yet',
+}
+
+/** Known languages: name -> family and a short code for the tiles. */
+export const LANGUAGES: Record<string, { family: Family; code: string }> = {
+  Greek: { family: 'Greek', code: 'Gr' },
+  Latin: { family: 'Latin', code: 'La' },
+  'Old Latin': { family: 'Latin', code: 'OL' },
+  'Medieval Latin': { family: 'Latin', code: 'ML' },
+  'Neo-Latin': { family: 'Latin', code: 'NL' },
+  German: { family: 'Germanic', code: 'De' },
+  Swedish: { family: 'Germanic', code: 'Sv' },
+  Danish: { family: 'Germanic', code: 'Da' },
+  Dutch: { family: 'Germanic', code: 'Nl' },
+  English: { family: 'Germanic', code: 'En' },
+  'Middle English': { family: 'Germanic', code: 'ME' },
+  'Old English': { family: 'Germanic', code: 'OE' },
+  'Old Norse': { family: 'Germanic', code: 'ON' },
+  'West Germanic': { family: 'Germanic', code: 'WG' },
+  French: { family: 'Romance', code: 'Fr' },
+  'Old French': { family: 'Romance', code: 'OF' },
+  'Middle French': { family: 'Romance', code: 'MF' },
+  'Anglo-Norman': { family: 'Romance', code: 'AN' },
+  Italian: { family: 'Romance', code: 'It' },
+  Spanish: { family: 'Romance', code: 'Es' },
+  Russian: { family: 'Slavic', code: 'Ru' },
+  Polish: { family: 'Slavic', code: 'Pl' },
+  Akkadian: { family: 'Other', code: 'Ak' },
+  Arabic: { family: 'Other', code: 'Ar' },
+  Cherokee: { family: 'Other', code: 'Ch' },
+  Finnish: { family: 'Other', code: 'Fi' },
+  Japanese: { family: 'Other', code: 'Ja' },
+  Pali: { family: 'Other', code: 'Pi' },
+  Persian: { family: 'Other', code: 'Fa' },
+  Prakrit: { family: 'Other', code: 'Pk' },
+  'Proto-Indo-European': { family: 'Other', code: 'PIE' },
+  Sanskrit: { family: 'Other', code: 'Sa' },
+  'Scottish Gaelic': { family: 'Other', code: 'Gd' },
+  Syriac: { family: 'Other', code: 'Sy' },
+}
+
+export function familyOf(language: string): Family {
+  return LANGUAGES[language]?.family ?? PLACEHOLDER
+}
+
+export function languageCode(language: string): string {
+  return LANGUAGES[language]?.code ?? PLACEHOLDER
+}

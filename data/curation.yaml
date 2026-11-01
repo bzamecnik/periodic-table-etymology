@@ -1,0 +1,613 @@
+# Curation layer: what Wikipedia does not offer in a usable form.
+# See data/README.md. A "?" is a placeholder; `npm run data:todo` lists them.
+H:
+  gloss: water + begetter
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek, Latin, French ]
+He:
+  gloss: sun
+  kinds: [ celestial, mythology ]
+  language: Greek
+  path: [ Greek ]
+Li:
+  gloss: stone
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek ]
+Be:
+  gloss: beryl
+  kinds: [ color ]
+  language: Sanskrit
+  path: [ Sanskrit, Pali, Prakrit, Greek, Latin, Old French, Middle English ]
+B:
+  gloss: "?"
+  kinds: [ "?" ]
+  language: Arabic
+  path: [ Arabic, Medieval Latin, Anglo-Norman, Middle French, Middle English ]
+C:
+  gloss: charcoal
+  kinds: [ "?" ]
+  language: Latin
+  path: [ Latin, French ]
+N:
+  gloss: native-soda begetter
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek, Latin, French ]
+O:
+  gloss: to bring forth acid
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek, French ]
+F:
+  gloss: a flowing
+  kinds: [ "?" ]
+  language: Latin
+  path: [ Latin ]
+Ne:
+  gloss: new
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek ]
+Na:
+  gloss: "?"
+  kinds: [ "?" ]
+  language: English
+  path: [ English ]
+  symbolLanguage: "?"
+Mg:
+  gloss: Μαγνησία (Magnesia)
+  kinds: [ place ]
+  language: Greek
+  path: [ Greek ]
+Al:
+  gloss: alum
+  kinds: [ "?" ]
+  language: Latin
+  path: [ Latin ]
+Si:
+  gloss: flint
+  kinds: [ property ]
+  language: Latin
+  path: [ Latin ]
+P:
+  gloss: light-bearer
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek, Latin ]
+S:
+  gloss: to burn
+  kinds: [ "?" ]
+  language: "?"
+  path: []
+  review: 'Unknown language in source: "Latin Proto-Indo-European (PIE)"'
+Cl:
+  gloss: pale green
+  kinds: [ color ]
+  language: Greek
+  path: [ Greek ]
+Ar:
+  gloss: inactive
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+K:
+  gloss: pot-ash
+  kinds: [ "?" ]
+  language: Neo-Latin
+  path: [ Neo-Latin, Dutch, English ]
+  symbolLanguage: "?"
+Ca:
+  gloss: "?"
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek, Latin ]
+  review: 'Two languages in source: "Greek/Latin"'
+Sc:
+  gloss: Scandinavia
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Ti:
+  gloss: Titans
+  kinds: [ mythology ]
+  language: Greek
+  path: [ Greek ]
+V:
+  gloss: Dís of the Vanir
+  kinds: [ mythology ]
+  language: Old Norse
+  path: [ Old Norse ]
+Cr:
+  gloss: colour
+  kinds: [ color ]
+  language: Greek
+  path: [ Greek, French ]
+Mn:
+  gloss: Magnesia (regional unit)
+  kinds: [ place, property ]
+  language: Greek
+  path: [ Greek, Latin, Italian, French ]
+Fe:
+  gloss: "?"
+  kinds: [ property ]
+  language: Old English
+  path: [ Old English, Middle English ]
+  symbolLanguage: "?"
+Co:
+  gloss: goblin
+  kinds: [ "?" ]
+  language: German
+  path: [ German ]
+Ni:
+  gloss: copper-coloured ore
+  kinds: [ property ]
+  language: Swedish
+  path: [ Swedish, German ]
+Cu:
+  gloss: "?"
+  kinds: [ place ]
+  language: Greek
+  path: [ Greek, Latin, West Germanic, Old English, Middle English ]
+  symbolLanguage: "?"
+  review: 'Uncertain language in source: "Greek? via Latin, West Germanic, Old English, and Middle English"'
+Zn:
+  gloss: Cornet
+  kinds: [ "?" ]
+  language: German
+  path: [ German ]
+Ga:
+  gloss: Gaul
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Ge:
+  gloss: Germany
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+As:
+  gloss: male
+  kinds: [ color ]
+  language: "?"
+  path: []
+  review: 'Two languages in source: "Syriac/Persian via Greek, Latin, Old French, and Middle English"'
+Se:
+  gloss: moon
+  kinds: [ celestial, mythology ]
+  language: Greek
+  path: [ Greek ]
+Br:
+  gloss: dirt
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek, French ]
+Kr:
+  gloss: hidden
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+Rb:
+  gloss: deepest red
+  kinds: [ color ]
+  language: Latin
+  path: [ Latin ]
+Sr:
+  gloss: Strontian
+  kinds: [ place ]
+  language: Scottish Gaelic
+  path: [ Scottish Gaelic, English ]
+Y:
+  gloss: Ytterby
+  kinds: [ place ]
+  language: Swedish
+  path: [ Swedish ]
+Zr:
+  gloss: gold-like
+  kinds: [ "?" ]
+  language: "?"
+  path: []
+  review: 'Two languages in source: "Syriac/Persian via Arabic and German"'
+Nb:
+  gloss: snowy
+  kinds: [ mythology ]
+  language: Greek
+  path: [ Greek ]
+Mo:
+  gloss: lead-like
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+Tc:
+  gloss: artificial
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+Ru:
+  gloss: Ruthenia
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Rh:
+  gloss: rose
+  kinds: [ color ]
+  language: Greek
+  path: [ Greek ]
+Pd:
+  gloss: little maiden
+  kinds: [ celestial, mythology ]
+  language: Greek
+  path: [ Greek, Latin ]
+Ag:
+  gloss: to refine
+  kinds: [ "?" ]
+  language: Akkadian
+  path: [ Akkadian, Old English, Middle English ]
+  symbolLanguage: "?"
+Cd:
+  gloss: Earth
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek, Latin ]
+  review: 'Two languages in source: "Greek/Latin"'
+In:
+  gloss: "?"
+  kinds: [ color ]
+  language: Greek
+  path: [ Greek, Latin, English ]
+Sn:
+  gloss: "?"
+  kinds: [ "?" ]
+  language: Old English
+  path: [ Old English, Middle English ]
+  symbolLanguage: "?"
+Sb:
+  gloss: "?"
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek, Medieval Latin, Middle English ]
+  symbolLanguage: "?"
+  review: 'Uncertain language in source: "Greek? via Medieval Latin and Middle English"'
+Te:
+  gloss: Earth
+  kinds: [ "?" ]
+  language: Latin
+  path: [ Latin ]
+I:
+  gloss: violet
+  kinds: [ color ]
+  language: Greek
+  path: [ Greek, French ]
+Xe:
+  gloss: foreign
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek ]
+Cs:
+  gloss: blue-grey
+  kinds: [ color ]
+  language: Latin
+  path: [ Latin ]
+Ba:
+  gloss: heavy
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek, Neo-Latin ]
+La:
+  gloss: to escape notice
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek ]
+Ce:
+  gloss: grain
+  kinds: [ celestial, mythology ]
+  language: Latin
+  path: [ Latin ]
+Pr:
+  gloss: green twin
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+Nd:
+  gloss: new twin
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+Pm:
+  gloss: forethought
+  kinds: [ mythology ]
+  language: Greek
+  path: [ Greek ]
+Sm:
+  gloss: "?"
+  kinds: [ person ]
+  language: "?"
+  path: []
+Eu:
+  gloss: broad-faced
+  kinds: [ place, mythology ]
+  language: Greek
+  path: [ Greek ]
+Gd:
+  gloss: Johan Gadolin
+  kinds: [ person ]
+  language: Finnish
+  path: [ Finnish ]
+Tb:
+  gloss: Ytterby
+  kinds: [ place ]
+  language: Swedish
+  path: [ Swedish ]
+Dy:
+  gloss: hard to get at
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+Ho:
+  gloss: Stockholm
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Er:
+  gloss: Ytterby
+  kinds: [ place ]
+  language: Swedish
+  path: [ Swedish ]
+Tm:
+  gloss: Thule
+  kinds: [ mythology ]
+  language: Greek
+  path: [ Greek ]
+Yb:
+  gloss: Ytterby
+  kinds: [ place ]
+  language: Swedish
+  path: [ Swedish ]
+Lu:
+  gloss: Paris
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Hf:
+  gloss: Copenhagen
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Ta:
+  gloss: "?"
+  kinds: [ mythology ]
+  language: Greek
+  path: [ Greek ]
+W:
+  gloss: heavy stone
+  kinds: [ property ]
+  language: "?"
+  path: []
+  symbolLanguage: "?"
+  review: 'Several languages in source: "Swedish and Danish"'
+Re:
+  gloss: Rhine
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Os:
+  gloss: a smell
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek, Neo-Latin ]
+Ir:
+  gloss: of rainbows
+  kinds: [ color ]
+  language: Greek
+  path: [ Greek, Latin ]
+Pt:
+  gloss: little silver
+  kinds: [ property ]
+  language: Spanish
+  path: [ Spanish, Neo-Latin ]
+Au:
+  gloss: "?"
+  kinds: [ color ]
+  language: Old English
+  path: [ Old English, Middle English ]
+  symbolLanguage: "?"
+Hg:
+  gloss: Mercury
+  kinds: [ mythology ]
+  language: Latin
+  path: [ Latin ]
+  symbolLanguage: "?"
+Tl:
+  gloss: green twig
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+Pb:
+  gloss: "?"
+  kinds: [ "?" ]
+  language: Old English
+  path: [ Old English ]
+  symbolLanguage: "?"
+Bi:
+  gloss: white mass
+  kinds: [ color ]
+  language: German
+  path: [ German, Neo-Latin ]
+Po:
+  gloss: Poland
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+At:
+  gloss: unstable
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek ]
+Rn:
+  gloss: "?"
+  kinds: [ "?" ]
+  language: Latin
+  path: [ Latin, German, English ]
+Fr:
+  gloss: France
+  kinds: [ place ]
+  language: French
+  path: [ French ]
+Ra:
+  gloss: ray
+  kinds: [ property ]
+  language: Latin
+  path: [ Latin, French ]
+Ac:
+  gloss: beam
+  kinds: [ "?" ]
+  language: Greek
+  path: [ Greek ]
+Th:
+  gloss: thunder
+  kinds: [ mythology ]
+  language: Old Norse
+  path: [ Old Norse ]
+Pa:
+  gloss: first beam element
+  kinds: [ property ]
+  language: Greek
+  path: [ Greek ]
+  review: 'Uncertain origin in source: "descriptive?"'
+U:
+  gloss: sky
+  kinds: [ celestial, mythology ]
+  language: Greek
+  path: [ Greek, Latin ]
+Np:
+  gloss: Neptune
+  kinds: [ celestial, mythology ]
+  language: Latin
+  path: [ Latin ]
+Pu:
+  gloss: god of wealth
+  kinds: [ celestial, mythology ]
+  language: Greek
+  path: [ Greek, Latin ]
+Am:
+  gloss: America
+  kinds: [ place ]
+  language: "?"
+  path: []
+Cm:
+  gloss: Marie and Pierre Curie
+  kinds: [ person ]
+  language: "?"
+  path: []
+Bk:
+  gloss: "?"
+  kinds: [ place ]
+  language: Old English
+  path: [ Old English, English ]
+Cf:
+  gloss: California
+  kinds: [ place ]
+  language: English
+  path: [ English ]
+Es:
+  gloss: Albert Einstein
+  kinds: [ person ]
+  language: German
+  path: [ German ]
+Fm:
+  gloss: Enrico Fermi
+  kinds: [ person ]
+  language: Italian
+  path: [ Italian ]
+Md:
+  gloss: Dmitri Mendeleyev
+  kinds: [ person ]
+  language: "?"
+  path: []
+No:
+  gloss: Alfred Nobel
+  kinds: [ person ]
+  language: "?"
+  path: []
+Lr:
+  gloss: Ernest Lawrence
+  kinds: [ person ]
+  language: "?"
+  path: []
+  symbolLanguage: "?"
+Rf:
+  gloss: Ernest Rutherford
+  kinds: [ person ]
+  language: "?"
+  path: []
+Db:
+  gloss: Дубна (Dubna)
+  kinds: [ place ]
+  language: Russian
+  path: [ Russian ]
+Sg:
+  gloss: Glenn Teodor Seaborg
+  kinds: [ person ]
+  language: Swedish
+  path: [ Swedish, English ]
+Bh:
+  gloss: Niels Bohr
+  kinds: [ person ]
+  language: "?"
+  path: []
+Hs:
+  gloss: Hesse
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Mt:
+  gloss: Lise Meitner
+  kinds: [ person ]
+  language: "?"
+  path: []
+Ds:
+  gloss: Darmstadt
+  kinds: [ place ]
+  language: German
+  path: [ German ]
+Rg:
+  gloss: Wilhelm Conrad Röntgen
+  kinds: [ person ]
+  language: "?"
+  path: []
+Cn:
+  gloss: Nicolaus Copernicus
+  kinds: [ person ]
+  language: Polish
+  path: [ Polish, Latin ]
+Nh:
+  gloss: Japan
+  kinds: [ place ]
+  language: Japanese
+  path: [ Japanese ]
+Fl:
+  gloss: Georgy Flerov
+  kinds: [ person ]
+  language: Russian
+  path: [ Russian ]
+Mc:
+  gloss: Moscow
+  kinds: [ place ]
+  language: Latin
+  path: [ Latin ]
+Lv:
+  gloss: Livermore
+  kinds: [ place ]
+  language: English
+  path: [ English ]
+Ts:
+  gloss: Tennessee
+  kinds: [ place ]
+  language: Cherokee
+  path: [ Cherokee, English ]
+Og:
+  gloss: Yuri Oganessian
+  kinds: [ person ]
+  language: Russian
+  path: [ Russian ]
