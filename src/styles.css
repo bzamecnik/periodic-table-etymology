@@ -112,9 +112,31 @@ html {
   padding: 0.5rem 1.5rem 0.6rem;
 }
 
+.search {
+  position: relative;
+}
+
+/* The key of the search; once in the box it has done its job */
+.search kbd {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  min-width: 1.4em;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--ink-soft);
+  pointer-events: none;
+}
+
+.search input:focus + kbd {
+  display: none;
+}
+
 .search input {
   width: 100%;
-  padding: 0.4rem 0.6rem;
+  padding: 0.4rem 1.8rem 0.4rem 0.6rem;
   border: 1px solid var(--rule);
   border-radius: 3px;
   background: var(--paper-raised);

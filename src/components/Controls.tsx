@@ -66,7 +66,7 @@ function SearchBox({ filters, searchRef, onFiltersChange, onSearchSubmit }: Sear
         ref={searchRef}
         type="search"
         aria-label="Search names, meanings and original words"
-        placeholder="Search names…  ( / )"
+        placeholder="Search names…"
         value={filters.query}
         onInput={(event) => onFiltersChange({ ...filters, query: event.currentTarget.value })}
         onKeyDown={(event) => {
@@ -81,6 +81,7 @@ function SearchBox({ filters, searchRef, onFiltersChange, onSearchSubmit }: Sear
           }
         }}
       />
+      {filters.query === '' && <kbd aria-hidden="true">/</kbd>}
     </div>
   )
 }

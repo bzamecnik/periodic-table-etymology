@@ -320,6 +320,16 @@ describe('App', () => {
   })
 
   describe('the search', () => {
+    const keyCap = () => document.querySelector('.search kbd')
+
+    it('shows its key until something is typed', async () => {
+      render(<App />)
+      expect(keyCap()).toHaveTextContent('/')
+      await userEvent.click(screen.getByRole('searchbox'))
+      await userEvent.keyboard('iron')
+      expect(keyCap()).toBeNull()
+    })
+
     const box = () => screen.getByRole('searchbox')
 
     it('is reached with the slash key, without typing the slash', async () => {
