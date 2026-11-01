@@ -670,8 +670,7 @@ kbd {
   grid-row: span 2;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 0.15rem;
+  gap: 0.1rem;
 }
 
 @media (max-width: 899px) {
@@ -772,7 +771,8 @@ kbd {
 .controls__status {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 0.9rem;
+  justify-content: center;
+  gap: 0 0.6rem;
   margin: 0;
 }
 
