@@ -57,9 +57,14 @@ git tag v0.1.0 && git push origin v0.1.0
 Once per repository: set Settings > Pages > Source to GitHub Actions, and add `v*`
 to the allowed tags in Settings > Environments > github-pages.
 
-## License
+## License / Credits
 
 - Code: [MIT](LICENSE).
+  - Ideas and guidance: Bohumír Zámečník
+  - Implementation, graphical design: Claude Code (Opus 5.5)
 - Data in [`data/`](data/): [CC BY-SA 4.0](data/LICENSE), adapted from
   [List of chemical element name etymologies](https://en.wikipedia.org/wiki/List_of_chemical_element_name_etymologies)
-  by Wikipedia contributors.
+  by Wikipedia contributors
+  ([revision 1382331679](https://en.wikipedia.org/w/index.php?oldid=1382331679)).
+  The text was restructured; the categories, short meanings and language routes
+  were added for this site and are editorial judgement.

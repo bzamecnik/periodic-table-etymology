@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/preact'
+import { render, screen, within } from '@testing-library/preact'
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { App } from './App.tsx'
@@ -18,14 +18,24 @@ describe('App', () => {
 
   it('credits Wikipedia and names the license, as CC BY-SA requires', () => {
     render(<App />)
-    expect(screen.getByRole('contentinfo')).toHaveTextContent('Wikipedia contributors')
-    expect(screen.getByRole('link', { name: /List of chemical element name etymologies/ })).toHaveAttribute(
+    const footer = within(screen.getByRole('contentinfo'))
+    expect(footer.getByRole('link', { name: 'Wikipedia' })).toHaveAttribute(
       'href',
       'https://en.wikipedia.org/wiki/List_of_chemical_element_name_etymologies',
     )
-    expect(screen.getByRole('link', { name: 'CC BY-SA 4.0' })).toHaveAttribute(
+    expect(footer.getByRole('link', { name: 'CC BY-SA 4.0' })).toHaveAttribute(
       'href',
       'https://creativecommons.org/licenses/by-sa/4.0/',
+    )
+  })
+
+  it('credits the authors and leads to the details in the repository', () => {
+    render(<App />)
+    const footer = screen.getByRole('contentinfo')
+    expect(footer).toHaveTextContent('Visualized by Claude Code Opus 5.5, guided by Bohumír Zámečník.')
+    expect(within(footer).getByRole('link', { name: 'GitHub' })).toHaveAttribute(
+      'href',
+      'https://github.com/bzamecnik/periodic-table-etymology',
     )
   })
 

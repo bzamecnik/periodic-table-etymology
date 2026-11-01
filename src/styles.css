@@ -347,6 +347,10 @@ html {
   margin: 0;
 }
 
+.attribution p + p {
+  margin-top: 0.35em;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .tile {
     transition: none;
