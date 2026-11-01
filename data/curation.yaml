@@ -550,10 +550,10 @@ Am:
   path: [ Old High German, Medieval Latin, Italian, Latin ]
 Cm:
   named: P. & M. Curie
-  about: radioactivity
+  gloss: stable hand?
   kinds: [ person ]
-  language: French
-  path: [ French ]
+  language: Old French
+  path: [ Old French, French ]
 Bk:
   named: Berkeley
   gloss: birch meadow
@@ -574,7 +574,7 @@ Es:
   path: [ German ]
 Fm:
   named: E. Fermi
-  about: reactor pioneer
+  gloss: son of Fermo
   kinds: [ person ]
   language: Italian
   path: [ Italian ]
@@ -628,7 +628,7 @@ Hs:
   path: [ Latin ]
 Mt:
   named: L. Meitner
-  about: nuclear fission
+  gloss: of Majetín
   kinds: [ person ]
   language: German
   path: [ German ]

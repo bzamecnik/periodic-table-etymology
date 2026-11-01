@@ -558,3 +558,20 @@ Hg:
       - "en.wiktionary: Mercurius @ 92969477"
       - "en.wikipedia: Mercury (mythology) @ 1381676266"
       - "en.wiktionary: mercury @ 92753415"
+Cm:
+  - text: "The surname came through Pierre Curie. Wiktionary reads it as a reduced form of Old French escuerie, \"stable\", the word behind modern écurie, so it would first have named a stable hand."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Curie @ 92512663"
+      - "en.wiktionary: écurie @ 91320998"
+Fm:
+  - text: "Wiktionary takes Fermi as a patronymic surname, from the Italian personal name Fermo."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Fermi @ 92512736"
+Mt:
+  - text: "According to Wiktionary, a great-great-grandfather of Lise Meitner took the surname Meietheiner in the late 18th century, meaning someone from Meiethein. That is the Moravian village now called Majetín, and the name later shortened to Meitheiner, Meithner and Meitner."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Meitner @ 92416755"
+      - "en.wikipedia: Majetín @ 1379561479"
