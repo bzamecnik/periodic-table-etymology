@@ -374,7 +374,7 @@ html {
   grid-column: 17 / 19;
   grid-row: 8 / 11;
   align-self: end;
-  padding-left: 0.5rem;
+  padding: 0 0 0.35rem 0.5rem;
   font-size: clamp(0.56rem, calc(var(--tile-text) * 0.92), 0.7rem);
   line-height: 1.25;
   color: var(--ink-soft);
