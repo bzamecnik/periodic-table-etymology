@@ -9,8 +9,12 @@ export function Attribution() {
         Etymologies adapted from{' '}
         <a href={source.url} target="_blank" rel="noopener noreferrer">
           Wikipedia
-        </a>
-        {' '}(
+        </a>{' '}
+        and{' '}
+        <a href="https://en.wiktionary.org/" target="_blank" rel="noopener noreferrer">
+          Wiktionary
+        </a>{' '}
+        (
         <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
           CC BY-SA 4.0
         </a>

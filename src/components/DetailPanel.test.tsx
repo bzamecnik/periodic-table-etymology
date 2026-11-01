@@ -1,4 +1,4 @@
-import { render, screen, within } from '@testing-library/preact'
+import { cleanup, render, screen, within } from '@testing-library/preact'
 import { describe, expect, it, vi } from 'vitest'
 import { elements } from '../data/index.ts'
 import { DetailPanel, languageRoute } from './DetailPanel.tsx'
@@ -42,8 +42,10 @@ describe('DetailPanel', () => {
   })
 
   it('shows what still needs curating', () => {
-    show('W')
-    expect(screen.getByText(/Several languages in source/)).toBeInTheDocument()
+    show('Sb')
+    expect(screen.getByText(/Uncertain language in source/)).toBeInTheDocument()
+    cleanup()
+    show('S')
     expect(screen.getByText(/Not classified yet/)).toBeInTheDocument()
   })
 

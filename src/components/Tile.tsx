@@ -33,8 +33,9 @@ const hasOwnSymbolLanguage = ({ language, symbolLanguage }: ChemicalElement) =>
 
 /** Long lines get smaller instead of being cut off. */
 function lineScale(text: string): number {
-  if (text.length >= 16) return 0.86
-  if (text.length >= 14) return 0.93
+  if (text.length >= 15) return 0.84
+  if (text.length >= 13) return 0.92
+  if (text.length >= 12) return 0.96
   return 1
 }
 

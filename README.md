@@ -67,4 +67,6 @@ to the allowed tags in Settings > Environments > github-pages.
   by Wikipedia contributors
   ([revision 1382331679](https://en.wikipedia.org/w/index.php?oldid=1382331679)).
   The text was restructured; the categories, short meanings and language routes
-  were added for this site and are editorial judgement.
+  were added for this site and are editorial judgement. Further findings in
+  [`data/deeper.yaml`](data/deeper.yaml) are adapted from other Wikipedia and
+  Wiktionary pages, each linked at the revision read, in the app as well.

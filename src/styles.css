@@ -314,8 +314,9 @@ html {
 
 /* Two lines of different content, each of them on its own line */
 .tile__gloss--two .tile__line {
-  -webkit-line-clamp: 1;
-  overflow-wrap: normal;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: calc(var(--tile-text) * var(--line-scale, 1));
   letter-spacing: -0.015em;
   /* the same height whatever the scale of the line */
@@ -646,7 +647,7 @@ kbd {
 
 .controls {
   display: grid;
-  grid-template-columns: clamp(11rem, 15vw, 15rem) minmax(0, 1fr);
+  grid-template-columns: clamp(10rem, 12vw, 13rem) minmax(0, 1fr);
   gap: 0.2rem 1rem;
   background: var(--paper);
   font-size: 0.78rem;
@@ -711,19 +712,20 @@ kbd {
   accent-color: var(--accent);
 }
 
-.chips,
-.chips__family {
+.chips {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.2rem;
 }
 
-.chips {
-  gap: 0.2rem 0.7rem;
+/* The chips of a family flow on with the others, so that no line ends half empty */
+.chips__family {
+  display: contents;
 }
 
 .chips__family-label {
+  margin-left: 0.35rem;
   font-size: 0.68rem;
   font-style: italic;
   color: var(--ink-faint);
@@ -733,7 +735,7 @@ kbd {
   display: inline-flex;
   align-items: center;
   gap: 0.28em;
-  padding: 0.08rem 0.4rem;
+  padding: 0.08rem 0.32rem;
   border: 1px solid var(--rule);
   border-radius: 2px;
   background: var(--paper-raised);

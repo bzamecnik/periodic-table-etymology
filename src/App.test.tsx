@@ -2,6 +2,9 @@ import { render, screen, within } from '@testing-library/preact'
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { App } from './App.tsx'
+import { Controls } from './components/Controls.tsx'
+import { elements } from './data/index.ts'
+import { NO_FILTERS } from './filters.ts'
 
 const tile = (symbol: string) => document.getElementById(`tile-${symbol}`)!
 const panel = () => screen.getByRole('complementary')
@@ -23,6 +26,7 @@ describe('App', () => {
       'href',
       'https://en.wikipedia.org/wiki/List_of_chemical_element_name_etymologies',
     )
+    expect(footer.getByRole('link', { name: 'Wiktionary' })).toBeInTheDocument()
     expect(footer.getByRole('link', { name: 'CC BY-SA 4.0' })).toHaveAttribute(
       'href',
       'https://creativecommons.org/licenses/by-sa/4.0/',
@@ -244,8 +248,20 @@ describe('App', () => {
     })
 
     it('hides kinds which no element has yet', () => {
-      render(<App />)
-      expect(screen.queryByRole('button', { name: /^Mineral or substance/ })).toBeNull()
+      render(
+        <Controls
+          elements={elements.filter((element) => !element.kinds.includes('substance'))}
+          filters={NO_FILTERS}
+          matchCount={0}
+          colorBy="kind"
+          searchRef={{ current: null }}
+          onFiltersChange={vi.fn()}
+          onSearchSubmit={vi.fn()}
+          onColorByChange={vi.fn()}
+          onClear={vi.fn()}
+        />,
+      )
+      expect(screen.queryByRole('button', { name: /^Substance/ })).toBeNull()
     })
 
     it('makes the arrows skip what does not match', async () => {

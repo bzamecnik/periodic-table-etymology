@@ -29,7 +29,7 @@ Y:
   path: [Swedish]        # the route of the name, oldest first
   symbolLanguage: Latin  # only when the symbol has another origin than the name...
   symbolPath: [Latin]    # ...with its own route
-  symbolGloss: aurum, dawn  # ...and a short meaning, shown like "Au: aurum, dawn"
+  symbolGloss: dawn       # ...and a short meaning, shown like "Au: dawn"
   review: why this is unsure  # shown in the detail panel; remove it once settled
 ```
 
@@ -42,7 +42,7 @@ Y:
 
 ### Conventions
 
-- **Two lines on a tile, up to 16 characters each.** Line 1 is what it is named
+- **Two lines on a tile, up to 15 characters each.** Line 1 is what it is named
   after (`named`), line 2 the meaning (`gloss`), or else a description (`about`).
   A tile with only one line may wrap it to two. Foreign scripts stay in the details.
 - **People** go by their initials and surname, such as `A. Einstein`.

@@ -45,7 +45,7 @@ describe('matchesFilters', () => {
 
   it('can select what is not classified yet', () => {
     expect(symbols({ kinds: new Set<Kind>(['?']) })).toContain('Li')
-    expect(symbols({ languages: new Set(['?']) })).toContain('Am')
+    expect(symbols({ languages: new Set(['?']) })).toContain('Sm')
   })
 
   it('also finds the language of a symbol', () => {
@@ -107,7 +107,7 @@ describe('counts', () => {
   it('counts kinds, with an element of two kinds in both', () => {
     const counts = countKinds(elements, NO_FILTERS)
     expect(counts.get('person')).toBeGreaterThan(10)
-    expect(counts.get('substance')).toBe(0)
+    expect(counts.get('substance')).toBeGreaterThan(0)
     const total = [...counts.values()].reduce((a, b) => a + b, 0)
     expect(total).toBe(elements.reduce((sum, e) => sum + e.kinds.length, 0))
   })

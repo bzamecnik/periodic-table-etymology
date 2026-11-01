@@ -1,2 +1,193 @@
 # Deeper layer: sourced findings beyond the main Wikipedia table. See data/README.md.
-{}
+Be:
+  - text: The Greek word beryllos named various blue-green stones and came from Prakrit veruḷiya or veḷuriya, "beryl". The Sanskrit vaiḍūrya is considered a later Sanskritization of it, not its source.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Beryl @ 1381494172"
+  - text: Ultimately of Dravidian origin, maybe after Belur or Velur, a town in southern India.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Beryl @ 1381494172"
+      - "en.wiktionary: beryl @ 93837312"
+Na:
+  - text: Soda came through Italian from an Arabic name of salt-tolerant plants (suwaydāʾ, the seablite genus Suaeda). Their ashes gave soda ash, which was also made from saltworts.
+    certainty: traditional
+    sources:
+      - "en.wiktionary: soda @ 94572399"
+      - "en.wikipedia: Sodium carbonate @ 1380705515"
+  - text: Another explanation derives it from Arabic suda, "headache", as soda was a remedy for it.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Sodium @ 1380092162"
+  - text: The symbol comes from natrium, named after natron, the salt the ancient Egyptians mined for burial rites, Egyptian nṯrj. It passed through Greek nitron, so nitrogen has the same root.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Natron @ 1375081479"
+      - "en.wiktionary: natron @ 93709328"
+Mg:
+  - text: Magnesia was named after the Magnetes, an ancient Greek tribe mentioned in the Iliad. Their colonies in Anatolia bore the same name.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Magnesia (regional unit) @ 1380367985"
+      - "en.wikipedia: Magnetes @ 1370757526"
+  - text: The word magnet has the same origin, "stone of Magnesia". The sources differ on whether that means the Greek region or its colony in today's Turkey.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Magnesia (regional unit) @ 1380367985"
+      - "en.wiktionary: magnet @ 93751114"
+Sc:
+  - text: The Latin name goes back to Proto-Germanic *Skadinawjō. According to some scholars it combines *skaðan-, "danger", with *awjō, "island", referring to the treacherous sandbanks around Scania.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Scandinavia @ 1381424511"
+      - "en.wiktionary: Scandinavia @ 92922100"
+  - text: Alternatively it may be related to *skaðwa-, "shadow", and to the name of the Norse goddess Skaði.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Scandinavia @ 1381424511"
+Mn:
+  - text: In antiquity two black minerals from the lands of the Magnetes were both called magnes. The "male" one attracted iron and gave us the word magnet. The "female" one did not, and it was later called magnesia, from which manganese developed.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Manganese @ 1382944860"
+      - "en.wiktionary: manganese @ 92354640"
+Fe:
+  - text: Old English īsern goes back to Proto-Germanic *īsarną, borrowed from Proto-Celtic *īsarnom, possibly related to a word for "blood". The Wikipedia table gives "holy or strong metal" instead.
+    certainty: disputed
+    sources:
+      - "en.wiktionary: iron @ 94559727"
+  - text: Latin ferrum is of unknown source, perhaps a loan from a pre-Latin language. One proposal connects it to Phoenician barzel, "iron".
+    certainty: disputed
+    sources:
+      - "en.wiktionary: ferrum @ 93595291"
+Cu:
+  - text: Copper comes from Latin aes Cyprium, "Cyprian metal", after the Greek name of Cyprus, a major source of copper in the Bronze Age. The word Kypriot is attested in Mycenaean Greek of the 15th century BC.
+    certainty: attested
+    sources:
+      - "en.wiktionary: copper @ 94551081"
+      - "en.wikipedia: Cyprus @ 1381867303"
+  - text: The origin of the name Cyprus itself is unknown. Proposals include an Eteocypriot word for copper, perhaps related to Sumerian zubar (copper) or kubar (bronze), the Greek name of the henna tree, and a Semitic goddess.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Cyprus @ 1381867303"
+      - "en.wiktionary: copper @ 94551081"
+As:
+  - text: From Syriac zarnika and Persian zarnikh, based on zar, "gold", hence the golden yellow mineral orpiment.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Arsenic @ 1382246719"
+      - "en.wiktionary: arsenic @ 94546632"
+  - text: The Greek arsenikon, "male, virile", which the Wikipedia table gives as its meaning, is a folk etymology which reshaped the foreign word.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Arsenic @ 1382246719"
+Sr:
+  - text: The Gaelic name of the village, Sròn an t-Sìthein, means "nose (that is, point) of the fairy hill", a low round hill inhabited by the mythological sídhe.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Strontian @ 1365492688"
+Y:
+  - text: The Swedish name of the village literally means "outer village". Its quarry gave names to four elements, yttrium, terbium, erbium and ytterbium.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Ytterby @ 1380007014"
+Ru:
+  - text: Rus' is generally considered a borrowing from Finnic Ruotsi, "Sweden", from Old Norse róðr, "rowing, fleet levy", as in róþsmenn, "rowers". An older form in Proto-Norse is reconstructed.
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Rus' people @ 1368860158"
+  - text: A compatible theory leads through Rōþin, an older name of the Swedish coast of Roslagen, which itself comes from the same word.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Rus' people @ 1368860158"
+Gd:
+  - text: A vicar, Jakob Gadolin (1678–1758), took the surname after his father's farm Magnula, rendering it with Hebrew gadol, "great", like Latin magnus. Johan Gadolin was his grandson.
+    certainty: attested
+    sources:
+      - "sv.wikipedia: Gadolin @ 59502114"
+      - "fi.wikipedia: Johan Gadolin @ 23889706"
+W:
+  - text: Swedish tung sten means "heavy stone" and first named the mineral scheelite.
+    certainty: attested
+    sources:
+      - "en.wiktionary: tungsten @ 93605346"
+  - text: Wolfram is generally explained as German Wolf and Rahm, "wolf's cream or soot", a translation of Latin lupi spuma, "wolf's froth", a term of contempt because the ore disturbed the smelting of tin. It may also come from a personal name.
+    certainty: disputed
+    sources:
+      - "en.wiktionary: wolfram @ 93837932"
+Au:
+  - text: Old English gold goes back to Proto-Germanic *gulþą and to a Proto-Indo-European root for "green, yellow". The word yellow is related.
+    certainty: traditional
+    sources:
+      - "en.wiktionary: gold @ 94509769"
+  - text: Latin aurum goes back to a Proto-Indo-European root meaning "to dawn, become light, become red".
+    certainty: traditional
+    sources:
+      - "en.wiktionary: aurum @ 94589779"
+Lu:
+  - text: Most likely from a Celtic root lut-, "swamp, marsh", which survives in Scottish Gaelic lòn, "pool, meadow". Greek authors recorded the settlement as Loukotokía and Leukotekía.
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Lutetia @ 1370197365"
+  - text: A less likely origin is a Celtic word for "mice", perhaps after the shape of the two islands in the Seine.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Lutetia @ 1370197365"
+Fr:
+  - text: France comes from Latin Francia, the land of the Franks, whose rule gave it the name.
+    certainty: attested
+    sources:
+      - "en.wikipedia: Name of France @ 1357000742"
+      - "en.wiktionary: France @ 94539397"
+  - text: The meaning of the name of the Franks is not certain. Proposals are "javelin" and "fierce". The word frank, "free", most likely comes from the name of the Franks, who were the free ruling class, not the other way round.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Franks @ 1381483252"
+      - "en.wikipedia: Name of France @ 1357000742"
+Am:
+  - text: America comes from Americus, the Latin form of the name of Amerigo Vespucci, used on the map by Martin Waldseemüller in 1507. Other explanations have been suggested, such as the Amerrisque Mountains or Richard Amerike.
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Naming of the Americas @ 1358654761"
+  - text: Amerigo is an old Italian form of Medieval Latin Emericus, from Old High German Emmerich. That may have merged several Germanic names, one of them Haimirich, "home ruler", related to Henry. Wikipedia flags this explanation as needing a better source.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Naming of the Americas @ 1358654761"
+Bk:
+  - text: The element is named after the city, itself named after the philosopher George Berkeley. His surname is an English place name, first recorded in 824 as Berclea, from Old English beorc, "birch", and lēah, "meadow, clearing".
+    certainty: attested
+    sources:
+      - "en.wikipedia: Berkeley, California @ 1379437650"
+      - "en.wikipedia: Berkeley, Gloucestershire @ 1341843754"
+      - "en.wiktionary: Berkeley @ 92512554"
+      - "en.wiktionary: lea @ 93704503"
+Es:
+  - text: Literally "ein Stein" is German for "one stone", but the surname has several proposed origins. It may come from places named after Middle High German einsteinen, "to enclose with stone", or be an ornamental name ending in -stein.
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Einstein (surname) @ 1371411957"
+      - "en.wikipedia: Einstein family @ 1379540415"
+Sg:
+  - text: Seaborg is the English form of the Swedish surname Sjöberg, from sjö, "lake", and berg, "mountain".
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Seaborg @ 92514171"
+      - "en.wiktionary: sjö @ 93816231"
+      - "en.wiktionary: berg @ 93467322"
+Mc:
+  - text: Moscow takes its name from the Moskva River. The most widely accepted theory derives it from a Proto-Balto-Slavic root related to "wet", so it might mean a river at a wetland. Wiktionary gives Proto-Slavic *mosky, "swamp, dampness".
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Moscow @ 1383089166"
+      - "en.wiktionary: Moscow @ 94541781"
+  - text: A Finno-Ugric hypothesis derives it from Mustajoki, "black river".
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Moscow @ 1383089166"
+Og:
+  - text: Oganessian is the Russified form of the Armenian surname Hovhannisyan, from the given name Hovhannes, the equivalent of John. John goes back to Hebrew Yôḥānān, "God has been gracious".
+    certainty: attested
+    sources:
+      - "en.wikipedia: Yuri Oganessian @ 1377348860"
+      - "en.wikipedia: Hovhannes @ 1290855289"
+      - "en.wikipedia: John (given name) @ 1381822284"

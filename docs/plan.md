@@ -19,7 +19,10 @@ from. Each step lands as one or more focused commits.
 - [ ] 5. Small screens: pinned table thumbnail with the selected element
   highlighted, the detail panel below, scrolling moves across elements, a small
   search box
-- [ ] Curation: replace the placeholders (`npm run data:todo` lists them)
+- [ ] Curation: replace the placeholders (`npm run data:todo` lists them), and add
+  sourced deeper meanings (`data/deeper.yaml`). Done so far: a pilot of 24 elements
+  (Be Na Mg Sc Mn Fe Cu As Sr Y Ru Gd W Au Lu Fr Am Cm Bk Es Db Sg Mc Og). Next:
+  the other placeholders, then places, persons and ancient words
 - [ ] Flags for the languages/countries of origin
 - [ ] More data layers, e.g. phase at common conditions
 - [ ] Illustrations, each with its own license and credit

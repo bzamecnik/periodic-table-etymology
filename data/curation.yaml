@@ -16,10 +16,11 @@ Li:
   language: Greek
   path: [ Greek ]
 Be:
-  gloss: beryl
-  kinds: [ color ]
-  language: Sanskrit
-  path: [ Sanskrit, Pali, Prakrit, Greek, Latin, Old French, Middle English ]
+  named: beryl
+  about: gemstone
+  kinds: [ substance ]
+  language: Prakrit
+  path: [ Prakrit, Greek, Latin, Old French, Middle English ]
 B:
   gloss: "?"
   kinds: [ "?" ]
@@ -51,13 +52,16 @@ Ne:
   language: Greek
   path: [ Greek ]
 Na:
-  gloss: "?"
-  kinds: [ "?" ]
-  language: English
-  path: [ English ]
-  symbolLanguage: "?"
+  gloss: saltwort?
+  kinds: [ substance ]
+  language: Arabic
+  path: [ Arabic, Italian, English ]
+  symbolLanguage: Egyptian
+  symbolPath: [ Egyptian, Greek, Arabic, Neo-Latin ]
+  symbolGloss: natron
 Mg:
-  gloss: Μαγνησία (Magnesia)
+  named: Magnesia
+  about: Greek region
   kinds: [ place ]
   language: Greek
   path: [ Greek ]
@@ -105,7 +109,8 @@ Ca:
   path: [ Greek, Latin ]
   review: 'Two languages in source: "Greek/Latin"'
 Sc:
-  gloss: Scandinavia
+  named: Scandinavia
+  gloss: dangerous isle?
   kinds: [ place ]
   language: Latin
   path: [ Latin ]
@@ -125,16 +130,19 @@ Cr:
   language: Greek
   path: [ Greek, French ]
 Mn:
-  gloss: Magnesia (regional unit)
-  kinds: [ place, property ]
+  named: Magnesia
+  about: via a black ore
+  kinds: [ place ]
   language: Greek
   path: [ Greek, Latin, Italian, French ]
 Fe:
-  gloss: "?"
+  gloss: holy metal?
   kinds: [ property ]
   language: Old English
   path: [ Old English, Middle English ]
-  symbolLanguage: "?"
+  symbolLanguage: Latin
+  symbolPath: [ Latin ]
+  symbolGloss: ferrum
 Co:
   gloss: goblin
   kinds: [ "?" ]
@@ -146,12 +154,11 @@ Ni:
   language: Swedish
   path: [ Swedish, German ]
 Cu:
-  gloss: "?"
+  named: Cyprus
+  gloss: Cyprian metal
   kinds: [ place ]
   language: Greek
   path: [ Greek, Latin, West Germanic, Old English, Middle English ]
-  symbolLanguage: "?"
-  review: 'Uncertain language in source: "Greek? via Latin, West Germanic, Old English, and Middle English"'
 Zn:
   gloss: Cornet
   kinds: [ "?" ]
@@ -168,11 +175,11 @@ Ge:
   language: Latin
   path: [ Latin ]
 As:
-  gloss: male
-  kinds: [ color ]
-  language: "?"
-  path: []
-  review: 'Two languages in source: "Syriac/Persian via Greek, Latin, Old French, and Middle English"'
+  named: orpiment
+  gloss: gold-colored
+  kinds: [ substance ]
+  language: Persian
+  path: [ Persian, Syriac, Greek, Latin, Middle French, Middle English ]
 Se:
   gloss: moon
   kinds: [ celestial, mythology ]
@@ -194,12 +201,14 @@ Rb:
   language: Latin
   path: [ Latin ]
 Sr:
-  gloss: Strontian
+  named: Strontian
+  gloss: fairy-hill nose
   kinds: [ place ]
   language: Scottish Gaelic
   path: [ Scottish Gaelic, English ]
 Y:
-  gloss: Ytterby
+  named: Ytterby
+  gloss: outer village
   kinds: [ place ]
   language: Swedish
   path: [ Swedish ]
@@ -225,10 +234,11 @@ Tc:
   language: Greek
   path: [ Greek ]
 Ru:
-  gloss: Ruthenia
+  named: Ruthenia
+  gloss: the rowers
   kinds: [ place ]
-  language: Latin
-  path: [ Latin ]
+  language: Old Norse
+  path: [ Old Norse, Finnic, Old East Slavic, Medieval Latin ]
 Rh:
   gloss: rose
   kinds: [ color ]
@@ -330,10 +340,11 @@ Eu:
   language: Greek
   path: [ Greek ]
 Gd:
-  gloss: Johan Gadolin
+  named: J. Gadolin
+  gloss: great
   kinds: [ person ]
-  language: Finnish
-  path: [ Finnish ]
+  language: Hebrew
+  path: [ Hebrew, Swedish ]
 Tb:
   gloss: Ytterby
   kinds: [ place ]
@@ -365,10 +376,11 @@ Yb:
   language: Swedish
   path: [ Swedish ]
 Lu:
-  gloss: Paris
+  named: Lutetia
+  gloss: place of mud
   kinds: [ place ]
-  language: Latin
-  path: [ Latin ]
+  language: Gaulish
+  path: [ Gaulish, Latin ]
 Hf:
   gloss: Copenhagen
   kinds: [ place ]
@@ -382,10 +394,11 @@ Ta:
 W:
   gloss: heavy stone
   kinds: [ property ]
-  language: "?"
-  path: []
-  symbolLanguage: "?"
-  review: 'Several languages in source: "Swedish and Danish"'
+  language: Swedish
+  path: [ Swedish ]
+  symbolLanguage: German
+  symbolPath: [ German ]
+  symbolGloss: wolf froth?
 Re:
   gloss: Rhine
   kinds: [ place ]
@@ -407,11 +420,13 @@ Pt:
   language: Spanish
   path: [ Spanish, Neo-Latin ]
 Au:
-  gloss: "?"
+  gloss: yellow
   kinds: [ color ]
   language: Old English
   path: [ Old English, Middle English ]
-  symbolLanguage: "?"
+  symbolLanguage: Latin
+  symbolPath: [ Latin ]
+  symbolGloss: dawn
 Hg:
   gloss: Mercury
   kinds: [ mythology ]
@@ -450,10 +465,11 @@ Rn:
   language: Latin
   path: [ Latin, German, English ]
 Fr:
-  gloss: France
+  named: France
+  gloss: Franks' land
   kinds: [ place ]
-  language: French
-  path: [ French ]
+  language: Frankish
+  path: [ Frankish, Latin, Old French, French ]
 Ra:
   gloss: ray
   kinds: [ property ]
@@ -491,17 +507,20 @@ Pu:
   language: Greek
   path: [ Greek, Latin ]
 Am:
-  gloss: America
+  named: America
+  about: for A. Vespucci
   kinds: [ place ]
-  language: "?"
-  path: []
+  language: Old High German
+  path: [ Old High German, Medieval Latin, Italian, Latin ]
 Cm:
-  gloss: Marie and Pierre Curie
+  named: P. & M. Curie
+  about: radioactivity
   kinds: [ person ]
-  language: "?"
-  path: []
+  language: French
+  path: [ French ]
 Bk:
-  gloss: "?"
+  named: Berkeley
+  gloss: birch meadow
   kinds: [ place ]
   language: Old English
   path: [ Old English, English ]
@@ -511,7 +530,8 @@ Cf:
   language: English
   path: [ English ]
 Es:
-  gloss: Albert Einstein
+  named: A. Einstein
+  gloss: stone-walled?
   kinds: [ person ]
   language: German
   path: [ German ]
@@ -542,12 +562,14 @@ Rf:
   language: "?"
   path: []
 Db:
-  gloss: Дубна (Dubna)
+  named: Dubna
+  about: Russian town
   kinds: [ place ]
   language: Russian
   path: [ Russian ]
 Sg:
-  gloss: Glenn Teodor Seaborg
+  named: G. T. Seaborg
+  gloss: lake mountain
   kinds: [ person ]
   language: Swedish
   path: [ Swedish, English ]
@@ -592,10 +614,11 @@ Fl:
   language: Russian
   path: [ Russian ]
 Mc:
-  gloss: Moscow
+  named: Moscow
+  gloss: wetland river
   kinds: [ place ]
-  language: Latin
-  path: [ Latin ]
+  language: Old East Slavic
+  path: [ Old East Slavic, Russian ]
 Lv:
   gloss: Livermore
   kinds: [ place ]
@@ -607,7 +630,8 @@ Ts:
   language: Cherokee
   path: [ Cherokee, English ]
 Og:
-  gloss: Yuri Oganessian
+  named: Y. Oganessian
+  gloss: God is gracious
   kinds: [ person ]
-  language: Russian
-  path: [ Russian ]
+  language: Hebrew
+  path: [ Hebrew, Armenian, Russian ]
