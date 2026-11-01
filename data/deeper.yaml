@@ -336,3 +336,107 @@ Ac:
     sources:
       - "en.wiktionary: actinium @ 93039810"
       - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Ga:
+  - text: "Latin Gallia was the land of the Gauls, whose name is generally derived from a Celtic root for \"power, ability\". The discoverer, Lecoq de Boisbaudran, named it after France. Allegations that he also named it after himself, as Latin gallus is French le coq, \"rooster\", he denied."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Gauls @ 1382897180"
+      - "en.wiktionary: Gallia @ 93132893"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Ge:
+  - text: "Germania means \"land of the Germani\", but the origin of that name is unknown. Even its language is disputed, with proposals of Germanic, Celtic, Latin and Illyrian."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Germania @ 1348712649"
+      - "en.wikipedia: Germanic peoples @ 1382484845"
+Tb:
+  - text: "One of four elements named after the quarry at this Swedish village, with yttrium, erbium and ytterbium."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Ytterby @ 1380007014"
+Ho:
+  - text: "Holmia is the Latin form of Stockholm, first recorded in 1252. Swedish stock means \"log\" and holm \"islet\". The logs may have kept out ships, and stock may also come from an old German word for \"fortification\"."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Stockholm @ 1382901523"
+      - "en.wiktionary: Stockholm @ 94595200"
+Er:
+  - text: "One of four elements named after the quarry at this Swedish village, with yttrium, terbium and ytterbium."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Ytterby @ 1380007014"
+Tm:
+  - text: "First written of by the Greek explorer Pytheas about 320 BC, Thule was the far north of the ancient maps, later identified with Iceland, Norway, Scandinavia and others. Isidore of Seville connected the name to the sun."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Thule @ 1379930143"
+      - "en.wiktionary: Thule @ 93452135"
+Yb:
+  - text: "One of four elements named after the quarry at this Swedish village, with yttrium, terbium and erbium."
+    certainty: attested
+    sources:
+      - "en.wikipedia: Ytterby @ 1380007014"
+Hf:
+  - text: "Hafnia is the Latin name of Copenhagen, from Old Norse hǫfn, \"harbor\". Copenhagen itself is Køpmannæhafn, \"merchants' harbor\", the same words as English \"chapmen's haven\"."
+    certainty: attested
+    sources:
+      - "en.wiktionary: Hafnia @ 92503570"
+      - "en.wikipedia: Copenhagen @ 1382526252"
+      - "en.wiktionary: Copenhagen @ 94538487"
+Re:
+  - text: "Latin Rhenus comes from Gaulish Rēnos, a river name built on a root meaning \"to flow, run\". Latin rivus, \"river\", is related."
+    certainty: traditional
+    sources:
+      - "en.wiktionary: Rhine @ 94578904"
+      - "en.wikipedia: Rhine @ 1381219422"
+Po:
+  - text: "Polonium honors the homeland of Marie Curie. Poland is named after the Polans, a West Slavic tribe, and that likely comes from pole, \"field\", so \"field dwellers\"."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Names of Poland @ 1351068420"
+      - "en.wikipedia: Polans (western) @ 1379340462"
+      - "en.wiktionary: Poland @ 94542643"
+      - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+Cf:
+  - text: "Most historians trace California to a Spanish novel of around 1510, Las sergas de Esplandián, with a fictional island ruled by Queen Calafia. Explorers took the peninsula for such an island. Her name may be a play on Arabic for \"caliph\"."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Etymology of California @ 1371981416"
+      - "en.wikipedia: California @ 1382283994"
+      - "en.wiktionary: California @ 94535285"
+Hs:
+  - text: "Latin Hassia means Hesse, and the name goes back to its people, the Hessians, often traced to the Chatti. There is no clear agreement on what the name Chatti meant."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Hesse @ 1382834846"
+      - "en.wikipedia: Chatti @ 1378958311"
+Ds:
+  - text: "First recorded in the late 11th century as Darmundestat. Its origin is uncertain, with current research seeing a man's name Darmund, others a settlement at a guarded gateway."
+    certainty: disputed
+    sources:
+      - "de.wikipedia: Darmstadt @ 271747793"
+      - "en.wikipedia: Darmstadt @ 1382713422"
+Nh:
+  - text: "Nihon is written 日本, \"sun\" and \"origin\", which is why Japan is known as the land of the rising sun."
+    certainty: attested
+    sources:
+      - "en.wiktionary: 日本 @ 93472794"
+      - "en.wikipedia: Names of Japan @ 1377999714"
+Lv:
+  - text: "Named after Lawrence Livermore National Laboratory in the city of Livermore, itself named after the English-born rancher Robert Livermore. The surname is probably from the English place Livermere."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Livermore, California @ 1380986623"
+      - "en.wikipedia: Robert Livermore @ 1351503432"
+      - "en.wiktionary: Livermore @ 92187690"
+Ts:
+  - text: "Tennessee comes from Tanasi, a Cherokee town on what is now the Little Tennessee River. The name is believed to mean \"winding river\"."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Tennessee @ 1380707474"
+      - "en.wiktionary: Tennessee @ 94544030"
+Eu:
+  - text: "Europa was a Phoenician princess in Greek myth. One view takes her name from Greek eurús, \"wide\", and ōps, \"eye, face\", so \"wide-gazing\" or \"broad of aspect\". A Semitic word for \"west\" has been proposed, but is considered unlikely."
+    certainty: disputed
+    sources:
+      - "en.wikipedia: Europe @ 1383018724"

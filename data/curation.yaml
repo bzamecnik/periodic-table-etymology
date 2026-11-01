@@ -168,12 +168,14 @@ Zn:
   language: Old High German
   path: [ Old High German, German ]
 Ga:
-  gloss: Gaul
+  named: Gaul
+  about: old France
   kinds: [ place ]
   language: Latin
   path: [ Latin ]
 Ge:
-  gloss: Germany
+  named: Germania
+  about: origin unknown
   kinds: [ place ]
   language: Latin
   path: [ Latin ]
@@ -344,7 +346,8 @@ Sm:
   language: "?"
   path: []
 Eu:
-  gloss: broad-faced
+  named: Europe
+  gloss: "wide-gazing?"
   kinds: [ place, mythology ]
   language: Greek
   path: [ Greek ]
@@ -355,7 +358,8 @@ Gd:
   language: Hebrew
   path: [ Hebrew, Swedish ]
 Tb:
-  gloss: Ytterby
+  named: Ytterby
+  gloss: outer village
   kinds: [ place ]
   language: Swedish
   path: [ Swedish ]
@@ -365,22 +369,26 @@ Dy:
   language: Greek
   path: [ Greek ]
 Ho:
-  gloss: Stockholm
+  named: Stockholm
+  gloss: log islet
   kinds: [ place ]
-  language: Latin
-  path: [ Latin ]
+  language: Swedish
+  path: [ Swedish, Latin ]
 Er:
-  gloss: Ytterby
+  named: Ytterby
+  gloss: outer village
   kinds: [ place ]
   language: Swedish
   path: [ Swedish ]
 Tm:
-  gloss: Thule
-  kinds: [ mythology ]
+  named: Thule
+  about: far-north land
+  kinds: [ place ]
   language: Greek
   path: [ Greek ]
 Yb:
-  gloss: Ytterby
+  named: Ytterby
+  gloss: outer village
   kinds: [ place ]
   language: Swedish
   path: [ Swedish ]
@@ -391,10 +399,11 @@ Lu:
   language: Gaulish
   path: [ Gaulish, Latin ]
 Hf:
-  gloss: Copenhagen
+  named: Copenhagen
+  gloss: merchant harbor
   kinds: [ place ]
-  language: Latin
-  path: [ Latin ]
+  language: Old Norse
+  path: [ Old Norse, Latin ]
 Ta:
   gloss: "?"
   kinds: [ mythology ]
@@ -409,10 +418,11 @@ W:
   symbolPath: [ German ]
   symbolGloss: wolf froth?
 Re:
-  gloss: Rhine
+  named: Rhine
+  gloss: flowing
   kinds: [ place ]
-  language: Latin
-  path: [ Latin ]
+  language: Gaulish
+  path: [ Gaulish, Latin ]
 Os:
   gloss: a smell
   kinds: [ property ]
@@ -461,10 +471,11 @@ Bi:
   language: German
   path: [ German, Neo-Latin ]
 Po:
-  gloss: Poland
+  named: Poland
+  gloss: field dwellers
   kinds: [ place ]
-  language: Latin
-  path: [ Latin ]
+  language: Polish
+  path: [ Polish, Latin ]
 At:
   gloss: unstable
   kinds: [ property ]
@@ -536,10 +547,11 @@ Bk:
   language: Old English
   path: [ Old English, English ]
 Cf:
-  gloss: California
+  named: California
+  about: "novel's island"
   kinds: [ place ]
-  language: English
-  path: [ English ]
+  language: Spanish
+  path: [ Spanish, English ]
 Es:
   named: A. Einstein
   gloss: stone-walled?
@@ -590,7 +602,8 @@ Bh:
   language: "?"
   path: []
 Hs:
-  gloss: Hesse
+  named: Hesse
+  about: German state
   kinds: [ place ]
   language: Latin
   path: [ Latin ]
@@ -600,7 +613,8 @@ Mt:
   language: "?"
   path: []
 Ds:
-  gloss: Darmstadt
+  named: Darmstadt
+  about: German city
   kinds: [ place ]
   language: German
   path: [ German ]
@@ -615,7 +629,8 @@ Cn:
   language: Polish
   path: [ Polish, Latin ]
 Nh:
-  gloss: Japan
+  named: Japan
+  gloss: origin of sun
   kinds: [ place ]
   language: Japanese
   path: [ Japanese ]
@@ -631,12 +646,14 @@ Mc:
   language: Old East Slavic
   path: [ Old East Slavic, Russian ]
 Lv:
-  gloss: Livermore
+  named: Livermore
+  about: California city
   kinds: [ place ]
   language: English
   path: [ English ]
 Ts:
-  gloss: Tennessee
+  named: Tennessee
+  gloss: "winding river?"
   kinds: [ place ]
   language: Cherokee
   path: [ Cherokee, English ]
