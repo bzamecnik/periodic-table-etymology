@@ -2,7 +2,7 @@
 # See data/README.md. A "?" is a placeholder; `npm run data:todo` lists them.
 H:
   gloss: water-maker
-  kinds: [ property ]
+  kinds: [ property, substance ]
   language: Greek
   path: [ Greek, Latin, French ]
 He:
@@ -18,7 +18,7 @@ Li:
 Be:
   named: beryl
   about: gemstone
-  kinds: [ substance ]
+  kinds: [ substance, color ]
   language: Prakrit
   path: [ Prakrit, Greek, Latin, Old French, Middle English ]
 B:
@@ -39,7 +39,7 @@ N:
   path: [ Egyptian, Greek, Latin, French ]
 O:
   gloss: acid-maker
-  kinds: [ property ]
+  kinds: [ property, substance ]
   language: Greek
   path: [ Greek, French ]
 F:
@@ -142,7 +142,7 @@ Mn:
   path: [ Greek, Latin, Italian, French ]
 Fe:
   gloss: holy metal?
-  kinds: [ property ]
+  kinds: [ property, substance ]
   language: Old English
   path: [ Old English, Middle English ]
   symbolLanguage: Latin
@@ -155,13 +155,13 @@ Co:
   path: [ German ]
 Ni:
   gloss: copper goblin
-  kinds: [ mythology ]
+  kinds: [ mythology, substance ]
   language: German
   path: [ German, Swedish ]
 Cu:
   named: Cyprus
   gloss: Cyprian metal
-  kinds: [ place ]
+  kinds: [ place, substance ]
   language: Greek
   path: [ Greek, Latin, West Germanic, Old English, Middle English ]
 Zn:
@@ -184,7 +184,7 @@ Ge:
 As:
   named: orpiment
   gloss: gold-colored
-  kinds: [ substance ]
+  kinds: [ substance, color ]
   language: Persian
   path: [ Persian, Syriac, Greek, Latin, Middle French, Middle English ]
 Se:
@@ -275,7 +275,7 @@ Cd:
 In:
   named: indigo
   gloss: from India
-  kinds: [ color ]
+  kinds: [ place, color ]
   language: Greek
   path: [ Greek, Latin, English ]
 Sn:
@@ -332,7 +332,7 @@ Ce:
   path: [ Latin ]
 Pr:
   gloss: green twin
-  kinds: [ property ]
+  kinds: [ property, color ]
   language: Greek
   path: [ Greek ]
 Nd:
@@ -443,7 +443,7 @@ Ir:
   path: [ Greek, Latin ]
 Pt:
   gloss: little silver
-  kinds: [ property ]
+  kinds: [ property, substance ]
   language: Spanish
   path: [ Spanish, Neo-Latin ]
 Au:
@@ -494,7 +494,7 @@ At:
 Rn:
   named: radium
   about: its decay gas
-  kinds: [ property ]
+  kinds: [ property, substance ]
   language: Latin
   path: [ Latin, German, English ]
 Fr:
