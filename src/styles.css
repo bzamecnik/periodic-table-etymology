@@ -808,3 +808,294 @@ kbd {
   text-underline-offset: 0.15em;
   cursor: pointer;
 }
+
+/*
+ * Phones held upright. The table shrinks to a map of colored symbols which stays in
+ * sight, and what the tiles cannot carry moves to a list below it. The width is in
+ * step with PHONE in useMediaQuery.ts.
+ */
+@media (max-width: 699px) {
+  html {
+    /* what stays on top: the table, about as wide as the screen */
+    scroll-padding-top: 62vw;
+  }
+
+  .page {
+    gap: 0.25rem;
+    min-height: 0;
+    padding: 0.4rem 0.4rem 0.6rem;
+  }
+
+  .controls {
+    gap: 0.25rem;
+  }
+
+  .controls__search {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .search {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .search kbd {
+    display: none;
+  }
+
+  .search input {
+    padding-right: 0.6rem;
+    /* anything smaller makes iOS zoom in on focus */
+    font-size: 1rem;
+  }
+
+  .controls__status {
+    flex: none;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 6rem;
+    text-align: right;
+  }
+
+  .controls__row {
+    grid-template-columns: 4.6rem minmax(0, 1fr);
+    gap: 0.3rem;
+    align-items: center;
+  }
+
+  .controls__label {
+    align-self: center;
+    padding-top: 0;
+    font-size: 0.68rem;
+    line-height: 1.1;
+  }
+
+  /* One row each, swiped sideways */
+  .chips {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+  }
+
+  .chip,
+  .chips__family-label {
+    flex: none;
+  }
+
+  .chip {
+    min-height: 2rem;
+    padding-inline: 0.45rem;
+  }
+
+  .table-scroll {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    flex: none;
+    min-height: 0;
+    container-type: inline-size;
+    overflow: visible;
+    padding: 3px 0;
+    background: var(--paper);
+  }
+
+  .table-layout {
+    --gap: 1px;
+    --width: 100cqw;
+    --tile-height: calc(var(--tile-width) * 1.2);
+  }
+
+  .tile {
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-top-width: 2px;
+  }
+
+  .tile:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .tile__head {
+    justify-content: center;
+  }
+
+  .tile__symbol {
+    font-size: max(0.6rem, calc(var(--tile-width) * 0.56));
+    letter-spacing: -0.02em;
+  }
+
+  .tile__meta,
+  .tile__name,
+  .tile__gloss,
+  .series-label {
+    display: none;
+  }
+
+  /* The title takes the free space above the transition metals */
+  .masthead {
+    grid-column: 3 / 13;
+    grid-row: 1 / 4;
+    padding: 0 0.5rem;
+    text-align: center;
+  }
+
+  .masthead h1 {
+    font-size: 1rem;
+  }
+
+  .tagline {
+    font-size: 0.68rem;
+  }
+
+  .phone-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .panel {
+    display: block;
+    margin: 0;
+    padding: 0.6rem 0.7rem;
+  }
+
+  .panel--intro {
+    padding: 0.2rem 0.3rem;
+  }
+
+  /* There is no keyboard, and the tiles do not show what the text explains */
+  .panel--intro p:not(.panel__lead) {
+    display: none;
+  }
+
+  .panel__lead {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .panel__head,
+  .panel__body {
+    overflow: visible;
+  }
+
+  .panel__head {
+    margin-bottom: 0.6rem;
+  }
+
+  .panel__nav button {
+    width: 2.75rem;
+    height: 2.25rem;
+    font-size: 1rem;
+  }
+
+  .panel__body {
+    padding: 0;
+    mask-image: none;
+    font-size: 0.95rem;
+  }
+
+  .field {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    margin-bottom: 0.6rem;
+  }
+
+  .field dt {
+    font-size: 0.75rem;
+  }
+
+  .deeper__sources {
+    font-size: 0.8rem;
+  }
+
+  .notes {
+    font-size: 0.82rem;
+  }
+
+  .element-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .element-list__empty {
+    margin: 1rem 0;
+    text-align: center;
+    color: var(--ink-soft);
+  }
+
+  .element-row {
+    display: grid;
+    grid-template-columns: 3rem minmax(0, 1fr) auto;
+    gap: 0.6rem;
+    align-items: center;
+    width: 100%;
+    min-height: 3.5rem;
+    padding: 0.3rem 0.1rem;
+    border: 0;
+    border-bottom: 1px solid var(--rule);
+    background: none;
+    color: var(--ink);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .element-row__symbol {
+    --fill-a: color-mix(in oklab, var(--color-a) var(--tint), var(--paper-raised));
+    --fill-b: color-mix(in oklab, var(--color-b) var(--tint), var(--paper-raised));
+    display: grid;
+    place-items: center;
+    height: 2.8rem;
+    border-top: 3px solid var(--color-a);
+    border-radius: 2px;
+    background: linear-gradient(135deg, var(--fill-a) 50%, var(--fill-b) 50%);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .element-row__text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .element-row__name {
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .element-row__line {
+    font-size: 0.82rem;
+    line-height: 1.25;
+    color: var(--ink-soft);
+  }
+
+  .element-row__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.7rem;
+    font-variant-numeric: lining-nums;
+    line-height: 1.25;
+    text-align: right;
+    color: var(--ink-soft);
+  }
+
+  .element-row__icons {
+    display: flex;
+    gap: 0.2rem;
+  }
+
+  .attribution {
+    padding: 0.5rem 0.3rem 0.4rem;
+    font-size: 0.72rem;
+  }
+}

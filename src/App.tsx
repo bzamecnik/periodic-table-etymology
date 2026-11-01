@@ -3,10 +3,12 @@ import type { ColorBy } from './colors.ts'
 import { Attribution } from './components/Attribution.tsx'
 import { Controls } from './components/Controls.tsx'
 import { DetailPanel } from './components/DetailPanel.tsx'
+import { ElementList } from './components/ElementList.tsx'
 import { PeriodicTable } from './components/PeriodicTable.tsx'
 import { type ChemicalElement, elements } from './data/index.ts'
 import { type Filters, followFilters, matchesFilters, NO_FILTERS } from './filters.ts'
 import { navigate, nextLinear } from './navigation.ts'
+import { PHONE, useMediaQuery } from './useMediaQuery.ts'
 
 function zFromHash(): number | null {
   const symbol = window.location.hash.slice(1)
@@ -16,10 +18,13 @@ function zFromHash(): number | null {
 function writeHash(z: number | null) {
   const url = z === null ? window.location.pathname + window.location.search : `#${elements[z - 1].symbol}`
   // no history entry per element: the back button should leave the page, not walk the table
-  window.history.replaceState(null, '', url)
+  window.history.replaceState(window.history.state, '', url)
 }
 
 const focusTile = (z: number) => document.getElementById(`tile-${elements[z - 1].symbol}`)?.focus()
+
+/** The state of a history entry made by opening details, so that closing them can step back from it. */
+const OPENED_HERE = 'details'
 
 /** A click on any of these has a purpose of its own, so it does not close the panel. */
 const KEEPS_PANEL_OPEN = 'button, a, input, label, .panel'
@@ -31,15 +36,26 @@ export function App() {
   const [filters, setFilters] = useState<Filters>(NO_FILTERS)
   const [colorBy, setColorBy] = useState<ColorBy>('kind')
   const searchRef = useRef<HTMLInputElement>(null)
+  const phone = useMediaQuery(PHONE)
 
   const activeElements = useMemo(() => new Set(elements.filter((e) => matchesFilters(e, filters))), [filters])
   const isActive = useCallback((element: ChemicalElement) => activeElements.has(element), [activeElements])
 
-  const select = useCallback((z: number | null) => {
-    setSelectedZ(z)
-    writeHash(z)
-    if (z !== null) setCurrentZ(z)
-  }, [])
+  const select = useCallback(
+    (z: number | null) => {
+      if (phone && selectedZ === null && z !== null) {
+        // on a phone, opened details are a step in the history, which the back button is expected to undo
+        window.history.pushState(OPENED_HERE, '', `#${elements[z - 1].symbol}`)
+      } else if (z === null && window.history.state === OPENED_HERE) {
+        window.history.back()
+      } else {
+        writeHash(z)
+      }
+      setSelectedZ(z)
+      if (z !== null) setCurrentZ(z)
+    },
+    [phone, selectedZ],
+  )
 
   const close = () => {
     // the focus would get lost with the panel; elsewhere it stays where it is
@@ -92,6 +108,22 @@ export function App() {
     return () => window.removeEventListener('hashchange', onHashChange)
   }, [])
 
+  // on a phone: the details start right below the table, closing them leads back to the row in the list
+  const previousZ = useRef(selectedZ)
+  useLayoutEffect(() => {
+    const previous = previousZ.current
+    // oxlint-disable-next-line react/immutability -- a ref is meant to change; the rule does not know the one of Preact
+    previousZ.current = selectedZ
+    if (!phone || previous === selectedZ) return
+    if (selectedZ !== null) {
+      const panelTop = document.querySelector('.panel')?.getBoundingClientRect().top ?? 0
+      const tableHeight = document.querySelector<HTMLElement>('.table-scroll')?.offsetHeight ?? 0
+      window.scrollTo(0, panelTop + window.scrollY - tableHeight)
+    } else if (previous !== null) {
+      document.getElementById(`row-${elements[previous - 1].symbol}`)?.scrollIntoView({ block: 'center' })
+    }
+  }, [phone, selectedZ])
+
   // a layout effect: a key pressed right after a move must already see that move
   useLayoutEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
@@ -111,7 +143,8 @@ export function App() {
       }
     }
     const onClick = (event: MouseEvent) => {
-      if (selectedZ === null || !(event.target instanceof Element)) return
+      // a phone has hardly any room outside of the panel, and a tap there is more likely a slip
+      if (phone || selectedZ === null || !(event.target instanceof Element)) return
       // the end of a drag which selected some text is a click as well
       if (event.target.closest(KEEPS_PANEL_OPEN) || window.getSelection()?.isCollapsed === false) return
       select(null)
@@ -123,6 +156,15 @@ export function App() {
       window.removeEventListener('click', onClick)
     }
   })
+
+  const panel = (
+    <DetailPanel
+      element={selectedZ === null ? null : elements[selectedZ - 1]}
+      onClose={close}
+      onPrevious={() => moveSelection(-1)}
+      onNext={() => moveSelection(1)}
+    />
+  )
 
   return (
     <div class="page">
@@ -150,14 +192,22 @@ export function App() {
           <h1>Periodic Table of Name Origins</h1>
           <p class="tagline">Where the names of all 118 elements come from.</p>
         </header>
-        <DetailPanel
-          element={selectedZ === null ? null : elements[selectedZ - 1]}
-          onClose={close}
-          onPrevious={() => moveSelection(-1)}
-          onNext={() => moveSelection(1)}
-        />
-        <Attribution />
+        {!phone && panel}
+        {!phone && <Attribution />}
       </PeriodicTable>
+      {phone && (
+        <div class="phone-content">
+          {panel}
+          {selectedZ === null && (
+            <ElementList
+              elements={elements.filter(isActive)}
+              colorBy={colorBy}
+              onSelect={(element) => select(element.z)}
+            />
+          )}
+          <Attribution />
+        </div>
+      )}
     </div>
   )
 }

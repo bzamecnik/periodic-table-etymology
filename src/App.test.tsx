@@ -1,6 +1,6 @@
-import { render, screen, within } from '@testing-library/preact'
+import { render, screen, waitFor, within } from '@testing-library/preact'
 import userEvent from '@testing-library/user-event'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { App } from './App.tsx'
 import { Controls } from './components/Controls.tsx'
 import { elements } from './data/index.ts'
@@ -410,5 +410,88 @@ describe('App', () => {
       await userEvent.keyboard('zzzzzz{Enter}')
       expect(box()).toHaveFocus()
     })
+  })
+
+  describe('on a phone', () => {
+    const row = (symbol: string) => document.getElementById(`row-${symbol}`)!
+    const rows = () => document.querySelectorAll('.element-row')
+
+    beforeEach(() => {
+      vi.stubGlobal('matchMedia', () => ({ matches: true, addEventListener: () => {}, removeEventListener: () => {} }))
+      vi.stubGlobal('scrollTo', vi.fn())
+      Element.prototype.scrollIntoView = vi.fn()
+    })
+
+    afterEach(() => {
+      vi.unstubAllGlobals()
+    })
+
+    it('lists all elements below the table, with what the tiles cannot carry', () => {
+      render(<App />)
+      expect(rows()).toHaveLength(118)
+      expect(row('Fe')).toHaveTextContent('Iron')
+      expect(row('Fe')).toHaveTextContent('Old English')
+      expect(tile('Fe')).toBeInTheDocument()
+    })
+
+    it('lists only what matches the filters', async () => {
+      render(<App />)
+      await userEvent.type(screen.getByRole('searchbox'), 'zzzzzz')
+      expect(rows()).toHaveLength(0)
+      expect(screen.getByText('No element matches the filters.')).toBeInTheDocument()
+    })
+
+    it('swaps the list for the details of a tapped row, and back', async () => {
+      render(<App />)
+      await userEvent.click(row('Fe'))
+      expect(screen.getByRole('complementary', { name: 'Name origin of Iron' })).toBeInTheDocument()
+      expect(rows()).toHaveLength(0)
+      await userEvent.click(screen.getByRole('button', { name: 'Close details' }))
+      expect(rows()).toHaveLength(118)
+      expect(Element.prototype.scrollIntoView).toHaveBeenCalled()
+    })
+
+    it('opens the details from a tile as well, and brings them into view', async () => {
+      render(<App />)
+      await userEvent.click(tile('Au'))
+      expect(screen.getByRole('complementary', { name: 'Name origin of Gold' })).toBeInTheDocument()
+      expect(window.scrollTo).toHaveBeenCalled()
+    })
+
+    it('closes the details by the back button', async () => {
+      render(<App />)
+      await userEvent.click(row('Fe'))
+      expect(window.location.hash).toBe('#Fe')
+      window.history.back()
+      await waitFor(() => expect(rows()).toHaveLength(118))
+      expect(window.location.hash).toBe('')
+    })
+
+    it('takes opened details back from the history when closed by the button', async () => {
+      render(<App />)
+      const pushState = vi.spyOn(window.history, 'pushState')
+      const back = vi.spyOn(window.history, 'back')
+      await userEvent.click(row('Fe'))
+      await userEvent.click(screen.getByRole('button', { name: 'Next element' }))
+      expect(pushState).toHaveBeenCalledTimes(1)
+      expect(window.location.hash).toBe('#Co')
+      await userEvent.click(screen.getByRole('button', { name: 'Close details' }))
+      expect(back).toHaveBeenCalledOnce()
+      await waitFor(() => expect(window.location.hash).toBe(''))
+      pushState.mockRestore()
+      back.mockRestore()
+    })
+
+    it('keeps the details open on a tap beside them', async () => {
+      render(<App />)
+      await userEvent.click(row('Fe'))
+      await userEvent.click(document.querySelector('.page')!)
+      expect(screen.getByRole('complementary', { name: 'Name origin of Iron' })).toBeInTheDocument()
+    })
+  })
+
+  it('has no list on a wider screen', () => {
+    render(<App />)
+    expect(document.querySelector('.element-row')).toBeNull()
   })
 })

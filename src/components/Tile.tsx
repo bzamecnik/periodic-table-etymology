@@ -14,7 +14,7 @@ interface TileProps {
   onSelect: (element: ChemicalElement) => void
 }
 
-function describe(element: ChemicalElement, dimmed: boolean): string {
+export function describeElement(element: ChemicalElement, dimmed: boolean): string {
   const gloss =
     element.gloss === PLACEHOLDER
       ? 'meaning not filled in yet'
@@ -28,7 +28,7 @@ function describe(element: ChemicalElement, dimmed: boolean): string {
   return `${element.name}, ${element.symbol}, atomic number ${element.z}: ${gloss}. Oldest language: ${language}. Kind: ${kinds}.${match}`
 }
 
-const hasOwnSymbolLanguage = ({ language, symbolLanguage }: ChemicalElement) =>
+export const hasOwnSymbolLanguage = ({ language, symbolLanguage }: ChemicalElement) =>
   symbolLanguage !== undefined && symbolLanguage !== PLACEHOLDER && symbolLanguage !== language
 
 /** Long names get smaller instead of being cut off. */
@@ -55,7 +55,7 @@ export function Tile({ element, colorBy, current, selected, dimmed, onSelect }: 
           '--color-b': colorB,
         }}
         tabIndex={current ? 0 : -1}
-        aria-label={describe(element, dimmed)}
+        aria-label={describeElement(element, dimmed)}
         onClick={() => onSelect(element)}
       >
         <span class="tile__head">

@@ -14,12 +14,14 @@ from. Each step lands as one or more focused commits.
   height, title and credit in the free spaces of the table, compact filters;
   easier closing of the details and leaving by Escape
 - [x] 8. Curation: no placeholders left, sourced findings in `data/deeper.yaml`
+- [x] 5. Phones held upright: the table as a pinned map of colored symbols with
+  the selected element highlighted, a list of the elements or the details below
+  it, one swiped row per filter, the back button closes the details
 
 ## Later
 
-- [ ] 5. Small screens: pinned table thumbnail with the selected element
-  highlighted, the detail panel below, scrolling moves across elements, a small
-  search box
+- [ ] Phones: swiping between the elements in the details, scrubbing across the
+  table with a finger; phones held sideways and small tablets still scroll the table
 - [ ] Flags for the languages/countries of origin
 - [ ] More data layers, e.g. phase at common conditions
 - [ ] Illustrations, each with its own license and credit
