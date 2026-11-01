@@ -758,6 +758,8 @@ kbd {
   border: 1px solid var(--rule);
   border-radius: 2px;
   background: var(--paper-raised);
+  /* The strip on the top of the tiles; it takes no room, so switching the colors moves nothing */
+  box-shadow: inset 0 3px 0 var(--color-a, transparent);
   color: var(--ink);
   font: inherit;
   cursor: pointer;
@@ -775,13 +777,6 @@ kbd {
 
 .chip--empty {
   color: var(--ink-faint);
-}
-
-.chip__swatch {
-  width: 0.65em;
-  height: 0.65em;
-  border-radius: 1px;
-  background: var(--color-a);
 }
 
 .chip__count {

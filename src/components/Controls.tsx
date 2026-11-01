@@ -51,7 +51,6 @@ function Chip({ label, count, pressed, color, icon, onClick }: ChipProps) {
       style={color ? { '--color-a': color } : undefined}
       onClick={onClick}
     >
-      {color && <span class="chip__swatch" aria-hidden="true" />}
       {icon && <KindIcon kind={icon} />}
       {label}{' '}
       <span class="chip__count">{count}</span>
