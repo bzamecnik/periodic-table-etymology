@@ -1,6 +1,6 @@
 import type { ChemicalElement } from './data/index.ts'
 import { inlineToText } from './data/inline.ts'
-import { familyOf, FAMILIES, type Family, KINDS, type Kind, PLACEHOLDER } from './data/vocabulary.ts'
+import { familyOf, FAMILIES, type Family, filterLanguage, KINDS, type Kind, PLACEHOLDER } from './data/vocabulary.ts'
 
 export interface Filters {
   kinds: ReadonlySet<Kind>
@@ -68,11 +68,11 @@ function matchesKinds(element: ChemicalElement, kinds: ReadonlySet<Kind>): boole
   return kinds.size === 0 || element.kinds.some((kind) => kinds.has(kind))
 }
 
-/** The oldest languages of an element: of the name, and of the symbol when it differs. */
+/** The oldest languages of an element as filtered: of the name, and of the symbol when it differs. */
 export function oldestLanguages(element: ChemicalElement): string[] {
   const { language, symbolLanguage } = element
-  if (!symbolLanguage || symbolLanguage === PLACEHOLDER) return [language]
-  return symbolLanguage === language ? [language] : [language, symbolLanguage]
+  const languages = !symbolLanguage || symbolLanguage === PLACEHOLDER ? [language] : [language, symbolLanguage]
+  return [...new Set(languages.map(filterLanguage))]
 }
 
 function matchesLanguages(element: ChemicalElement, languages: ReadonlySet<string>): boolean {

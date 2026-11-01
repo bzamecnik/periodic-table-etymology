@@ -148,7 +148,25 @@ describe('orderKinds', () => {
   })
 })
 
+describe('the later stages of Latin', () => {
+  const sb = { ...element('Sb'), language: 'Medieval Latin', symbolLanguage: 'Greek' }
+
+  it('filter as Latin', () => {
+    expect(oldestLanguages(sb)).toEqual(['Latin', 'Greek'])
+    expect(matchesFilters(sb, { ...NO_FILTERS, languages: new Set(['Latin']) })).toBe(true)
+  })
+
+  it('count once when name and symbol both end up as Latin', () => {
+    expect(oldestLanguages({ ...sb, symbolLanguage: 'Latin' })).toEqual(['Latin'])
+  })
+})
+
 describe('groupLanguages', () => {
+  it('has the Romance languages together with Latin', () => {
+    const latin = groupLanguages([element('Fe'), { ...element('Co'), language: 'Spanish' }])
+    expect(latin.find((g) => g.languages.includes('Spanish'))!.family).toBe('Latin')
+  })
+
   it('groups by family with the most common first', () => {
     const groups = groupLanguages(elements)
     expect(groups[0]).toEqual({ family: 'Greek', languages: ['Greek'] })

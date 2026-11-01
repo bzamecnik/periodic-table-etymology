@@ -17,14 +17,13 @@ export const KIND_LABELS: Record<Kind, string> = {
   [PLACEHOLDER]: 'Unclassified',
 }
 
-export const FAMILIES = ['Greek', 'Latin', 'Germanic', 'Romance', 'Slavic', 'Other', PLACEHOLDER] as const
+export const FAMILIES = ['Greek', 'Latin', 'Germanic', 'Slavic', 'Other', PLACEHOLDER] as const
 export type Family = (typeof FAMILIES)[number]
 
 export const FAMILY_LABELS: Record<Family, string> = {
   Greek: 'Greek',
   Latin: 'Latin',
   Germanic: 'Germanic',
-  Romance: 'Romance',
   Slavic: 'Slavic',
   Other: 'Other',
   [PLACEHOLDER]: 'Unclassified',
@@ -33,14 +32,15 @@ export const FAMILY_LABELS: Record<Family, string> = {
 /**
  * Known languages: name -> family and a short code for the tiles. Reconstructed
  * ones may appear on a route, but never as the oldest language of a tile, because
- * sooner or later nearly every word would end up in Proto-Indo-European.
+ * sooner or later nearly every word would end up in Proto-Indo-European. The
+ * later stages of a language can share the filter of the language itself.
  */
-export const LANGUAGES: Record<string, { family: Family; code: string; reconstructed?: boolean }> = {
+export const LANGUAGES: Record<string, { family: Family; code: string; reconstructed?: boolean; filterAs?: string }> = {
   Greek: { family: 'Greek', code: 'Gr' },
   Latin: { family: 'Latin', code: 'La' },
-  'Old Latin': { family: 'Latin', code: 'OL' },
-  'Medieval Latin': { family: 'Latin', code: 'ML' },
-  'Neo-Latin': { family: 'Latin', code: 'NL' },
+  'Old Latin': { family: 'Latin', code: 'OL', filterAs: 'Latin' },
+  'Medieval Latin': { family: 'Latin', code: 'ML', filterAs: 'Latin' },
+  'Neo-Latin': { family: 'Latin', code: 'NL', filterAs: 'Latin' },
   German: { family: 'Germanic', code: 'De' },
   Swedish: { family: 'Germanic', code: 'Sv' },
   Danish: { family: 'Germanic', code: 'Da' },
@@ -52,12 +52,12 @@ export const LANGUAGES: Record<string, { family: Family; code: string; reconstru
   'Old High German': { family: 'Germanic', code: 'OH' },
   Frankish: { family: 'Germanic', code: 'Fk' },
   'West Germanic': { family: 'Germanic', code: 'WG', reconstructed: true },
-  French: { family: 'Romance', code: 'Fr' },
-  'Old French': { family: 'Romance', code: 'OF' },
-  'Middle French': { family: 'Romance', code: 'MF' },
-  'Anglo-Norman': { family: 'Romance', code: 'AN' },
-  Italian: { family: 'Romance', code: 'It' },
-  Spanish: { family: 'Romance', code: 'Es' },
+  French: { family: 'Latin', code: 'Fr' },
+  'Old French': { family: 'Latin', code: 'OF' },
+  'Middle French': { family: 'Latin', code: 'MF' },
+  'Anglo-Norman': { family: 'Latin', code: 'AN' },
+  Italian: { family: 'Latin', code: 'It' },
+  Spanish: { family: 'Latin', code: 'Es' },
   Russian: { family: 'Slavic', code: 'Ru' },
   Polish: { family: 'Slavic', code: 'Pl' },
   'Old East Slavic': { family: 'Slavic', code: 'OS' },
@@ -83,6 +83,10 @@ export const LANGUAGES: Record<string, { family: Family; code: string; reconstru
 
 export function familyOf(language: string): Family {
   return LANGUAGES[language]?.family ?? PLACEHOLDER
+}
+
+export function filterLanguage(language: string): string {
+  return LANGUAGES[language]?.filterAs ?? language
 }
 
 export function languageCode(language: string): string {
