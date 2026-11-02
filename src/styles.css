@@ -743,6 +743,14 @@ kbd {
   display: contents;
 }
 
+/* A label does not stay behind at the end of a line, away from its languages */
+.chips__keep {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
 .chips__family-label {
   margin-left: 0.35rem;
   font-size: 0.68rem;

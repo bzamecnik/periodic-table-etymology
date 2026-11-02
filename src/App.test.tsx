@@ -319,6 +319,15 @@ describe('App', () => {
     })
   })
 
+  it('keeps the label of a language family together with its first language', () => {
+    render(<App />)
+    for (const label of document.querySelectorAll('.chips__family-label')) {
+      expect(label.parentElement).toHaveClass('chips__keep')
+      expect(label.nextElementSibling).toHaveClass('chip')
+    }
+    expect(document.querySelectorAll('.chips__family-label').length).toBeGreaterThan(0)
+  })
+
   describe('the colors', () => {
     const coloredByKind = () => screen.getByRole<HTMLInputElement>('radio', { name: /^Kind of origin/ }).checked
     const coloredByLanguage = () => screen.getByRole<HTMLInputElement>('radio', { name: /^Oldest language/ }).checked

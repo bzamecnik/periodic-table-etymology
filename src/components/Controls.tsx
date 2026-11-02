@@ -160,25 +160,34 @@ export function Controls(props: ControlsProps) {
           onColorByChange={onColorByChange}
         />
         <div class="chips" role="group" aria-label="Oldest language">
-          {groupLanguages(elements).map(({ family, languages }) => (
-            <div key={family} class="chips__family" role="group" aria-label={FAMILY_LABELS[family]}>
-              {family !== PLACEHOLDER && languages.length > 1 && (
-                <span class="chips__family-label" aria-hidden="true">
-                  {FAMILY_LABELS[family]}
-                </span>
-              )}
-              {languages.map((language) => (
-                <Chip
-                  key={language}
-                  label={language === PLACEHOLDER ? FAMILY_LABELS[PLACEHOLDER] : language}
-                  count={languageCounts.get(language)!}
-                  pressed={filters.languages.has(language)}
-                  color={colorBy === 'language' ? familyColor(family) : undefined}
-                  onClick={() => onFiltersChange({ ...filters, languages: toggled(filters.languages, language) })}
-                />
-              ))}
-            </div>
-          ))}
+          {groupLanguages(elements).map(({ family, languages }) => {
+            const chip = (language: string) => (
+              <Chip
+                key={language}
+                label={language === PLACEHOLDER ? FAMILY_LABELS[PLACEHOLDER] : language}
+                count={languageCounts.get(language)!}
+                pressed={filters.languages.has(language)}
+                color={colorBy === 'language' ? familyColor(family) : undefined}
+                onClick={() => onFiltersChange({ ...filters, languages: toggled(filters.languages, language) })}
+              />
+            )
+            const [first, ...others] = languages
+            return (
+              <div key={family} class="chips__family" role="group" aria-label={FAMILY_LABELS[family]}>
+                {family !== PLACEHOLDER && languages.length > 1 ? (
+                  <span class="chips__keep">
+                    <span class="chips__family-label" aria-hidden="true">
+                      {FAMILY_LABELS[family]}
+                    </span>
+                    {chip(first)}
+                  </span>
+                ) : (
+                  chip(first)
+                )}
+                {others.map(chip)}
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>
