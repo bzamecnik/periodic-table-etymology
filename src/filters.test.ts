@@ -161,6 +161,14 @@ describe('the later stages of Latin', () => {
   })
 })
 
+describe('the stages of Persian', () => {
+  it('filter as Persian', () => {
+    const zr = { ...element('Zr'), language: 'Middle Persian' }
+    expect(oldestLanguages(zr)).toEqual(['Persian'])
+    expect(oldestLanguages({ ...zr, language: 'Old Persian' })).toEqual(['Persian'])
+  })
+})
+
 describe('groupLanguages', () => {
   it('has the Romance languages together with Latin', () => {
     const latin = groupLanguages([element('Fe'), { ...element('Co'), language: 'Spanish' }])
