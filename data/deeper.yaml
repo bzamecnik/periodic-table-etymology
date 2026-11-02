@@ -286,6 +286,13 @@ In:
     sources:
       - "en.wiktionary: indigo @ 93631957"
       - "en.wikipedia: List of chemical element name etymologies @ 1382331679"
+  - text: "India is named after the Indus River. Sanskrit sindhu means \"river, stream\", and especially the Indus. The Old Persian Hinduš was used for the lower Indus basin and passed into Greek as Indos. Wiktionary derives India from the Sanskrit, but elsewhere treats the Old Persian and Sanskrit forms as relatives from an older word of uncertain origin."
+    certainty: traditional
+    sources:
+      - "en.wikipedia: Names of India @ 1382512174"
+      - "en.wiktionary: India @ 94540371"
+      - "en.wiktionary: सिन्धु @ 93636077"
+      - "en.wiktionary: Ἰνδός @ 92779634"
 Sn:
   - text: "Old English tin goes back to a Proto-Germanic word without a known origin."
     certainty: attested
@@ -331,7 +338,7 @@ Rn:
     sources:
       - "en.wiktionary: radon @ 94637933"
 Ac:
-  - text: "From Greek aktis, \"beam, ray\", in the same way as the first part of protactinium."
+  - text: "From Greek aktis, \"beam, ray\", in the same way as the second part of protactinium."
     certainty: attested
     sources:
       - "en.wiktionary: actinium @ 93039810"
@@ -423,9 +430,11 @@ Nh:
       - "en.wiktionary: 日本 @ 93472794"
       - "en.wikipedia: Names of Japan @ 1377999714"
 Lv:
-  - text: "Named after Lawrence Livermore National Laboratory in the city of Livermore, itself named after the English-born rancher Robert Livermore. The surname is probably from the English place Livermere."
+  - text: "Named after Lawrence Livermore National Laboratory in the city of Livermore, itself named after the English-born rancher Robert Livermore. The surname is probably from the English place Livermere in Suffolk. Great Livermere's name is explained as \"reed lake\", from Old English lēfer, \"rush, reed\", and mere, \"pond, pool, lake\"."
     certainty: traditional
     sources:
+      - "en.wikipedia: Great Livermere @ 1375437244"
+      - "en.wiktionary: Livermere @ 92245903"
       - "en.wikipedia: Livermore, California @ 1380986623"
       - "en.wikipedia: Robert Livermore @ 1351503432"
       - "en.wiktionary: Livermore @ 92187690"

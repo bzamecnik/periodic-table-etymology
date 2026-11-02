@@ -74,6 +74,7 @@ export const LANGUAGES: Record<string, { family: Family; code: string; reconstru
   Pali: { family: 'Other', code: 'Pi' },
   Persian: { family: 'Other', code: 'Fa' },
   'Middle Persian': { family: 'Other', code: 'MP' },
+  'Old Persian': { family: 'Other', code: 'OP' },
   Prakrit: { family: 'Other', code: 'Pk' },
   'Proto-Indo-European': { family: 'Other', code: 'PIE', reconstructed: true },
   Sanskrit: { family: 'Other', code: 'Sa' },

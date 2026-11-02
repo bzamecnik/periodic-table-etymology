@@ -276,8 +276,8 @@ In:
   named: indigo
   gloss: from India
   kinds: [ place, color ]
-  language: Greek
-  path: [ Greek, Latin, English ]
+  language: Sanskrit
+  path: [ Sanskrit, Old Persian, Greek, Latin, English ]
 Sn:
   about: unknown root
   kinds: [ substance ]
@@ -670,10 +670,10 @@ Mc:
   path: [ Old East Slavic, Russian ]
 Lv:
   named: Livermore
-  about: California city
+  gloss: reed lake?
   kinds: [ place ]
-  language: English
-  path: [ English ]
+  language: Old English
+  path: [ Old English, English ]
 Ts:
   named: Tennessee
   gloss: "winding river?"
