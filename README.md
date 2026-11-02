@@ -3,6 +3,10 @@
 Where the names of all 118 chemical elements come from: an interactive periodic
 table of element name etymology.
 
+**[Open the table](https://bzamecnik.github.io/periodic-table-etymology/)**
+
+[![The periodic table with the details of hydrogen open: each tile shows the meaning of the name, its oldest language and the kind of origin](docs/screenshot.png)](https://bzamecnik.github.io/periodic-table-etymology/)
+
 - Each tile shows the short meaning of the name, its oldest language and an icon
   for the kind of origin (place, person, mythology, …).
 - Choose an element to read its original word, the route of the name through
@@ -71,3 +75,5 @@ to the allowed tags in Settings > Environments > github-pages.
   were added for this site and are editorial judgement. Further findings in
   [`data/deeper.yaml`](data/deeper.yaml) are adapted from other Wikipedia and
   Wiktionary pages, each linked at the revision read, in the app as well.
+- Screenshot in [`docs/screenshot.png`](docs/screenshot.png): CC BY-SA 4.0, as it
+  shows that data.
